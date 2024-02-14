@@ -1,0 +1,276 @@
+"'login screen' As screen":
+
+    Container1 As groupContainer.horizontalAutoLayoutContainer:
+        Height: =768
+        LayoutMode: =LayoutMode.Auto
+        Width: =1366
+        ZIndex: =1
+
+        Container2 As groupContainer.manualLayoutContainer:
+            LayoutMinHeight: =100
+            LayoutMinWidth: =250
+            RadiusBottomLeft: =0
+            RadiusBottomRight: =0
+            RadiusTopLeft: =0
+            RadiusTopRight: =0
+            ZIndex: =1
+
+            Land_Con_Txt As groupContainer.verticalAutoLayoutContainer:
+                BorderStyle: =BorderStyle.None
+                DropShadow: =DropShadow.None
+                Height: =655
+                LayoutDirection: =LayoutDirection.Vertical
+                LayoutGap: =Switch(App.ActiveScreen.Size,2,10,3, 15,4,10)
+                LayoutMode: =LayoutMode.Auto
+                PaddingLeft: =50
+                Width: =Parent.Width
+                Y: =112
+                ZIndex: =1
+
+                Land_lbl_title As label:
+                    Color: =RGBA(68, 65, 86, 1)
+                    Font: ="Poppins"
+                    FontWeight: =FontWeight.Bold
+                    Height: =Switch(App.ActiveScreen.Size,2,130,3,150,4,135) 
+                    PaddingTop: =If(App.ActiveScreen.Size=2,15, 5)
+                    Size: =Switch(App.ActiveScreen.Size,2,25,3,23,4,22) 
+                    Text: ="Empower Your Business with a Streamlined All-in-One Solution"
+                    Width: =Switch(App.ActiveScreen.Size,2,500,3,350,4,  Parent.Width/1.6)
+                    X: =If(App.ActiveScreen.Size=2,18, 0)
+                    ZIndex: =1
+
+                Land_lbl_Subtitle As label:
+                    Color: =RGBA(30, 128, 142, 1)
+                    Font: ="Poppins"
+                    FontWeight: =FontWeight.Lighter
+                    Height: =Switch(App.ActiveScreen.Size,2,65,3,90,4,80) 
+                    LineHeight: =1.5
+                    PaddingBottom: =0
+                    PaddingLeft: =0
+                    PaddingRight: =0
+                    PaddingTop: =0
+                    Size: =Switch(App.ActiveScreen.Size,2,11,3,8,4,10) 
+                    Text: ="Simplify operations, boost productivity with our all-in-one solution. Manage travel, expenses, equipment effortlessly on one platform. Experience enhanced efficiency, optimized performance."
+                    Width: =Parent.Width/1.5
+                    ZIndex: =2
+
+                Land_btn_Ex As button:
+                    BorderStyle: =BorderStyle.None
+                    BorderThickness: =0
+                    Fill: =RGBA(35, 127, 234, 1)
+                    FocusedBorderThickness: =0
+                    Font: ="Poppins"
+                    Height: =  Switch(App.ActiveScreen.Size,2,35,3,35,4,50)
+                    OnSelect: =Set(varLoginbtn,true)
+                    PressedColor: =Color.White
+                    PressedFill: =Self.Fill
+                    Size: = Switch(App.ActiveScreen.Size,3,12,4,15) 
+                    Text: ="Explore Now"
+                    Width: = Switch(App.ActiveScreen.Size,2,130,3,130,4,160) 
+                    ZIndex: =3
+
+                Land_Vec_Img As image:
+                    Height: =Switch(App.ActiveScreen.Size,2,120,3,120,4, 100)
+                    Image: |
+                        ="data:image/svg+xml;utf8, "&EncodeUrl("<svg width='187' height='87' viewBox='0 0 187 87' fill='none' xmlns='http://www.w3.org/2000/svg'>
+                        <path d='M156.036 32.0001L156.691 31.2448L156.036 32.0001ZM78.8421 52.0136L79.7887 52.3358L78.8421 52.0136ZM4.51497 0.958766L0.419269 11.755L11.8169 9.90386L4.51497 0.958766ZM185.984 86.6766C186.258 85.1496 186.28 83.2633 186.059 81.1182L184.069 81.3231C184.278 83.3537 184.246 85.04 184.016 86.3234L185.984 86.6766ZM183.646 70.5953C182.609 67.4833 181.246 64.1419 179.534 60.6783L177.741 61.5644C179.414 64.949 180.742 68.2057 181.748 71.2273L183.646 70.5953ZM174.226 51.3773C172.355 48.5001 170.247 45.6031 167.891 42.7417L166.347 44.0129C168.654 46.815 170.718 49.6514 172.55 52.4677L174.226 51.3773ZM160.637 34.8677C159.374 33.6411 158.059 32.4318 156.691 31.2448L155.38 32.7553C156.72 33.9175 158.007 35.1016 159.244 36.3026L160.637 34.8677ZM156.691 31.2448C155.483 30.1967 154.25 29.2335 152.996 28.3518L151.846 29.9882C153.044 30.8302 154.224 31.7514 155.38 32.7553L156.691 31.2448ZM144.804 23.8294C141.858 22.6034 138.849 21.7434 135.816 21.2079L135.468 23.1775C138.362 23.6885 141.23 24.5084 144.036 25.6758L144.804 23.8294ZM126.49 20.5384C123.368 20.625 120.265 21.0094 117.226 21.6459L117.636 23.6034C120.567 22.9897 123.55 22.6207 126.546 22.5377L126.49 20.5384ZM108.294 24.2836C105.365 25.4035 102.543 26.7394 99.8738 28.244L100.856 29.9863C103.442 28.5288 106.174 27.2354 109.008 26.1517L108.294 24.2836ZM92.1285 33.4036C89.5929 35.3868 87.2926 37.5191 85.2893 39.7399L86.7744 41.0795C88.6951 38.9503 90.9096 36.8961 93.3607 34.979L92.1285 33.4036ZM79.8137 47.3544C79.0336 48.7921 78.3886 50.2425 77.8954 51.6913L79.7887 52.3358C80.2419 51.0045 80.8397 49.6573 81.5716 48.3081L79.8137 47.3544ZM77.8954 51.6913C77.4039 53.1353 76.6717 54.5255 75.726 55.8328L77.3465 57.0051C78.3994 55.5495 79.228 53.9831 79.7887 52.3358L77.8954 51.6913ZM68.5374 61.9976C65.8673 63.4626 62.7855 64.5386 59.4426 65.0919L59.7692 67.0651C63.3269 66.4763 66.6245 65.3284 69.4994 63.751L68.5374 61.9976ZM49.7844 65.2027C46.736 64.7823 43.6049 63.9223 40.4771 62.5475L39.6723 64.3784C42.9698 65.8278 46.2799 66.7384 49.5111 67.184L49.7844 65.2027ZM32.133 57.5533C29.72 55.6891 27.3545 53.459 25.0805 50.8243L23.5664 52.1311C25.9242 54.8628 28.3866 57.1863 30.9103 59.136L32.133 57.5533ZM19.3092 42.8853C17.6908 40.2548 16.1513 37.358 14.7118 34.1767L12.8896 35.0012C14.3619 38.2549 15.9406 41.2268 17.6057 43.9333L19.3092 42.8853ZM11.1145 24.9743C10.1126 21.9925 9.18801 18.8161 8.35166 15.4359L6.41021 15.9163C7.25892 19.3465 8.19855 22.5752 9.21863 25.6113L11.1145 24.9743Z' fill='#237FEA'/>
+                        </svg>")
+                    PaddingTop: =20
+                    Visible: =If(App.ActiveScreen.Size=2, false,true)
+                    Width: =300
+                    ZIndex: =4
+
+        Container2_1 As groupContainer.manualLayoutContainer:
+            LayoutMinHeight: =100
+            LayoutMinWidth: =250
+            RadiusBottomLeft: =0
+            RadiusBottomRight: =0
+            RadiusTopLeft: =0
+            RadiusTopRight: =0
+            ZIndex: =2
+
+            Image1 As image:
+                Height: =768
+                Image: ='123'
+                ImagePosition: =ImagePosition.Fill
+                Width: =683
+                ZIndex: =1
+
+    Container3 As groupContainer.manualLayoutContainer:
+        Fill: =RGBA(43, 40, 59, 0.84)
+        Height: =228
+        RadiusBottomLeft: =0
+        RadiusBottomRight: =
+        RadiusTopLeft: =
+        RadiusTopRight: =90
+        Width: =263
+        X: =684
+        Y: =540
+        ZIndex: =2
+
+    Container3_1 As groupContainer.manualLayoutContainer:
+        Fill: =RGBA(43, 40, 59, 1)
+        Height: =228
+        RadiusBottomLeft: =0
+        RadiusBottomRight: =
+        RadiusTopLeft: =
+        RadiusTopRight: =0
+        Width: =684
+        Y: =540
+        ZIndex: =3
+
+        Land_Gal As gallery.galleryHorizontal:
+            DelayItemLoading: =true
+            Fill: =RGBA(48, 52, 63, 1)
+            Height: =Parent.Height
+            Items: |-
+                =/*Table(
+                    {
+                        Header: "Travel",
+                        Info: "You can add your travel request",
+                        Icon: "data:image/svg+xml;utf8, " & EncodeUrl(
+                            "<svg width='131' height='140' viewBox='0 0 131 140' fill='none' xmlns='http://www.w3.org/2000/svg'>
+                <g filter='url(#filter0_f_3412_5336)'>
+                <rect x='41' y='50' width='40' height='40' fill='#237FEA'/>
+                </g>
+                <g clip-path='url(#clip0_3412_5336)'>
+                <path d='M51.7998 64.8001V77.6001L57.3998 74.4001L63.7998 77.6001L69.3998 74.4001V61.6001L63.7998 64.8001L57.3998 61.6001L51.7998 64.8001Z' stroke='white' stroke-width='1.6' stroke-linecap='round' stroke-linejoin='round'/>
+                <path d='M57.3999 61.6001V74.4001' stroke='white' stroke-width='1.6' stroke-linecap='round' stroke-linejoin='round'/>
+                <path d='M63.7998 64.8V77.6' stroke='white' stroke-width='1.6' stroke-linecap='round' stroke-linejoin='round'/>
+                </g>
+                <defs>
+                <filter id='filter0_f_3412_5336' x='-9' y='0' width='140' height='140' filterUnits='userSpaceOnUse' color-interpolation-filters='sRGB'>
+                <feFlood flood-opacity='0' result='BackgroundImageFix'/>
+                <feBlend mode='normal' in='SourceGraphic' in2='BackgroundImageFix' result='shape'/>
+                <feGaussianBlur stdDeviation='25' result='effect1_foregroundBlur_3412_5336'/>
+                </filter>
+                <clipPath id='clip0_3412_5336'>
+                <rect width='19.2' height='19.2' fill='white' transform='translate(51 60)'/>
+                </clipPath>
+                </defs>
+                </svg>"
+                        )
+                    },
+                    {Header: "Expense",
+                        Info: "You can add your expense se request",
+                        Icon:"data:image/svg+xml;utf8, "&EncodeUrl("<svg width='140' height='140' viewBox='0 0 140 140' fill='none' xmlns='http://www.w3.org/2000/svg'>
+                <g filter='url(#filter0_f_3412_5346)'>
+                <rect x='50' y='50' width='40' height='40' fill='#237FEA'/>
+                </g>
+                <path d='M70.7466 74.2C70.6755 74.2 70.6065 74.1866 70.5396 74.16C70.4728 74.1333 70.4129 74.0933 70.3599 74.04L67.1466 70.6933C67.0843 70.6311 67.0331 70.5466 66.993 70.44C66.9528 70.3333 66.9329 70.2355 66.9332 70.1466C66.9332 69.9422 67.0067 69.7666 67.1535 69.6197C67.3003 69.4729 67.4758 69.3996 67.6799 69.4H68.7999C69.271 69.4 69.6778 69.2466 70.0202 68.9397C70.3626 68.6329 70.5691 68.253 70.6399 67.8H66.9332C66.7821 67.8 66.6554 67.7488 66.553 67.6464C66.4506 67.544 66.3995 67.4174 66.3999 67.2666C66.3999 67.1155 66.4511 66.9888 66.5535 66.8864C66.6559 66.784 66.7825 66.733 66.9332 66.7333H70.4799C70.3288 66.4222 70.1043 66.1666 69.8063 65.9664C69.5083 65.7662 69.1729 65.6663 68.7999 65.6666H66.9332C66.7821 65.6666 66.6554 65.6154 66.553 65.513C66.4506 65.4106 66.3995 65.2841 66.3999 65.1333C66.3999 64.9822 66.4511 64.8554 66.5535 64.753C66.6559 64.6506 66.7825 64.5996 66.9332 64.6H72.2666C72.4177 64.6 72.5444 64.6512 72.6468 64.7536C72.7492 64.856 72.8003 64.9826 72.7999 65.1333C72.7999 65.2844 72.7487 65.4112 72.6463 65.5136C72.5439 65.616 72.4173 65.667 72.2666 65.6666H71.0666C71.191 65.8178 71.3021 65.9822 71.3999 66.16C71.4977 66.3378 71.5732 66.5289 71.6266 66.7333H72.2666C72.4177 66.7333 72.5444 66.7845 72.6468 66.8869C72.7492 66.9893 72.8003 67.1159 72.7999 67.2666C72.7999 67.4178 72.7487 67.5445 72.6463 67.6469C72.5439 67.7493 72.4173 67.8003 72.2666 67.8H71.7199C71.6488 68.5555 71.3377 69.189 70.7866 69.7002C70.2355 70.2115 69.5732 70.467 68.7999 70.4666H68.4132L71.1332 73.2933C71.2932 73.4622 71.3267 73.6556 71.2335 73.8736C71.1403 74.0915 70.978 74.2003 70.7466 74.2Z' fill='white'/>
+                <rect x='60.8' y='60.8' width='17.6' height='17.6' rx='8.8' stroke='white' stroke-width='1.6'/>
+                <defs>
+                <filter id='filter0_f_3412_5346' x='0' y='0' width='140' height='140' filterUnits='userSpaceOnUse' color-interpolation-filters='sRGB'>
+                <feFlood flood-opacity='0' result='BackgroundImageFix'/>
+                <feBlend mode='normal' in='SourceGraphic' in2='BackgroundImageFix' result='shape'/>
+                <feGaussianBlur stdDeviation='25' result='effect1_foregroundBlur_3412_5346'/>
+                </filter>
+                </defs>
+                </svg>
+                ")},
+                    {Header: "Equipment",
+                        Info: "You can request for Equipments",
+                        Icon:"data:image/svg+xml;utf8, "&EncodeUrl("<svg width='140' height='140' viewBox='0 0 140 140' fill='none' xmlns='http://www.w3.org/2000/svg'>
+                <g filter='url(#filter0_f_3412_5513)'>
+                <rect x='50' y='50' width='40' height='40' fill='#237FEA'/>
+                </g>
+                <path d='M64.1667 74.1667H63.3334C62.8914 74.1667 62.4675 73.9911 62.1549 73.6785C61.8423 73.366 61.6667 72.942 61.6667 72.5V64.1667C61.6667 63.7246 61.8423 63.3007 62.1549 62.9882C62.4675 62.6756 62.8914 62.5 63.3334 62.5H76.6667C77.1088 62.5 77.5327 62.6756 77.8453 62.9882C78.1578 63.3007 78.3334 63.7246 78.3334 64.1667V72.5C78.3334 72.942 78.1578 73.366 77.8453 73.6785C77.5327 73.9911 77.1088 74.1667 76.6667 74.1667H75.8334' stroke='white' stroke-width='2.18182' stroke-linecap='round' stroke-linejoin='round'/>
+                <path d='M69.9999 72.5L74.1666 77.5H65.8333L69.9999 72.5Z' stroke='white' stroke-width='2.18182' stroke-linecap='round' stroke-linejoin='round'/>
+                <defs>
+                <filter id='filter0_f_3412_5513' x='0' y='0' width='140' height='140' filterUnits='userSpaceOnUse' color-interpolation-filters='sRGB'>
+                <feFlood flood-opacity='0' result='BackgroundImageFix'/>
+                <feBlend mode='normal' in='SourceGraphic' in2='BackgroundImageFix' result='shape'/>
+                <feGaussianBlur stdDeviation='25' result='effect1_foregroundBlur_3412_5513'/>
+                </filter>
+                </defs>
+                </svg>
+                ")}
+                )*/
+                homescreenop
+            ShowScrollbar: =false
+            TemplatePadding: =0
+            TemplateSize: |-
+                =//If(Self.Layout = Layout.Horizontal, Min(320, Self.Width - 60), Min(320, Self.Height - 60))
+                If(Self.Layout = Layout.Horizontal, Land_Gal.Width/3, Land_Gal.Height)
+            Width: =684
+            ZIndex: =1
+
+            Land_gal_Con_main As groupContainer.manualLayoutContainer:
+                BorderStyle: =BorderStyle.None
+                Height: =Land_Gal.TemplateHeight
+                PaddingLeft: =10
+                PaddingRight: =10
+                RadiusBottomLeft: =0
+                RadiusBottomRight: =0
+                RadiusTopLeft: =0
+                RadiusTopRight: =0
+                Width: =Land_Gal.TemplateWidth
+                ZIndex: =1
+
+                Land_gal_img As image:
+                    Height: = Switch(App.ActiveScreen.Size,2,80,3,75,4,80) 
+                    Image: =ThisItem.Icon
+                    Width: =Parent.Width
+                    Y: = Switch(App.ActiveScreen.Size,2,Parent.Y+5,3,Parent.Y+5,4,Parent.Y+18)   
+                    ZIndex: =1
+
+                Land_gal_lbl_Title As label:
+                    Color: =RGBA(255, 255, 255, 1)
+                    Font: ="Poppins"
+                    Height: =Switch(App.ActiveScreen.Size,2,25,3,25,4, 25)
+                    PaddingLeft: =15
+                    Size: = Switch(App.ActiveScreen.Size,2,9,3,9,4,11)  
+                    Text: =ThisItem.Header
+                    Width: =Parent.Width
+                    Y: =  Switch(App.ActiveScreen.Size,2,Land_gal_img.Y+Land_gal_img.Height+10,3,Land_gal_img.Y+Land_gal_img.Height+10,4,Land_gal_img.Y+Land_gal_img.Height+10)     //  110
+                    ZIndex: =2
+
+                Land_gal_lbl_Subtitle As label:
+                    Color: =RGBA(149, 149, 149, 1)
+                    Font: ="Poppins"
+                    Height: =Switch(App.ActiveScreen.Size,2,35,3,35,4, 40)
+                    PaddingLeft: =15
+                    PaddingTop: =0
+                    Size: = Switch(App.ActiveScreen.Size,2,8,3,7,4,9)  
+                    Text: =ThisItem.Info
+                    Width: =Parent.Width
+                    Y: =  Switch(App.ActiveScreen.Size,2,Land_gal_img.Y+Land_gal_img.Height+Land_gal_lbl_Title.Height+15,3,Land_gal_img.Y+Land_gal_img.Height+Land_gal_lbl_Title.Height+15,4,Land_gal_img.Y+Land_gal_img.Height+Land_gal_lbl_Title.Height+15)   //   //153
+                    ZIndex: =3
+
+                Land_gal_Btn As button:
+                    BorderStyle: =BorderStyle.None
+                    BorderThickness: =0
+                    Fill: =RGBA(0, 0, 0, 0)
+                    Height: =Land_gal_Con_main.Height
+                    HoverBorderColor: =Color.Transparent
+                    HoverColor: =Color.Transparent
+                    HoverFill: =Color.Transparent
+                    PressedBorderColor: =Color.Transparent
+                    PressedColor: =Color.Transparent
+                    PressedFill: =Color.Transparent
+                    RadiusBottomLeft: =0
+                    RadiusBottomRight: =0
+                    RadiusTopLeft: =0
+                    RadiusTopRight: =0
+                    Text: =""
+                    Width: =Land_gal_Con_main.Width
+                    ZIndex: =4
+
+    Container3_2 As groupContainer.manualLayoutContainer:
+        Fill: =RGBA(43, 40, 59, 0.84)
+        Height: =153
+        RadiusBottomLeft: =90
+        RadiusBottomRight: =
+        RadiusTopLeft: =
+        RadiusTopRight: =
+        Width: =98
+        X: =1268
+        ZIndex: =4
+
+    Rectangle1 As rectangle:
+        Fill: =RGBA(0, 0, 0, 0.68)
+        Height: =768
+        Visible: =varLoginbtn
+        Width: =1366
+        ZIndex: =5
+

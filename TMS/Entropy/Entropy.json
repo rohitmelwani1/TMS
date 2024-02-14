@@ -3,47 +3,130 @@
   "ControlUniqueGuids": {},
   "ControlUniqueIds": {
     "App": 1,
+    "Container1": 5,
+    "Container2": 6,
+    "Container2_1": 7,
+    "Container3": 9,
+    "Container3_1": 10,
+    "Container3_2": 24,
+    "galleryTemplate3": 17,
     "Host": 3,
-    "Screen1": 4
+    "Image1": 8,
+    "Land_btn_Ex": 14,
+    "Land_Con_Txt": 11,
+    "Land_Gal": 16,
+    "Land_gal_Btn": 19,
+    "Land_gal_Con_main": 18,
+    "Land_gal_img": 20,
+    "Land_gal_lbl_Subtitle": 22,
+    "Land_gal_lbl_Title": 21,
+    "Land_lbl_Subtitle": 13,
+    "Land_lbl_title": 12,
+    "Land_Vec_Img": 15,
+    "login screen": 4,
+    "Rectangle1": 25
   },
   "FunctionParamsInvariantScripts": {},
   "FunctionParamsInvariantScriptsOnInstances": {},
-  "HeaderLastSavedDateTimeUTC": "02/14/2024 07:13:51",
+  "HeaderLastSavedDateTimeUTC": "02/14/2024 07:49:26",
   "IsLegacyComponentAllowGlobalScopeCase": false,
   "LocalConnectionIDReferences": {
     "176ea08a-3c03-4dfc-b673-b48610b13ee2": "\"/providers/microsoft.powerapps/apis/shared_sharepointonline/connections/ffbc5922b2e140c387b18cbafc6d5552\""
   },
   "LocalDatabaseReferencesAsEmpty": false,
-  "LocalResourceFileNames": {},
-  "LocalResourceRootPaths": {},
+  "LocalResourceFileNames": {
+    "123": "6356a7b5-9fc7-436e-98c4-412f4803f7ac.jpg"
+  },
+  "LocalResourceRootPaths": {
+    "123": "https://docserverpwaprodweu.blob.core.windows.net/fb0d788e-43e5-439c-8faa-17d03c53f5f1-1/resource/144018e0-2c43-4c53-86e7-faac0cf762a1.jpg?skoid=58690ece-ec83-4ce2-9ce8-883d4d6a54ee&sktid=975f013f-7f24-47e8-a7d3-abc4752bf346&skt=2024-02-14T07%3A21%3A18Z&ske=2024-02-15T07%3A36%3A18Z&sks=b&skv=2022-11-02&sv=2022-11-02&spr=https&se=2024-02-15T07%3A36%3A18Z&sr=b&sp=r&sig=iw8IROnJtcSi8j56uknSdBS7jua6y3CdHhSud3cw8Sw%3D"
+  },
   "OrderComponentMetadata": {},
   "OrderComponentTemplate": {},
   "OrderDataSource": {
+    "CustomGallerySample": 2,
+    "homescreenop": 3,
     "TMS_Tickets": 1,
     "TMS_Users": 0
   },
   "OrderGroupControls": {},
   "OrderPcfTemplate": {},
   "OrderTemplate": {},
-  "OrderXMLTemplate": {},
+  "OrderXMLTemplate": {
+    "button": 2,
+    "gallery": 5,
+    "groupContainer": 0,
+    "image": 3,
+    "label": 1,
+    "rectangle": 4
+  },
   "OverridablePropertiesEntry": {
     "App": {},
+    "Container1": {},
+    "Container2": {},
+    "Container2_1": {},
+    "Container3": {},
+    "Container3_1": {},
+    "Container3_2": {},
+    "galleryTemplate3": {},
     "Host": {},
-    "Screen1": {}
+    "Image1": {},
+    "Land_btn_Ex": {},
+    "Land_Con_Txt": {},
+    "Land_Gal": {},
+    "Land_gal_Btn": {},
+    "Land_gal_Con_main": {},
+    "Land_gal_img": {},
+    "Land_gal_lbl_Subtitle": {},
+    "Land_gal_lbl_Title": {},
+    "Land_lbl_Subtitle": {},
+    "Land_lbl_title": {},
+    "Land_Vec_Img": {},
+    "login screen": {},
+    "Rectangle1": {}
   },
   "PCFDynamicSchemaForIRRetrievalEntry": {},
   "PCFTemplateEntry": {},
   "PublishOrderIndices": {
     "App": 0,
+    "Container1": 0,
+    "Container2": 1,
+    "Container2_1": 7,
+    "Container3": 18,
+    "Container3_1": 10,
+    "Container3_2": 9,
+    "galleryTemplate3": 12,
     "Host": 0,
-    "Screen1": 0
+    "Image1": 8,
+    "Land_btn_Ex": 5,
+    "Land_Con_Txt": 2,
+    "Land_Gal": 11,
+    "Land_gal_Btn": 14,
+    "Land_gal_Con_main": 13,
+    "Land_gal_img": 15,
+    "Land_gal_lbl_Subtitle": 17,
+    "Land_gal_lbl_Title": 16,
+    "Land_lbl_Subtitle": 4,
+    "Land_lbl_title": 3,
+    "Land_Vec_Img": 6,
+    "login screen": 0,
+    "Rectangle1": 0
   },
-  "ResourcesJsonIndices": {},
+  "ResourcesJsonIndices": {
+    "Image-123": 1,
+    "Image-SampleImage": 0
+  },
   "RuleScreenIdWithoutScreen": {},
   "TemplateVersions": {},
   "VolatileProperties": {
     "AnalysisLoadTime": 0.0189366,
-    "ControlCount": {}
+    "ControlCount": {
+      "button": 2,
+      "gallery": 1,
+      "galleryTemplate": 1,
+      "groupContainer": 6,
+      "image": 2,
+      "label": 4
+    }
   },
   "WasLocalDatabaseReferencesEmpty": true
 }

@@ -1,5 +1,73 @@
 App As appinfo:
     BackEnabled: =true
+    OnStart: |-
+        =ClearCollect(
+            homescreenop,
+          Table(
+            {
+                Header: "Travel",
+                Info: "You can add your travel request",
+                Icon: "data:image/svg+xml;utf8, " & EncodeUrl(
+                    "<svg width='131' height='140' viewBox='0 0 131 140' fill='none' xmlns='http://www.w3.org/2000/svg'>
+        <g filter='url(#filter0_f_3412_5336)'>
+        <rect x='41' y='50' width='40' height='40' fill='#237FEA'/>
+        </g>
+        <g clip-path='url(#clip0_3412_5336)'>
+        <path d='M51.7998 64.8001V77.6001L57.3998 74.4001L63.7998 77.6001L69.3998 74.4001V61.6001L63.7998 64.8001L57.3998 61.6001L51.7998 64.8001Z' stroke='white' stroke-width='1.6' stroke-linecap='round' stroke-linejoin='round'/>
+        <path d='M57.3999 61.6001V74.4001' stroke='white' stroke-width='1.6' stroke-linecap='round' stroke-linejoin='round'/>
+        <path d='M63.7998 64.8V77.6' stroke='white' stroke-width='1.6' stroke-linecap='round' stroke-linejoin='round'/>
+        </g>
+        <defs>
+        <filter id='filter0_f_3412_5336' x='-9' y='0' width='140' height='140' filterUnits='userSpaceOnUse' color-interpolation-filters='sRGB'>
+        <feFlood flood-opacity='0' result='BackgroundImageFix'/>
+        <feBlend mode='normal' in='SourceGraphic' in2='BackgroundImageFix' result='shape'/>
+        <feGaussianBlur stdDeviation='25' result='effect1_foregroundBlur_3412_5336'/>
+        </filter>
+        <clipPath id='clip0_3412_5336'>
+        <rect width='19.2' height='19.2' fill='white' transform='translate(51 60)'/>
+        </clipPath>
+        </defs>
+        </svg>"
+                )
+            },
+            {Header: "Expense",
+                Info: "You can add your expense se request",
+                Icon:"data:image/svg+xml;utf8, "&EncodeUrl("<svg width='140' height='140' viewBox='0 0 140 140' fill='none' xmlns='http://www.w3.org/2000/svg'>
+        <g filter='url(#filter0_f_3412_5346)'>
+        <rect x='50' y='50' width='40' height='40' fill='#237FEA'/>
+        </g>
+        <path d='M70.7466 74.2C70.6755 74.2 70.6065 74.1866 70.5396 74.16C70.4728 74.1333 70.4129 74.0933 70.3599 74.04L67.1466 70.6933C67.0843 70.6311 67.0331 70.5466 66.993 70.44C66.9528 70.3333 66.9329 70.2355 66.9332 70.1466C66.9332 69.9422 67.0067 69.7666 67.1535 69.6197C67.3003 69.4729 67.4758 69.3996 67.6799 69.4H68.7999C69.271 69.4 69.6778 69.2466 70.0202 68.9397C70.3626 68.6329 70.5691 68.253 70.6399 67.8H66.9332C66.7821 67.8 66.6554 67.7488 66.553 67.6464C66.4506 67.544 66.3995 67.4174 66.3999 67.2666C66.3999 67.1155 66.4511 66.9888 66.5535 66.8864C66.6559 66.784 66.7825 66.733 66.9332 66.7333H70.4799C70.3288 66.4222 70.1043 66.1666 69.8063 65.9664C69.5083 65.7662 69.1729 65.6663 68.7999 65.6666H66.9332C66.7821 65.6666 66.6554 65.6154 66.553 65.513C66.4506 65.4106 66.3995 65.2841 66.3999 65.1333C66.3999 64.9822 66.4511 64.8554 66.5535 64.753C66.6559 64.6506 66.7825 64.5996 66.9332 64.6H72.2666C72.4177 64.6 72.5444 64.6512 72.6468 64.7536C72.7492 64.856 72.8003 64.9826 72.7999 65.1333C72.7999 65.2844 72.7487 65.4112 72.6463 65.5136C72.5439 65.616 72.4173 65.667 72.2666 65.6666H71.0666C71.191 65.8178 71.3021 65.9822 71.3999 66.16C71.4977 66.3378 71.5732 66.5289 71.6266 66.7333H72.2666C72.4177 66.7333 72.5444 66.7845 72.6468 66.8869C72.7492 66.9893 72.8003 67.1159 72.7999 67.2666C72.7999 67.4178 72.7487 67.5445 72.6463 67.6469C72.5439 67.7493 72.4173 67.8003 72.2666 67.8H71.7199C71.6488 68.5555 71.3377 69.189 70.7866 69.7002C70.2355 70.2115 69.5732 70.467 68.7999 70.4666H68.4132L71.1332 73.2933C71.2932 73.4622 71.3267 73.6556 71.2335 73.8736C71.1403 74.0915 70.978 74.2003 70.7466 74.2Z' fill='white'/>
+        <rect x='60.8' y='60.8' width='17.6' height='17.6' rx='8.8' stroke='white' stroke-width='1.6'/>
+        <defs>
+        <filter id='filter0_f_3412_5346' x='0' y='0' width='140' height='140' filterUnits='userSpaceOnUse' color-interpolation-filters='sRGB'>
+        <feFlood flood-opacity='0' result='BackgroundImageFix'/>
+        <feBlend mode='normal' in='SourceGraphic' in2='BackgroundImageFix' result='shape'/>
+        <feGaussianBlur stdDeviation='25' result='effect1_foregroundBlur_3412_5346'/>
+        </filter>
+        </defs>
+        </svg>
+        ")},
+            {Header: "Equipment",
+                Info: "You can request for Equipments",
+                Icon:"data:image/svg+xml;utf8, "&EncodeUrl("<svg width='140' height='140' viewBox='0 0 140 140' fill='none' xmlns='http://www.w3.org/2000/svg'>
+        <g filter='url(#filter0_f_3412_5513)'>
+        <rect x='50' y='50' width='40' height='40' fill='#237FEA'/>
+        </g>
+        <path d='M64.1667 74.1667H63.3334C62.8914 74.1667 62.4675 73.9911 62.1549 73.6785C61.8423 73.366 61.6667 72.942 61.6667 72.5V64.1667C61.6667 63.7246 61.8423 63.3007 62.1549 62.9882C62.4675 62.6756 62.8914 62.5 63.3334 62.5H76.6667C77.1088 62.5 77.5327 62.6756 77.8453 62.9882C78.1578 63.3007 78.3334 63.7246 78.3334 64.1667V72.5C78.3334 72.942 78.1578 73.366 77.8453 73.6785C77.5327 73.9911 77.1088 74.1667 76.6667 74.1667H75.8334' stroke='white' stroke-width='2.18182' stroke-linecap='round' stroke-linejoin='round'/>
+        <path d='M69.9999 72.5L74.1666 77.5H65.8333L69.9999 72.5Z' stroke='white' stroke-width='2.18182' stroke-linecap='round' stroke-linejoin='round'/>
+        <defs>
+        <filter id='filter0_f_3412_5513' x='0' y='0' width='140' height='140' filterUnits='userSpaceOnUse' color-interpolation-filters='sRGB'>
+        <feFlood flood-opacity='0' result='BackgroundImageFix'/>
+        <feBlend mode='normal' in='SourceGraphic' in2='BackgroundImageFix' result='shape'/>
+        <feGaussianBlur stdDeviation='25' result='effect1_foregroundBlur_3412_5513'/>
+        </filter>
+        </defs>
+        </svg>
+        ")}
+        )
+        );
+        Set(varLoginbtn,false)
+    StartScreen: =
     Theme: =PowerAppsTheme
 
     Host As hostControl.DefaultHostControlVariant:
