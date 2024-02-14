@@ -494,6 +494,36 @@
             {
               "logicalLocations": [
                 {
+                  "fullyQualifiedName": "App.VarPersona"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "App.VarPersona",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "VarPersona",
+                "module": "App",
+                "type": "App"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "app-UnusedVariables",
+          "ruleIndex": 3
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
                   "fullyQualifiedName": "App.123"
                 }
               ],

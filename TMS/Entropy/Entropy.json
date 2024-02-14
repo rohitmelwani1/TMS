@@ -23,6 +23,7 @@
     "Container6": 15,
     "Container6_1": 41,
     "galleryTemplate3": 23,
+    "Home Screen": 57,
     "Host": 3,
     "imgDecor": 13,
     "imgLOGO": 32,
@@ -51,7 +52,7 @@
   },
   "FunctionParamsInvariantScripts": {},
   "FunctionParamsInvariantScriptsOnInstances": {},
-  "HeaderLastSavedDateTimeUTC": "02/14/2024 13:19:20",
+  "HeaderLastSavedDateTimeUTC": "02/14/2024 13:32:11",
   "IsLegacyComponentAllowGlobalScopeCase": false,
   "LocalConnectionIDReferences": {
     "176ea08a-3c03-4dfc-b673-b48610b13ee2": "\"/providers/microsoft.powerapps/apis/shared_sharepointonline/connections/ffbc5922b2e140c387b18cbafc6d5552\""
@@ -113,6 +114,7 @@
     "Container6": {},
     "Container6_1": {},
     "galleryTemplate3": {},
+    "Home Screen": {},
     "Host": {},
     "imgDecor": {},
     "imgLOGO": {},
@@ -290,6 +292,7 @@
     "Container6": 11,
     "Container6_1": 22,
     "galleryTemplate3": 36,
+    "Home Screen": 0,
     "Host": 0,
     "imgDecor": 8,
     "imgLOGO": 12,

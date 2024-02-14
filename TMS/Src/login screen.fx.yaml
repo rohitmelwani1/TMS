@@ -399,8 +399,8 @@
                     ZIndex: =2
 
                 BtnLogin As Button:
-                    BasePaletteColor: =RGBA(5, 102, 178, 1)
-                    DisplayMode: |-
+                    BasePaletteColor: =RGBA(194, 58, 180, 1)
+                    DisplayMode: |
                         =DisplayMode.Edit
                         //If(And(Varlogin=true,Varpswd=true),DisplayMode.Edit,DisplayMode.Disabled)
                         //If(IsBlank(Varlogin),DisplayMode.Disabled,DisplayMode.Disabled)
@@ -557,7 +557,7 @@
                         ZIndex: =1
 
                     BtnSubmit As Button:
-                        BasePaletteColor: =RGBA(5, 102, 178, 1)
+                        BasePaletteColor: =RGBA(194, 58, 180, 1)
                         DisplayMode: |-
                             =DisplayMode.Edit
                             //If(And(Varlogin=true,Varpswd=true),DisplayMode.Edit,DisplayMode.Disabled)
@@ -577,7 +577,7 @@
 
                 BtnSubmit_2 As Button:
                     AlignInContainer: =AlignInContainer.Center
-                    BasePaletteColor: =RGBA(5, 102, 178, 1)
+                    BasePaletteColor: =RGBA(194, 58, 180, 1)
                     DisplayMode: |-
                         =DisplayMode.Edit
                         //If(And(Varlogin=true,Varpswd=true),DisplayMode.Edit,DisplayMode.Disabled)
