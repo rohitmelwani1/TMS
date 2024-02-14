@@ -1,0 +1,28 @@
+{
+  "176ea08a-3c03-4dfc-b673-b48610b13ee2": {
+    "connectionRef": {
+      "displayName": "SharePoint",
+      "iconUri": "https://connectoricons-prod.azureedge.net/releases/v1.0.1676/1.0.1676.3617/sharepointonline/icon.png",
+      "id": "/providers/microsoft.powerapps/apis/shared_sharepointonline"
+    },
+    "datasets": {
+      "https://xebiagroup.sharepoint.com/sites/MY.FirstSite": {
+        "dataSources": {
+          "TMS_Tickets": {
+            "tableName": "d786e853-9375-4e56-8cdf-8f79e629c1b7"
+          },
+          "TMS_Users": {
+            "tableName": "7e4b2e77-d4e6-43b7-aac8-00cb4a4fb8ff"
+          }
+        }
+      }
+    },
+    "dataSources": [
+      "TMS_Users",
+      "TMS_Tickets"
+    ],
+    "dependencies": {},
+    "dependents": [],
+    "id": "176ea08a-3c03-4dfc-b673-b48610b13ee2"
+  }
+}
