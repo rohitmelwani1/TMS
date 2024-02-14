@@ -362,6 +362,13 @@
                     Height: =45
                     LayoutMinHeight: =32
                     LayoutMinWidth: =320
+                    OnChange: |-
+                        =If(
+                            IsEmpty(Filter(TMS_Users,TMS_USERNAME= TxtinputUserName.Value)),
+                            Set(Varlogin,false),
+                            Set(Varlogin,true)
+                            
+                         )
                     Placeholder: ="Enter your username"
                     Width: =Parent.Width*.85
                     X: =0
@@ -375,6 +382,13 @@
                     Height: =45
                     LayoutMinHeight: =32
                     LayoutMinWidth: =320
+                    OnChange: |-
+                        =If(
+                            IsEmpty(Filter(TMS_Users,TMS_PASSWORD= Txtinputpassword.Value)),
+                            Set(Varpswd,false),
+                            Set(Varpswd,true)
+                            
+                         )
                     Placeholder: ="Enter your Password"
                     Type: ='TextInputCanvas.Type'.Password
                     Width: =Parent.Width*.85
@@ -384,16 +398,16 @@
 
                 BtnLogin As Button:
                     BasePaletteColor: =RGBA(212, 55, 196, 1)
-                    DisplayMode: =DisplayMode.Edit
+                    DisplayMode: |-
+                        =DisplayMode.Edit
+                        //If(And(Varlogin=true,Varpswd=true),DisplayMode.Edit,DisplayMode.Disabled)
+                        //If(IsBlank(Varlogin),DisplayMode.Disabled,DisplayMode.Disabled)
                     FontSize: =15
                     FontWeight: =FontWeight.Bold
                     Height: =38
                     LayoutMinHeight: =32
                     LayoutMinWidth: =96
-                    OnSelect: |-
-                        =Set(Varusername,Filter(TMS_Users,TMS_USERNAME= TxtinputUserName.Value));
-                        Set(VarPassword,Filter(TMS_Users,TMS_PASSWORD = Txtinputpassword.Value));
-                        If(VarPassword=Txtinputpassword.Value,true,false)
+                    OnSelect: =
                     Text: ="Log In"
                     Width: =Parent.Width*.85
                     X: =0
@@ -409,6 +423,9 @@
                     Height: =38
                     LayoutMinHeight: =32
                     LayoutMinWidth: =96
+                    OnSelect: |-
+                        =
+                        Set(varLoginbtn,false)
                     Text: ="Clear"
                     Width: =Parent.Width*.85
                     X: =0
