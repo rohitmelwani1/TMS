@@ -368,7 +368,7 @@
                     Y: =0
                     ZIndex: =1
 
-                "TxtinputUserName_1 As 'Text input'":
+                "Txtinputpassword As 'Text input'":
                     BasePaletteColor: =RGBA(194, 58, 180, 1)
                     DisplayMode: =DisplayMode.Edit
                     FontColor: =
@@ -390,7 +390,10 @@
                     Height: =38
                     LayoutMinHeight: =32
                     LayoutMinWidth: =96
-                    OnSelect: =false
+                    OnSelect: |-
+                        =Set(Varusername,Filter(TMS_Users,TMS_USERNAME= TxtinputUserName.Value));
+                        Set(VarPassword,Filter(TMS_Users,TMS_PASSWORD = Txtinputpassword.Value));
+                        If(VarPassword=Txtinputpassword.Value,true,false)
                     Text: ="Log In"
                     Width: =Parent.Width*.85
                     X: =0
