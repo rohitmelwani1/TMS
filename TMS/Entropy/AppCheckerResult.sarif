@@ -14,19 +14,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "'login screen'.Container1.Container2.Land_Con_Txt.Land_btn_Ex.FocusedBorderThickness"
+                  "fullyQualifiedName": "'login screen'.ConMain.Conlest.Land_Con_Txt.Land_btn_Ex.FocusedBorderThickness"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "'login screen'.Container1.Container2.Land_Con_Txt.Land_btn_Ex.FocusedBorderThickness",
+                  "fullyQualifiedName": "'login screen'.ConMain.Conlest.Land_Con_Txt.Land_btn_Ex.FocusedBorderThickness",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "FocusedBorderThickness",
                 "module": "login screen",
-                "type": "'login screen'.Container1.Container2.Land_Con_Txt.Land_btn_Ex"
+                "type": "'login screen'.ConMain.Conlest.Land_Con_Txt.Land_btn_Ex"
               }
             }
           ],
@@ -44,19 +44,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "'login screen'.Container3_1.Land_Gal.AccessibleLabel"
+                  "fullyQualifiedName": "'login screen'.Congal.Landing_Gal.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "'login screen'.Container3_1.Land_Gal.AccessibleLabel",
+                  "fullyQualifiedName": "'login screen'.Congal.Landing_Gal.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
                 "module": "login screen",
-                "type": "'login screen'.Container3_1.Land_Gal"
+                "type": "'login screen'.Congal.Landing_Gal"
               }
             }
           ],
@@ -74,19 +74,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "'login screen'.Container3_1.Land_Gal.TabIndex"
+                  "fullyQualifiedName": "'login screen'.Congal.Landing_Gal.TabIndex"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "'login screen'.Container3_1.Land_Gal.TabIndex",
+                  "fullyQualifiedName": "'login screen'.Congal.Landing_Gal.TabIndex",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "TabIndex",
                 "module": "login screen",
-                "type": "'login screen'.Container3_1.Land_Gal"
+                "type": "'login screen'.Congal.Landing_Gal"
               }
             }
           ],
@@ -98,6 +98,36 @@
           },
           "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
           "ruleIndex": 2
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "App.123"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "App.123",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "123",
+                "module": "App",
+                "type": "App"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "app-UnusedMediaResources",
+          "ruleIndex": 3
         }
       ],
       "tool": {
@@ -154,6 +184,23 @@
                 "level": "Medium",
                 "primaryCategory": "accessibility",
                 "whyFix": "People who use the keyboard with your app will not be able to access this element without a tab stop."
+              }
+            },
+            {
+              "id": "app-UnusedMediaResources",
+              "messageStrings": {
+                "issue": {
+                  "text": "Unused media files"
+                }
+              },
+              "properties": {
+                "componentType": "app",
+                "howToFix": [
+                  "Remove the unused media file in the Media pane."
+                ],
+                "level": "Medium",
+                "primaryCategory": "performance",
+                "whyFix": "This media file is not referenced by any control formulas so it is not needed. Removing it will improve performance."
               }
             }
           ],

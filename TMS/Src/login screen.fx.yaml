@@ -1,12 +1,12 @@
 "'login screen' As screen":
 
-    Container1 As groupContainer.horizontalAutoLayoutContainer:
+    ConMain As groupContainer.horizontalAutoLayoutContainer:
         Height: =768
         LayoutMode: =LayoutMode.Auto
         Width: =1366
         ZIndex: =1
 
-        Container2 As groupContainer.manualLayoutContainer:
+        Conlest As groupContainer.manualLayoutContainer:
             LayoutMinHeight: =100
             LayoutMinWidth: =250
             RadiusBottomLeft: =0
@@ -80,7 +80,7 @@
                     Width: =300
                     ZIndex: =4
 
-        Container2_1 As groupContainer.manualLayoutContainer:
+        Conright As groupContainer.manualLayoutContainer:
             LayoutMinHeight: =100
             LayoutMinWidth: =250
             RadiusBottomLeft: =0
@@ -89,14 +89,14 @@
             RadiusTopRight: =0
             ZIndex: =2
 
-            Image1 As image:
+            imgDecor As image:
                 Height: =768
-                Image: ='123'
+                Image: =employees
                 ImagePosition: =ImagePosition.Fill
                 Width: =683
                 ZIndex: =1
 
-    Container3 As groupContainer.manualLayoutContainer:
+    Condescenbottom As groupContainer.manualLayoutContainer:
         Fill: =RGBA(43, 40, 59, 0.84)
         Height: =228
         RadiusBottomLeft: =0
@@ -108,7 +108,7 @@
         Y: =540
         ZIndex: =2
 
-    Container3_1 As groupContainer.manualLayoutContainer:
+    Congal As groupContainer.manualLayoutContainer:
         Fill: =RGBA(43, 40, 59, 1)
         Height: =228
         RadiusBottomLeft: =0
@@ -119,7 +119,7 @@
         Y: =540
         ZIndex: =3
 
-        Land_Gal As gallery.galleryHorizontal:
+        Landing_Gal As gallery.galleryHorizontal:
             DelayItemLoading: =true
             Fill: =RGBA(48, 52, 63, 1)
             Height: =Parent.Height
@@ -191,20 +191,20 @@
             TemplatePadding: =0
             TemplateSize: |-
                 =//If(Self.Layout = Layout.Horizontal, Min(320, Self.Width - 60), Min(320, Self.Height - 60))
-                If(Self.Layout = Layout.Horizontal, Land_Gal.Width/3, Land_Gal.Height)
+                If(Self.Layout = Layout.Horizontal, Landing_Gal.Width/3, Landing_Gal.Height)
             Width: =684
             ZIndex: =1
 
             Land_gal_Con_main As groupContainer.manualLayoutContainer:
                 BorderStyle: =BorderStyle.None
-                Height: =Land_Gal.TemplateHeight
+                Height: =Landing_Gal.TemplateHeight
                 PaddingLeft: =10
                 PaddingRight: =10
                 RadiusBottomLeft: =0
                 RadiusBottomRight: =0
                 RadiusTopLeft: =0
                 RadiusTopRight: =0
-                Width: =Land_Gal.TemplateWidth
+                Width: =Landing_Gal.TemplateWidth
                 ZIndex: =1
 
                 Land_gal_img As image:
@@ -256,7 +256,7 @@
                     Width: =Land_gal_Con_main.Width
                     ZIndex: =4
 
-    Container3_2 As groupContainer.manualLayoutContainer:
+    ConDestopright As groupContainer.manualLayoutContainer:
         Fill: =RGBA(43, 40, 59, 0.84)
         Height: =153
         RadiusBottomLeft: =90
@@ -267,10 +267,67 @@
         X: =1268
         ZIndex: =4
 
-    Rectangle1 As rectangle:
+    RecBlurBG As rectangle:
         Fill: =RGBA(0, 0, 0, 0.68)
         Height: =768
         Visible: =varLoginbtn
         Width: =1366
         ZIndex: =5
+
+    Container5 As groupContainer.horizontalAutoLayoutContainer:
+        Height: =768
+        LayoutAlignItems: =LayoutAlignItems.Center
+        LayoutJustifyContent: =LayoutJustifyContent.Center
+        LayoutMode: =LayoutMode.Auto
+        Width: =1366
+        ZIndex: =6
+
+        Container6 As groupContainer.verticalAutoLayoutContainer:
+            AlignInContainer: =AlignInContainer.SetByContainer
+            Fill: =RGBA(255, 255, 255, 1)
+            FillPortions: =0
+            Height: =450
+            LayoutAlignItems: =LayoutAlignItems.Center
+            LayoutDirection: =LayoutDirection.Vertical
+            LayoutMinHeight: =100
+            LayoutMinWidth: =250
+            LayoutMode: =LayoutMode.Auto
+            PaddingBottom: =20
+            PaddingTop: =20
+            RadiusBottomLeft: =10
+            RadiusBottomRight: =10
+            RadiusTopLeft: =10
+            RadiusTopRight: =10
+            Visible: =varLoginbtn
+            Width: =450
+            ZIndex: =1
+
+            Container38_1 As groupContainer.verticalAutoLayoutContainer:
+                AlignInContainer: =AlignInContainer.Center
+                DropShadow: =DropShadow.None
+                FillPortions: =0
+                Height: =Parent.Height/5.5
+                LayoutDirection: =LayoutDirection.Vertical
+                LayoutMinHeight: =100
+                LayoutMinWidth: =250
+                LayoutMode: =LayoutMode.Auto
+                PaddingLeft: =10
+                PaddingTop: =7
+                Width: =Parent.Width*.9
+                ZIndex: =1
+
+                Label9_1 As label:
+                    Color: |-
+                        =ColorValue("#444156")
+                    Font: ="Poppins"
+                    FontWeight: =FontWeight.Semibold
+                    Size: =18
+                    Text: ="Log In As"
+                    ZIndex: =1
+
+                Label10_1 As label:
+                    Color: |-
+                        =ColorValue("#444156")
+                    Text: ="Select User Type"
+                    ZIndex: =2
 
