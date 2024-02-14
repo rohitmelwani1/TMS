@@ -382,7 +382,7 @@
                     Y: =0
                     ZIndex: =2
 
-                ButtonCanvas1 As Button:
+                BtnLogin As Button:
                     BasePaletteColor: =RGBA(212, 55, 196, 1)
                     DisplayMode: =DisplayMode.Edit
                     FontSize: =15
@@ -390,13 +390,14 @@
                     Height: =38
                     LayoutMinHeight: =32
                     LayoutMinWidth: =96
+                    OnSelect: =false
                     Text: ="Log In"
                     Width: =Parent.Width*.85
                     X: =0
                     Y: =0
                     ZIndex: =3
 
-                ButtonCanvas1_1 As Button:
+                BtnClear As Button:
                     BasePaletteColor: =RGBA(250, 250, 250, 1)
                     DisplayMode: =DisplayMode.Edit
                     FontColor: =
@@ -411,7 +412,7 @@
                     Y: =0
                     ZIndex: =4
 
-                TextCanvas1 As Text:
+                TxtFogotpassword As Text:
                     Align: ='TextCanvas.Align'.Center
                     DisplayMode: =DisplayMode.Edit
                     FontColor: =RGBA(15, 108, 189, 1)
