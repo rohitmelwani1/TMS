@@ -1,6 +1,6 @@
 App As appinfo:
     BackEnabled: =true
-    OnStart: |
+    OnStart: |+
         =ClearCollect(
             homescreenop,
           Table(
@@ -70,7 +70,9 @@ App As appinfo:
         Set(Varlogin,Blank());
         Set(Varpswd,Blank());
         Reset(Txtinputpassword);
-        Reset(TxtinputUserName)
+        Reset(TxtinputUserName);
+        Set(varLoginpopup,false);
+        
     StartScreen: =
     Theme: =PowerAppsTheme
 

@@ -296,7 +296,9 @@
             RadiusBottomRight: =10
             RadiusTopLeft: =10
             RadiusTopRight: =10
-            Visible: =varLoginbtn
+            Visible: |-
+                =//varLoginbtn
+                If(varLoginpopup=false,true,false)
             Width: =450
             ZIndex: =1
 
@@ -397,7 +399,7 @@
                     ZIndex: =2
 
                 BtnLogin As Button:
-                    BasePaletteColor: =RGBA(212, 55, 196, 1)
+                    BasePaletteColor: =RGBA(5, 102, 178, 1)
                     DisplayMode: |-
                         =DisplayMode.Edit
                         //If(And(Varlogin=true,Varpswd=true),DisplayMode.Edit,DisplayMode.Disabled)
@@ -432,17 +434,191 @@
                     Y: =0
                     ZIndex: =4
 
-                TxtFogotpassword As Text:
-                    Align: ='TextCanvas.Align'.Center
-                    DisplayMode: =DisplayMode.Edit
-                    FontColor: =RGBA(15, 108, 189, 1)
-                    Height: =32
-                    LayoutMinHeight: =32
-                    LayoutMinWidth: =96
+                TxtFogotpassword As label:
+                    Align: =Align.Center
+                    AlignInContainer: =AlignInContainer.Stretch
+                    Color: =RGBA(15, 108, 189, 1)
+                    OnSelect: =Set(varLoginpopup,true)
                     Text: ="Forgot Password ?"
-                    VerticalAlign: ='TextCanvas.VerticalAlign'.Top
-                    Width: =Parent.Width
+                    ZIndex: =5
+
+        Container6_1 As groupContainer.verticalAutoLayoutContainer:
+            AlignInContainer: =AlignInContainer.Center
+            DropShadow: =DropShadow.ExtraBold
+            Fill: =RGBA(255, 255, 255, 1)
+            FillPortions: =0
+            Height: =450
+            LayoutAlignItems: =LayoutAlignItems.Center
+            LayoutDirection: =LayoutDirection.Vertical
+            LayoutMinHeight: =100
+            LayoutMinWidth: =250
+            LayoutMode: =LayoutMode.Auto
+            PaddingBottom: =20
+            PaddingTop: =20
+            RadiusBottomLeft: =10
+            RadiusBottomRight: =10
+            RadiusTopLeft: =10
+            RadiusTopRight: =10
+            Visible: |-
+                =//varLoginbtn
+                varLoginpopup
+            Width: =450
+            ZIndex: =2
+
+            imgLOGO_1 As image:
+                Height: =80
+                Image: ='TMS-removebg'
+                Width: =160
+                ZIndex: =1
+
+            Container1_1 As groupContainer.verticalAutoLayoutContainer:
+                DropShadow: =DropShadow.None
+                FillPortions: =0
+                Height: =Parent.Height*.55
+                LayoutAlignItems: =LayoutAlignItems.Center
+                LayoutDirection: =LayoutDirection.Vertical
+                LayoutGap: =10
+                LayoutMinHeight: =100
+                LayoutMinWidth: =250
+                LayoutMode: =LayoutMode.Auto
+                PaddingTop: =20
+                ZIndex: =2
+
+                "TxtinputUserName_forgottpswrd As 'Text input'":
+                    BasePaletteColor: =RGBA(194, 58, 180, 1)
+                    DisplayMode: =DisplayMode.Edit
+                    FontColor: =
+                    Height: =45
+                    LayoutMinHeight: =32
+                    LayoutMinWidth: =320
+                    OnChange: |-
+                        =If(
+                            IsEmpty(Filter(TMS_Users,TMS_USERNAME= TxtinputUserName_forgottpswrd.Value)),
+                            Set(Varlogin,false),
+                            Set(Varlogin,true)
+                            
+                         )
+                    Placeholder: ="Enter your username"
+                    Width: =Parent.Width*.85
                     X: =0
                     Y: =0
+                    ZIndex: =1
+
+                "Txtinputpassword_forgotpswrd As 'Text input'":
+                    BasePaletteColor: =RGBA(194, 58, 180, 1)
+                    DisplayMode: =DisplayMode.Edit
+                    FontColor: =
+                    Height: =45
+                    LayoutMinHeight: =32
+                    LayoutMinWidth: =320
+                    OnChange: |-
+                        =If(
+                            IsEmpty(Filter(TMS_Users,TMS_PASSWORD= Txtinputpassword_forgotpswrd.Value)),
+                            Set(Varpswd,false),
+                            Set(Varpswd,true)
+                            
+                         )
+                    Placeholder: ="Enter OTP"
+                    Type: ='TextInputCanvas.Type'.Password
+                    Width: =Parent.Width*.85
+                    X: =0
+                    Y: =0
+                    ZIndex: =2
+
+                Container2 As groupContainer.horizontalAutoLayoutContainer:
+                    DropShadow: =DropShadow.None
+                    FillPortions: =0
+                    Height: =50
+                    LayoutAlignItems: =LayoutAlignItems.Center
+                    LayoutGap: =15
+                    LayoutJustifyContent: =LayoutJustifyContent.Center
+                    LayoutMinHeight: =100
+                    LayoutMinWidth: =250
+                    LayoutMode: =LayoutMode.Auto
                     ZIndex: =5
+
+                    BtnSubmit_1 As Button:
+                        BasePaletteColor: =RGBA(189, 178, 176, 1)
+                        DisplayMode: |-
+                            =DisplayMode.Edit
+                            //If(And(Varlogin=true,Varpswd=true),DisplayMode.Edit,DisplayMode.Disabled)
+                            //If(IsBlank(Varlogin),DisplayMode.Disabled,DisplayMode.Disabled)
+                        FontColor: =
+                        FontSize: =15
+                        FontWeight: =FontWeight.Bold
+                        Height: =38
+                        LayoutMinHeight: =32
+                        LayoutMinWidth: =96
+                        OnSelect: =Set(varLoginpopup,false)
+                        Text: ="close"
+                        Width: =Parent.Width*.4
+                        X: =0
+                        Y: =0
+                        ZIndex: =1
+
+                    BtnSubmit As Button:
+                        BasePaletteColor: =RGBA(5, 102, 178, 1)
+                        DisplayMode: |-
+                            =DisplayMode.Edit
+                            //If(And(Varlogin=true,Varpswd=true),DisplayMode.Edit,DisplayMode.Disabled)
+                            //If(IsBlank(Varlogin),DisplayMode.Disabled,DisplayMode.Disabled)
+                        FontColor: =
+                        FontSize: =15
+                        FontWeight: =FontWeight.Bold
+                        Height: =38
+                        LayoutMinHeight: =32
+                        LayoutMinWidth: =96
+                        OnSelect: =
+                        Text: ="Get Otp"
+                        Width: =Parent.Width*.4
+                        X: =0
+                        Y: =0
+                        ZIndex: =2
+
+                BtnSubmit_2 As Button:
+                    AlignInContainer: =AlignInContainer.Center
+                    BasePaletteColor: =RGBA(5, 102, 178, 1)
+                    DisplayMode: |-
+                        =DisplayMode.Edit
+                        //If(And(Varlogin=true,Varpswd=true),DisplayMode.Edit,DisplayMode.Disabled)
+                        //If(IsBlank(Varlogin),DisplayMode.Disabled,DisplayMode.Disabled)
+                    FontColor: =
+                    FontSize: =15
+                    FontWeight: =FontWeight.Bold
+                    Height: =38
+                    LayoutMinHeight: =32
+                    LayoutMinWidth: =96
+                    OnSelect: =
+                    Text: ="Submit"
+                    Width: =Parent.Width*.83
+                    X: =0
+                    Y: =0
+                    ZIndex: =6
+
+            Container38_2 As groupContainer.verticalAutoLayoutContainer:
+                DropShadow: =DropShadow.None
+                FillPortions: =0
+                Height: =Parent.Height/5.5
+                LayoutAlignItems: =LayoutAlignItems.Center
+                LayoutDirection: =LayoutDirection.Vertical
+                LayoutMinHeight: =100
+                LayoutMinWidth: =250
+                LayoutMode: =LayoutMode.Auto
+                PaddingTop: =7
+                Width: =Parent.Width*.95
+                ZIndex: =3
+
+                Label10_2 As label:
+                    Align: =Align.Center
+                    AlignInContainer: =AlignInContainer.Stretch
+                    Color: |-
+                        =ColorValue("#444156")
+                    PaddingBottom: =0
+                    PaddingLeft: =0
+                    PaddingRight: =0
+                    PaddingTop: =0
+                    Size: =12
+                    Text: |-
+                        ="Reclaim Access: Reset Your Password with Ease"
+                    ZIndex: =1
 
