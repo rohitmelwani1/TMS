@@ -412,7 +412,10 @@
                     OnSelect: |-
                         =If(And(Varpswd,Varlogin),
                             Navigate('Home Screen'),false
-                        )
+                        );
+                        Reset(Txtinputpassword);
+                        Reset(TxtinputUserName);
+                        Set(varLoginbtn,false)
                     Text: ="Log In"
                     Width: =Parent.Width*.85
                     X: =0
