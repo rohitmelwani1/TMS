@@ -3,37 +3,37 @@
   "ControlUniqueGuids": {},
   "ControlUniqueIds": {
     "App": 1,
-    "Condescenbottom": 9,
-    "ConDestopright": 24,
-    "Congal": 10,
+    "Condescenbottom": 29,
+    "ConDestopright": 20,
+    "Congal": 21,
     "Conlest": 6,
     "ConMain": 5,
-    "Conright": 7,
-    "Container38_1": 35,
-    "Container5": 30,
-    "Container6": 31,
-    "galleryTemplate3": 17,
+    "Conright": 12,
+    "Container38_1": 16,
+    "Container5": 14,
+    "Container6": 15,
+    "galleryTemplate3": 23,
     "Host": 3,
-    "imgDecor": 8,
-    "Label10_1": 37,
-    "Label9_1": 36,
-    "Land_btn_Ex": 14,
-    "Land_Con_Txt": 11,
-    "Land_gal_Btn": 19,
-    "Land_gal_Con_main": 18,
-    "Land_gal_img": 20,
-    "Land_gal_lbl_Subtitle": 22,
-    "Land_gal_lbl_Title": 21,
-    "Land_lbl_Subtitle": 13,
-    "Land_lbl_title": 12,
-    "Land_Vec_Img": 15,
-    "Landing_Gal": 16,
+    "imgDecor": 13,
+    "Label10_1": 18,
+    "Label9_1": 17,
+    "Land_btn_Ex": 10,
+    "Land_Con_Txt": 7,
+    "Land_gal_Btn": 25,
+    "Land_gal_Con_main": 24,
+    "Land_gal_img": 26,
+    "Land_gal_lbl_Subtitle": 28,
+    "Land_gal_lbl_Title": 27,
+    "Land_lbl_Subtitle": 9,
+    "Land_lbl_title": 8,
+    "Land_Vec_Img": 11,
+    "Landing_Gal": 22,
     "login screen": 4,
-    "RecBlurBG": 25
+    "RecBlurBG": 19
   },
   "FunctionParamsInvariantScripts": {},
   "FunctionParamsInvariantScriptsOnInstances": {},
-  "HeaderLastSavedDateTimeUTC": "02/14/2024 08:06:05",
+  "HeaderLastSavedDateTimeUTC": "02/14/2024 10:30:41",
   "IsLegacyComponentAllowGlobalScopeCase": false,
   "LocalConnectionIDReferences": {
     "176ea08a-3c03-4dfc-b673-b48610b13ee2": "\"/providers/microsoft.powerapps/apis/shared_sharepointonline/connections/ffbc5922b2e140c387b18cbafc6d5552\""
@@ -44,8 +44,8 @@
     "employees": "ac4fd0ad-bc8c-4b4f-9b68-5ba56f4dac04.jpg"
   },
   "LocalResourceRootPaths": {
-    "123": "https://docserverpwaprodweu.blob.core.windows.net/fb0d788e-43e5-439c-8faa-17d03c53f5f1-1/resource/144018e0-2c43-4c53-86e7-faac0cf762a1.jpg?skoid=58690ece-ec83-4ce2-9ce8-883d4d6a54ee&sktid=975f013f-7f24-47e8-a7d3-abc4752bf346&skt=2024-02-14T07%3A21%3A18Z&ske=2024-02-15T07%3A36%3A18Z&sks=b&skv=2022-11-02&sv=2022-11-02&spr=https&se=2024-02-15T07%3A36%3A18Z&sr=b&sp=r&sig=iw8IROnJtcSi8j56uknSdBS7jua6y3CdHhSud3cw8Sw%3D",
-    "employees": "https://docserverpwaprodweu.blob.core.windows.net/fb0d788e-43e5-439c-8faa-17d03c53f5f1-1/resource/16629669-3673-4a0d-bddf-c6b6df1492a3.jpg?skoid=58690ece-ec83-4ce2-9ce8-883d4d6a54ee&sktid=975f013f-7f24-47e8-a7d3-abc4752bf346&skt=2024-02-14T07%3A53%3A31Z&ske=2024-02-15T08%3A08%3A31Z&sks=b&skv=2022-11-02&sv=2022-11-02&spr=https&se=2024-02-15T08%3A08%3A31Z&sr=b&sp=r&sig=bx105vZU0yhk9NNlruCBZJyr5tmnxFNzQ1pPg0imuw8%3D"
+    "123": "https://docserverpwaprodneu.blob.core.windows.net/50d3267b-880a-4e56-bb5f-503fc046d4a4-1/resource/Assets0Images06356a7b5-9fc7-436e-98c4-412f4803f7ac.jpg?skoid=58690ece-ec83-4ce2-9ce8-883d4d6a54ee&sktid=975f013f-7f24-47e8-a7d3-abc4752bf346&skt=2024-02-14T10%3A28%3A42Z&ske=2024-02-15T10%3A43%3A42Z&sks=b&skv=2022-11-02&sv=2022-11-02&spr=https&se=2024-02-15T10%3A43%3A42Z&sr=b&sp=r&sig=fahqyuYHruViQaFAtQhYqwehtk3OMALxZeNPiTSjYgs%3D",
+    "employees": "https://docserverpwaprodneu.blob.core.windows.net/50d3267b-880a-4e56-bb5f-503fc046d4a4-1/resource/Assets0Images0ac4fd0ad-bc8c-4b4f-9b68-5ba56f4dac04.jpg?skoid=58690ece-ec83-4ce2-9ce8-883d4d6a54ee&sktid=975f013f-7f24-47e8-a7d3-abc4752bf346&skt=2024-02-14T10%3A28%3A42Z&ske=2024-02-15T10%3A43%3A42Z&sks=b&skv=2022-11-02&sv=2022-11-02&spr=https&se=2024-02-15T10%3A43%3A42Z&sr=b&sp=r&sig=OwLniSoKxZ9SgE4in%2Fq5yb1gr7PrSckGFzvxThUgX%2Fk%3D"
   },
   "OrderComponentMetadata": {},
   "OrderComponentTemplate": {},
@@ -136,15 +136,18 @@
   "RuleScreenIdWithoutScreen": {},
   "TemplateVersions": {},
   "VolatileProperties": {
-    "AnalysisLoadTime": 0.0189366,
+    "AnalysisLoadTime": 0.1823722,
     "ControlCount": {
       "button": 2,
       "gallery": 1,
       "galleryTemplate": 1,
-      "groupContainer": 9,
-      "image": 2,
-      "label": 10
-    }
+      "groupContainer": 11,
+      "image": 3,
+      "label": 6,
+      "rectangle": 1,
+      "screen": 1
+    },
+    "DeserializationLoadTime": 0.9874878
   },
   "WasLocalDatabaseReferencesEmpty": true
 }
