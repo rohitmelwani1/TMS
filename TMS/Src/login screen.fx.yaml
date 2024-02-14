@@ -409,7 +409,10 @@
                     Height: =38
                     LayoutMinHeight: =32
                     LayoutMinWidth: =96
-                    OnSelect: =
+                    OnSelect: |-
+                        =If(And(Varpswd,Varlogin),
+                            Navigate('Home Screen'),false
+                        )
                     Text: ="Log In"
                     Width: =Parent.Width*.85
                     X: =0
