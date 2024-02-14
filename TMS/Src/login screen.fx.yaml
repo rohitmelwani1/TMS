@@ -279,18 +279,15 @@
         LayoutAlignItems: =LayoutAlignItems.Center
         LayoutJustifyContent: =LayoutJustifyContent.Center
         LayoutMode: =LayoutMode.Auto
+        Visible: =varLoginbtn
         Width: =1366
         ZIndex: =6
 
         Container6 As groupContainer.verticalAutoLayoutContainer:
-            AlignInContainer: =AlignInContainer.SetByContainer
             Fill: =RGBA(255, 255, 255, 1)
-            FillPortions: =0
             Height: =450
             LayoutAlignItems: =LayoutAlignItems.Center
             LayoutDirection: =LayoutDirection.Vertical
-            LayoutMinHeight: =100
-            LayoutMinWidth: =250
             LayoutMode: =LayoutMode.Auto
             PaddingBottom: =20
             PaddingTop: =20
@@ -302,32 +299,82 @@
             Width: =450
             ZIndex: =1
 
-            Container38_1 As groupContainer.verticalAutoLayoutContainer:
-                AlignInContainer: =AlignInContainer.Center
-                DropShadow: =DropShadow.None
-                FillPortions: =0
-                Height: =Parent.Height/5.5
-                LayoutDirection: =LayoutDirection.Vertical
-                LayoutMinHeight: =100
-                LayoutMinWidth: =250
-                LayoutMode: =LayoutMode.Auto
-                PaddingLeft: =10
-                PaddingTop: =7
-                Width: =Parent.Width*.9
+            imgLOGO As image:
+                Height: =80
+                Image: ='TMS-removebg'
+                Width: =160
                 ZIndex: =1
 
+            Container38_1 As groupContainer.verticalAutoLayoutContainer:
+                DropShadow: =DropShadow.None
+                Height: =Parent.Height/5.5
+                LayoutAlignItems: =LayoutAlignItems.Center
+                LayoutDirection: =LayoutDirection.Vertical
+                LayoutJustifyContent: =LayoutJustifyContent.Center
+                LayoutMode: =LayoutMode.Auto
+                PaddingTop: =7
+                Width: =Parent.Width*.95
+                ZIndex: =2
+
+                Label10_1 As label:
+                    Align: =Align.Center
+                    AlignInContainer: =AlignInContainer.Stretch
+                    Color: |-
+                        =ColorValue("#444156")
+                    PaddingBottom: =0
+                    PaddingLeft: =0
+                    PaddingRight: =0
+                    PaddingTop: =0
+                    Size: =12
+                    Text: |-
+                        ="Unlock Your Potential: Access Made Simple with Every"
+                    ZIndex: =1
+
                 Label9_1 As label:
+                    Align: =Align.Center
+                    AlignInContainer: =AlignInContainer.Stretch
                     Color: |-
                         =ColorValue("#444156")
                     Font: ="Poppins"
-                    FontWeight: =FontWeight.Semibold
+                    FontWeight: =FontWeight.Bold
                     Size: =18
-                    Text: ="Log In As"
+                    Text: ="Log In"
+                    ZIndex: =2
+
+            Container1 As groupContainer.verticalAutoLayoutContainer:
+                LayoutAlignItems: =LayoutAlignItems.Center
+                LayoutDirection: =LayoutDirection.Vertical
+                LayoutGap: =10
+                LayoutMinHeight: =100
+                LayoutMinWidth: =250
+                LayoutMode: =LayoutMode.Auto
+                PaddingTop: =20
+                ZIndex: =4
+
+                "TxtinputUserName As 'Text input'":
+                    BasePaletteColor: =RGBA(12, 20, 56, 1)
+                    DisplayMode: =DisplayMode.Edit
+                    FontColor: =
+                    Height: =45
+                    LayoutMinHeight: =32
+                    LayoutMinWidth: =320
+                    Placeholder: ="Enter your username"
+                    Width: =Parent.Width*.85
+                    X: =0
+                    Y: =0
                     ZIndex: =1
 
-                Label10_1 As label:
-                    Color: |-
-                        =ColorValue("#444156")
-                    Text: ="Select User Type"
+                "TxtinputUserName_1 As 'Text input'":
+                    BasePaletteColor: =RGBA(12, 20, 56, 1)
+                    DisplayMode: =DisplayMode.Edit
+                    FontColor: =
+                    Height: =45
+                    LayoutMinHeight: =32
+                    LayoutMinWidth: =320
+                    Placeholder: ="Enter your Password"
+                    Type: ='TextInputCanvas.Type'.Password
+                    Width: =Parent.Width*.85
+                    X: =0
+                    Y: =0
                     ZIndex: =2
 
