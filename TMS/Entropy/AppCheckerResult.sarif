@@ -44,66 +44,6 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "'login screen'.Congal.Landing_Gal.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "'login screen'.Congal.Landing_Gal.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "login screen",
-                "type": "'login screen'.Congal.Landing_Gal"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 1
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "'login screen'.Congal.Landing_Gal.TabIndex"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "'login screen'.Congal.Landing_Gal.TabIndex",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "TabIndex",
-                "module": "login screen",
-                "type": "'login screen'.Congal.Landing_Gal"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
-          "ruleIndex": 2
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
                   "fullyQualifiedName": "'login screen'.Container5.Container6.Container1.TxtinputUserName.AccessibleLabel"
                 }
               ],
@@ -374,6 +314,36 @@
             {
               "logicalLocations": [
                 {
+                  "fullyQualifiedName": "'login screen'.Container5.Container6_1.Container1_1.Container2.BtnSubmit.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'login screen'.Container5.Container6_1.Container1_1.Container2.BtnSubmit.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "login screen",
+                "type": "'login screen'.Container5.Container6_1.Container1_1.Container2.BtnSubmit"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 1
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
                   "fullyQualifiedName": "'login screen'.Container5.Container6_1.Container1_1.BtnSubmit_2.AccessibleLabel"
                 }
               ],
@@ -404,19 +374,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "'login screen'.Container5.Container6_1.Container1_1.Container2.BtnSubmit.AccessibleLabel"
+                  "fullyQualifiedName": "'login screen'.Congal.Landing_Gal.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "'login screen'.Container5.Container6_1.Container1_1.Container2.BtnSubmit.AccessibleLabel",
+                  "fullyQualifiedName": "'login screen'.Congal.Landing_Gal.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
                 "module": "login screen",
-                "type": "'login screen'.Container5.Container6_1.Container1_1.Container2.BtnSubmit"
+                "type": "'login screen'.Congal.Landing_Gal"
               }
             }
           ],
@@ -428,6 +398,36 @@
           },
           "ruleId": "acc-AccessibleLabelNeeded",
           "ruleIndex": 1
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'login screen'.Congal.Landing_Gal.TabIndex"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'login screen'.Congal.Landing_Gal.TabIndex",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "TabIndex",
+                "module": "login screen",
+                "type": "'login screen'.Congal.Landing_Gal"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
+          "ruleIndex": 2
         },
         {
           "locations": [
@@ -611,7 +611,7 @@
               }
             }
           ],
-          "version": "1.336"
+          "version": "1.337"
         }
       }
     }

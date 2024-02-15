@@ -284,11 +284,15 @@
         ZIndex: =6
 
         Container6 As groupContainer.verticalAutoLayoutContainer:
+            AlignInContainer: =AlignInContainer.SetByContainer
             DropShadow: =DropShadow.ExtraBold
             Fill: =RGBA(255, 255, 255, 1)
+            FillPortions: =0
             Height: =450
             LayoutAlignItems: =LayoutAlignItems.Center
             LayoutDirection: =LayoutDirection.Vertical
+            LayoutMinHeight: =100
+            LayoutMinWidth: =250
             LayoutMode: =LayoutMode.Auto
             PaddingBottom: =20
             PaddingTop: =20
@@ -309,11 +313,14 @@
                 ZIndex: =1
 
             Container38_1 As groupContainer.verticalAutoLayoutContainer:
+                AlignInContainer: =AlignInContainer.SetByContainer
                 DropShadow: =DropShadow.None
                 Height: =Parent.Height/5.5
                 LayoutAlignItems: =LayoutAlignItems.Center
                 LayoutDirection: =LayoutDirection.Vertical
                 LayoutJustifyContent: =LayoutJustifyContent.Center
+                LayoutMinHeight: =100
+                LayoutMinWidth: =250
                 LayoutMode: =LayoutMode.Auto
                 PaddingTop: =7
                 Width: =Parent.Width*.95
@@ -347,14 +354,14 @@
             Container1 As groupContainer.verticalAutoLayoutContainer:
                 DropShadow: =DropShadow.None
                 FillPortions: =0
-                Height: =Parent.Height*.59
+                Height: =Parent.Height*.556
                 LayoutAlignItems: =LayoutAlignItems.Center
                 LayoutDirection: =LayoutDirection.Vertical
-                LayoutGap: =10
+                LayoutGap: =8
                 LayoutMinHeight: =100
                 LayoutMinWidth: =250
                 LayoutMode: =LayoutMode.Auto
-                PaddingTop: =20
+                PaddingTop: =10
                 ZIndex: =4
 
                 "TxtinputUserName As 'Text input'":
@@ -404,6 +411,7 @@
                         =DisplayMode.Edit
                         //If(And(Varlogin=true,Varpswd=true),DisplayMode.Edit,DisplayMode.Disabled)
                         //If(IsBlank(Varlogin),DisplayMode.Disabled,DisplayMode.Disabled)
+                    FontColor: =
                     FontSize: =15
                     FontWeight: =FontWeight.Bold
                     Height: =38
@@ -445,6 +453,7 @@
                     AlignInContainer: =AlignInContainer.Stretch
                     Color: =RGBA(15, 108, 189, 1)
                     OnSelect: =Set(varLoginpopup,true)
+                    PaddingTop: =0
                     Text: ="Forgot Password ?"
                     ZIndex: =5
 
