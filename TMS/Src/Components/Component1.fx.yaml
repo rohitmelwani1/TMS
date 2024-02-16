@@ -1,0 +1,55 @@
+Component1 As CanvasComponent:
+    Fill: =RGBA(0, 0, 0, 0)
+    Height: =100
+    Width: =1300
+    X: =0
+    Y: =0
+    ZIndex: =1
+
+    Container16 As groupContainer.horizontalAutoLayoutContainer:
+        Height: =Parent.Height
+        LayoutAlignItems: =LayoutAlignItems.Center
+        LayoutJustifyContent: =LayoutJustifyContent.SpaceBetween
+        LayoutMode: =LayoutMode.Auto
+        Width: =Parent.Width
+        Y: =40
+        ZIndex: =1
+
+        Label2 As label:
+            FontWeight: =FontWeight.Bold
+            Height: =Parent.Height
+            PaddingLeft: =15
+            Size: =20
+            Text: ="SCREEN NAME"
+            Width: =Parent.Width*.2
+            ZIndex: =1
+
+        Container17 As groupContainer.horizontalAutoLayoutContainer:
+            LayoutMinHeight: =100
+            LayoutMinWidth: =250
+            LayoutMode: =LayoutMode.Auto
+            ZIndex: =2
+
+            Container18 As groupContainer.manualLayoutContainer:
+                AlignInContainer: =AlignInContainer.Center
+                DropShadow: =DropShadow.Regular
+                Fill: =RGBA(180, 214, 250, 0.26)
+                FillPortions: =0
+                Height: =Parent.Height*.6
+                LayoutMinHeight: =100
+                LayoutMinWidth: =250
+                RadiusBottomLeft: =10
+                RadiusBottomRight: =10
+                RadiusTopLeft: =10
+                RadiusTopRight: =10
+                Width: =Self.Height
+                ZIndex: =1
+
+                Image1 As image:
+                    Height: =Parent.Height*.5
+                    Image: =BELL
+                    Width: =Parent.Width*.5
+                    X: =Parent.Width/2-Self.Width/2
+                    Y: =Parent.Height/2-Self.Height/2
+                    ZIndex: =1
+
