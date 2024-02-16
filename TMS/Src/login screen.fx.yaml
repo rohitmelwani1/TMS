@@ -419,7 +419,7 @@
                     LayoutMinWidth: =96
                     OnSelect: |-
                         =If(And(Varpswd,Varlogin),
-                            Navigate('Home Screen'),false
+                            Navigate('Home screen'),false
                         );
                         Reset(Txtinputpassword);
                         Reset(TxtinputUserName);

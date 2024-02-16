@@ -1,0 +1,89 @@
+CmpNavBar As CanvasComponent:
+    Fill: =RGBA(255, 255, 255, 1)
+    Height: =640
+    IsNavExpand: =true
+    navbarclose: =
+    navitems: |-
+        =Table(
+            {
+                Title: "HOME",
+                TargetScreen: App.ActiveScreen,
+                image:'menuBar-cicle'
+        
+            },
+            {
+                Title: "DASHBOARD",
+                TargetScreen: App.ActiveScreen,
+                image: 'airplay-white'
+                
+            }
+        )
+    Width: =If(VarExpandNavBar,240,100)
+    X: =0
+    Y: =0
+    ZIndex: =1
+
+    Container3 As groupContainer.verticalAutoLayoutContainer:
+        Fill: =RGBA(20, 32, 54, 1)
+        Height: =Parent.Height
+        LayoutDirection: =LayoutDirection.Vertical
+        LayoutMode: =LayoutMode.Auto
+        RadiusBottomLeft: =0
+        RadiusBottomRight: =0
+        RadiusTopLeft: =0
+        RadiusTopRight: =0
+        Width: =Parent.Width-20
+        X: =40
+        ZIndex: =1
+
+        Container4 As groupContainer.horizontalAutoLayoutContainer:
+            AlignInContainer: =AlignInContainer.Center
+            DropShadow: =DropShadow.None
+            FillPortions: =0
+            Height: =Parent.Height*.2
+            LayoutJustifyContent: =LayoutJustifyContent.Center
+            LayoutMinHeight: =100
+            LayoutMinWidth: =250
+            LayoutMode: =LayoutMode.Auto
+            PaddingTop: =20
+            Width: =Parent.Width
+            ZIndex: =1
+
+            Image2 As image:
+                Height: =Parent.Height*.5
+                Image: ='Teamwork-iconLOGO'
+                Width: =Parent.Width
+                ZIndex: =1
+
+        Container8 As groupContainer.verticalAutoLayoutContainer:
+            AlignInContainer: =AlignInContainer.Center
+            FillPortions: =0
+            Height: =Parent.Height*.8
+            LayoutDirection: =LayoutDirection.Vertical
+            LayoutMinHeight: =100
+            LayoutMinWidth: =250
+            LayoutMode: =LayoutMode.Auto
+            Width: =Parent.Width
+            ZIndex: =2
+
+    Container7 As groupContainer.manualLayoutContainer:
+        DropShadow: =DropShadow.None
+        Height: =50
+        Width: =50
+        X: =Parent.Width-Self.Width
+        Y: =80
+        ZIndex: =2
+
+        Image3 As image:
+            Height: =40
+            Image: =If(VarExpandNavBar,'arrow-left','arrow-right')
+            OnSelect: =Set(VarExpandNavBar,!VarExpandNavBar)
+            RadiusBottomLeft: =50
+            RadiusBottomRight: =50
+            RadiusTopLeft: =50
+            RadiusTopRight: =50
+            Width: =40
+            X: =Parent.Width-Self.Width
+            Y: =Parent.Height/2-Self.Height/2
+            ZIndex: =1
+

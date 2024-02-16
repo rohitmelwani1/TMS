@@ -1,2 +1,36 @@
-"'Home Screen' As screen":
+"'Home screen' As screen":
+    OnVisible: =
+
+    Container9 As groupContainer.horizontalAutoLayoutContainer:
+        Height: =Parent.Height
+        LayoutMode: =LayoutMode.Auto
+        Width: =Parent.Width
+        ZIndex: =2
+
+        Container10 As groupContainer.verticalAutoLayoutContainer:
+            AlignInContainer: =AlignInContainer.Center
+            FillPortions: =0
+            Height: =Parent.Height
+            LayoutDirection: =LayoutDirection.Vertical
+            LayoutMinHeight: =100
+            LayoutMinWidth: =250
+            LayoutMode: =LayoutMode.Auto
+            Width: =If(VarExpandNavBar,240,100)
+            ZIndex: =1
+
+            CmpNavBar_1 As CmpNavBar:
+                Height: =Parent.Height
+                LayoutMinWidth: =640
+
+        Container11 As groupContainer.verticalAutoLayoutContainer:
+            AlignInContainer: =AlignInContainer.Center
+            Fill: =RGBA(40, 134, 222, 1)
+            FillPortions: =0
+            Height: =Parent.Height
+            LayoutDirection: =LayoutDirection.Vertical
+            LayoutMinHeight: =100
+            LayoutMinWidth: =250
+            LayoutMode: =LayoutMode.Auto
+            Width: =Parent.Width-Container10.Width
+            ZIndex: =2
 
