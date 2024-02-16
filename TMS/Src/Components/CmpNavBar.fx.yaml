@@ -1,7 +1,7 @@
 CmpNavBar As CanvasComponent:
+    currentscreen: ="Text"
     Fill: =RGBA(255, 255, 255, 1)
     Height: =640
-    IsNavExpand: =true
     navbarclose: =
     navitems: |-
         =Table(
@@ -15,6 +15,12 @@ CmpNavBar As CanvasComponent:
                 Title: "DASHBOARD",
                 TargetScreen: App.ActiveScreen,
                 image: 'airplay-white'
+                
+            },
+            {
+                Title: "LOGOUT",
+                TargetScreen: App.ActiveScreen,
+                image: 'LOG-OUT'
                 
             }
         )
@@ -81,6 +87,7 @@ CmpNavBar As CanvasComponent:
                 ZIndex: =1
 
                 Container12 As groupContainer.horizontalAutoLayoutContainer:
+                    DropShadow: =DropShadow.None
                     Height: =Parent.TemplateHeight
                     LayoutAlignItems: =LayoutAlignItems.Center
                     LayoutGap: =5
@@ -93,12 +100,12 @@ CmpNavBar As CanvasComponent:
 
                     Container13 As groupContainer.manualLayoutContainer:
                         AlignInContainer: =AlignInContainer.SetByContainer
-                        Fill: =RGBA(0, 217, 255, 1)
+                        Fill: =If(ThisItem.Title=CmpNavBar.currentscreen,RGBA(71, 158, 245, 1),RGBA(0, 0, 0, 0))
                         FillPortions: =0
-                        Height: =Gallery1.TemplateHeight
+                        Height: =Gallery1.TemplateHeight*.75
                         LayoutMinHeight: =100
                         LayoutMinWidth: =250
-                        Width: =Gallery1.TemplateHeight
+                        Width: =Gallery1.TemplateHeight*.75
                         ZIndex: =1
 
                         Container14 As groupContainer.verticalAutoLayoutContainer:
@@ -115,6 +122,7 @@ CmpNavBar As CanvasComponent:
                             Image4 As image:
                                 Height: =Parent.Width*.5
                                 Image: =ThisItem.image
+                                OnSelect: =Navigate(ThisItem.TargetScreen,ScreenTransition.None)
                                 Width: =Parent.Width*.5
                                 X: =40
                                 Y: =40
@@ -122,10 +130,13 @@ CmpNavBar As CanvasComponent:
 
                     Label1 As label:
                         Color: =RGBA(255, 255, 255, 1)
+                        FontWeight: =FontWeight.Bold
                         Height: =Gallery1.TemplateHeight
+                        OnSelect: =Navigate(ThisItem.TargetScreen,ScreenTransition.None)
+                        Size: =10
                         Text: =ThisItem.Title
                         Visible: =VarExpandNavBar
-                        Width: =Gallery1.TemplateWidth-Image4.Width-30
+                        Width: =Gallery1.TemplateWidth*.5
                         ZIndex: =2
 
     Container7 As groupContainer.manualLayoutContainer:

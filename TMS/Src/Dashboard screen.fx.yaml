@@ -1,7 +1,6 @@
-"'Home screen' As screen":
-    OnVisible: =
+"'Dashboard screen' As screen":
 
-    Container9 As groupContainer.horizontalAutoLayoutContainer:
+    Container9_1 As groupContainer.horizontalAutoLayoutContainer:
         Height: =Parent.Height
         LayoutMode: =LayoutMode.Auto
         RadiusBottomLeft: =0
@@ -9,9 +8,9 @@
         RadiusTopLeft: =0
         RadiusTopRight: =0
         Width: =Parent.Width
-        ZIndex: =2
+        ZIndex: =1
 
-        Container10 As groupContainer.verticalAutoLayoutContainer:
+        Container10_1 As groupContainer.verticalAutoLayoutContainer:
             AlignInContainer: =AlignInContainer.Center
             FillPortions: =0
             Height: =Parent.Height
@@ -26,8 +25,8 @@
             Width: =If(VarExpandNavBar,240,100)
             ZIndex: =1
 
-            CmpNavBar_1 As CmpNavBar:
-                currentscreen: ="HOME"
+            CmpNavBar_2 As CmpNavBar:
+                currentscreen: ="DASHBOARD"
                 Height: =Parent.Height
                 LayoutMinWidth: =640
                 navitems: |-
@@ -47,7 +46,7 @@
                     )*/
                     Clearcollectnavitems
 
-        Container11 As groupContainer.verticalAutoLayoutContainer:
+        Container11_1 As groupContainer.verticalAutoLayoutContainer:
             AlignInContainer: =AlignInContainer.Center
             DropShadow: =DropShadow.None
             Fill: =RGBA(255, 255, 255, 1)
@@ -61,6 +60,6 @@
             RadiusBottomRight: =0
             RadiusTopLeft: =0
             RadiusTopRight: =0
-            Width: =Parent.Width-Container10.Width
+            Width: =Parent.Width-Container10_1.Width
             ZIndex: =2
 

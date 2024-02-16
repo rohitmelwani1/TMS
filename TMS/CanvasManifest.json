@@ -135,6 +135,7 @@
   },
   "ScreenOrder": [
     "login screen",
-    "Home screen"
+    "Home screen",
+    "Dashboard screen"
   ]
 }

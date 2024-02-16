@@ -2,6 +2,29 @@ App As appinfo:
     BackEnabled: =true
     OnStart: |+
         =ClearCollect(
+        Clearcollectnavitems,
+           Table(
+            {
+                Title: "HOME",
+                TargetScreen: 'Home screen',
+                image:'menuBar-cicle'
+        
+            },
+            {
+                Title: "DASHBOARD",
+                TargetScreen: 'Dashboard screen',
+                image: 'airplay-white'
+                
+            },
+            {
+                Title: "LOG-OUT",
+                TargetScreen: 'login screen',
+                image: 'LOG-OUT'
+                
+            }
+        )
+        );
+        ClearCollect(
             homescreenop,
           Table(
             {
