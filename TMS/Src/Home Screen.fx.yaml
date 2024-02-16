@@ -4,6 +4,10 @@
     Container9 As groupContainer.horizontalAutoLayoutContainer:
         Height: =Parent.Height
         LayoutMode: =LayoutMode.Auto
+        RadiusBottomLeft: =0
+        RadiusBottomRight: =0
+        RadiusTopLeft: =0
+        RadiusTopRight: =0
         Width: =Parent.Width
         ZIndex: =2
 
@@ -15,6 +19,10 @@
             LayoutMinHeight: =100
             LayoutMinWidth: =250
             LayoutMode: =LayoutMode.Auto
+            RadiusBottomLeft: =0
+            RadiusBottomRight: =0
+            RadiusTopLeft: =0
+            RadiusTopRight: =0
             Width: =If(VarExpandNavBar,240,100)
             ZIndex: =1
 
@@ -24,13 +32,18 @@
 
         Container11 As groupContainer.verticalAutoLayoutContainer:
             AlignInContainer: =AlignInContainer.Center
-            Fill: =RGBA(40, 134, 222, 1)
+            DropShadow: =DropShadow.None
+            Fill: =RGBA(255, 255, 255, 1)
             FillPortions: =0
             Height: =Parent.Height
             LayoutDirection: =LayoutDirection.Vertical
             LayoutMinHeight: =100
             LayoutMinWidth: =250
             LayoutMode: =LayoutMode.Auto
+            RadiusBottomLeft: =0
+            RadiusBottomRight: =0
+            RadiusTopLeft: =0
+            RadiusTopRight: =0
             Width: =Parent.Width-Container10.Width
             ZIndex: =2
 

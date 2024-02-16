@@ -66,6 +66,68 @@ CmpNavBar As CanvasComponent:
             Width: =Parent.Width
             ZIndex: =2
 
+            Gallery1 As gallery.variableTemplateHeightGallery:
+                AlignInContainer: =AlignInContainer.Center
+                DelayItemLoading: =true
+                FillPortions: =0
+                Height: =Parent.Height
+                Items: =CmpNavBar.navitems
+                Layout: =Layout.Vertical
+                LayoutMinHeight: =287
+                LayoutMinWidth: =320
+                LoadingSpinner: =LoadingSpinner.Data
+                TemplateSize: =Parent.Height*.1
+                Width: =Parent.Width
+                ZIndex: =1
+
+                Container12 As groupContainer.horizontalAutoLayoutContainer:
+                    Height: =Parent.TemplateHeight
+                    LayoutAlignItems: =LayoutAlignItems.Center
+                    LayoutGap: =5
+                    LayoutJustifyContent: =LayoutJustifyContent.Center
+                    LayoutMode: =LayoutMode.Auto
+                    Width: =Parent.TemplateWidth
+                    X: =Parent.TemplateWidth/2-Self.Width/2
+                    Y: =Parent.TemplateHeight/2-Self.Height/2
+                    ZIndex: =1
+
+                    Container13 As groupContainer.manualLayoutContainer:
+                        AlignInContainer: =AlignInContainer.SetByContainer
+                        Fill: =RGBA(0, 217, 255, 1)
+                        FillPortions: =0
+                        Height: =Gallery1.TemplateHeight
+                        LayoutMinHeight: =100
+                        LayoutMinWidth: =250
+                        Width: =Gallery1.TemplateHeight
+                        ZIndex: =1
+
+                        Container14 As groupContainer.verticalAutoLayoutContainer:
+                            Height: =Parent.Height
+                            LayoutAlignItems: =LayoutAlignItems.Center
+                            LayoutDirection: =LayoutDirection.Vertical
+                            LayoutJustifyContent: =LayoutJustifyContent.Center
+                            LayoutMode: =LayoutMode.Auto
+                            Width: =Parent.Width
+                            X: =Parent.Width/2-Self.Width/2
+                            Y: =Parent.Height/2-Self.Height/2
+                            ZIndex: =2
+
+                            Image4 As image:
+                                Height: =Parent.Width*.5
+                                Image: =ThisItem.image
+                                Width: =Parent.Width*.5
+                                X: =40
+                                Y: =40
+                                ZIndex: =1
+
+                    Label1 As label:
+                        Color: =RGBA(255, 255, 255, 1)
+                        Height: =Gallery1.TemplateHeight
+                        Text: =ThisItem.Title
+                        Visible: =VarExpandNavBar
+                        Width: =Gallery1.TemplateWidth-Image4.Width-30
+                        ZIndex: =2
+
     Container7 As groupContainer.manualLayoutContainer:
         DropShadow: =DropShadow.None
         Height: =50
