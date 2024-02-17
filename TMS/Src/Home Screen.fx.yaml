@@ -3,19 +3,198 @@
 
     Container20 As groupContainer.manualLayoutContainer:
         DropShadow: =DropShadow.None
-        Fill: =RGBA(227, 227, 227, 1)
+        Fill: =RGBA(214, 214, 214, 0.35)
         Height: =Parent.Height
         Width: =Parent.Width
         ZIndex: =1
 
         Container22 As groupContainer.manualLayoutContainer:
-            Fill: =RGBA(40, 112, 134, 1)
-            Height: =765
+            Height: =Parent.Height
             Width: =Parent.Width-Container21.Width+20
             X: =Container21.Width-20
             ZIndex: =1
 
+            Component1_1 As Component1:
+                Fill: =RGBA(255, 255, 255, 1)
+                Height: =Parent.Height*.08
+                screenname: ="HOME"
+                Width: =Parent.Width
+
+            Container10 As groupContainer.manualLayoutContainer:
+                Height: |-
+                    =//310
+                    Parent.Height*.4
+                Width: =Parent.Width*.74
+                X: |-
+                    =//316
+                    Parent.Width-Self.Width-15
+                Y: =73
+                ZIndex: =2
+
+                Image6 As image:
+                    Height: =Parent.Height
+                    Image: =BLUE
+                    ImagePosition: =ImagePosition.Fill
+                    Width: =955
+                    ZIndex: =1
+
+                Container11 As groupContainer.verticalAutoLayoutContainer:
+                    DropShadow: =DropShadow.None
+                    Fill: =RGBA(255, 255, 255, 1)
+                    Height: =Parent.Height/2
+                    LayoutDirection: =LayoutDirection.Vertical
+                    LayoutMode: =LayoutMode.Auto
+                    RadiusBottomLeft: =0
+                    RadiusBottomRight: =0
+                    RadiusTopLeft: =0
+                    RadiusTopRight: =0
+                    Width: =Parent.Width
+                    Y: =Parent.Height-Self.Height
+                    ZIndex: =2
+
+                Container26 As groupContainer.horizontalAutoLayoutContainer:
+                    DropShadow: =DropShadow.None
+                    Height: =Parent.Height*.6
+                    LayoutAlignItems: =LayoutAlignItems.Center
+                    LayoutGap: =5
+                    LayoutJustifyContent: =LayoutJustifyContent.SpaceBetween
+                    LayoutMode: =LayoutMode.Auto
+                    PaddingLeft: =2
+                    PaddingRight: =2
+                    Width: |-
+                        =//883
+                        Parent.Width*.93
+                    X: =Parent.Width/2-Self.Width/2
+                    Y: =Parent.Height/2-Self.Height/2+28
+                    ZIndex: =6
+
+                    Container15 As groupContainer.verticalAutoLayoutContainer:
+                        AlignInContainer: =AlignInContainer.SetByContainer
+                        BorderThickness: =0.5
+                        DropShadow: =DropShadow.None
+                        Fill: =RGBA(255, 255, 255, 1)
+                        FillPortions: =0
+                        Height: =Parent.Height-4
+                        LayoutDirection: =LayoutDirection.Vertical
+                        LayoutMinHeight: =100
+                        LayoutMinWidth: =250
+                        LayoutMode: =LayoutMode.Auto
+                        RadiusBottomLeft: =8
+                        RadiusBottomRight: =8
+                        RadiusTopLeft: =8
+                        RadiusTopRight: =8
+                        Width: =Parent.Width/3-20
+                        X: =Parent.Width*.04
+                        Y: =Parent.Height-Self.Height-33
+                        ZIndex: =1
+
+                        Container23 As groupContainer.horizontalAutoLayoutContainer:
+                            AlignInContainer: =AlignInContainer.Center
+                            DropShadow: =DropShadow.None
+                            FillPortions: =0
+                            Height: =Parent.Height*.5
+                            LayoutAlignItems: =LayoutAlignItems.End
+                            LayoutMinHeight: =100
+                            LayoutMinWidth: =250
+                            LayoutMode: =LayoutMode.Auto
+                            PaddingBottom: =15
+                            PaddingLeft: =15
+                            Width: =Parent.Width
+                            ZIndex: =1
+
+                            Container25 As groupContainer.manualLayoutContainer:
+                                AlignInContainer: =AlignInContainer.SetByContainer
+                                Fill: =RGBA(180, 214, 250, 0.21)
+                                FillPortions: =0
+                                Height: =Parent.Height-30
+                                LayoutMinHeight: =100
+                                LayoutMinWidth: =250
+                                RadiusBottomLeft: =8
+                                RadiusBottomRight: =8
+                                RadiusTopLeft: =8
+                                RadiusTopRight: =8
+                                Width: =Parent.Height-30
+                                ZIndex: =1
+
+                                Image7 As image:
+                                    Height: =Parent.Height*.6
+                                    Image: =TICKETS
+                                    Width: =Parent.Width*.6
+                                    X: =Parent.Height/2-Self.Height/2
+                                    Y: =Parent.Width/2-Self.Width/2
+                                    ZIndex: =1
+
+                        Container24 As groupContainer.horizontalAutoLayoutContainer:
+                            AlignInContainer: =AlignInContainer.Center
+                            DropShadow: =DropShadow.None
+                            FillPortions: =0
+                            Height: =Parent.Height*.5
+                            LayoutDirection: =LayoutDirection.Vertical
+                            LayoutMinHeight: =100
+                            LayoutMinWidth: =250
+                            LayoutMode: =LayoutMode.Auto
+                            PaddingLeft: =15
+                            Width: =Parent.Width
+                            ZIndex: =2
+
+                            Label3 As label:
+                                Color: =RGBA(0, 0, 0, 0.61)
+                                FontWeight: =FontWeight.Bold
+                                PaddingBottom: =0
+                                Size: =22
+                                Text: ="10"
+                                ZIndex: =1
+
+                            Label5 As label:
+                                Color: =RGBA(150, 150, 150, 1)
+                                PaddingTop: =0
+                                Text: ="Total Tickets"
+                                ZIndex: =2
+
+                    Container15_1 As groupContainer.verticalAutoLayoutContainer:
+                        AlignInContainer: =AlignInContainer.SetByContainer
+                        BorderColor: =RGBA(255, 255, 255, 1)
+                        BorderThickness: =0.5
+                        DropShadow: =DropShadow.None
+                        Fill: =RGBA(0, 0, 0, 0.2)
+                        FillPortions: =0
+                        Height: =Parent.Height-4
+                        LayoutDirection: =LayoutDirection.Vertical
+                        LayoutMinHeight: =100
+                        LayoutMinWidth: =250
+                        LayoutMode: =LayoutMode.Auto
+                        RadiusBottomLeft: =8
+                        RadiusBottomRight: =8
+                        RadiusTopLeft: =8
+                        RadiusTopRight: =8
+                        Width: =Parent.Width/3-20
+                        X: =Parent.Width*.36
+                        Y: =Parent.Height-Self.Height-33
+                        ZIndex: =2
+
+                    Container15_2 As groupContainer.verticalAutoLayoutContainer:
+                        AlignInContainer: =AlignInContainer.SetByContainer
+                        BorderColor: =RGBA(255, 255, 255, 1)
+                        BorderThickness: =0.5
+                        DropShadow: =DropShadow.None
+                        Fill: =RGBA(0, 0, 0, 0.2)
+                        FillPortions: =0
+                        Height: =Parent.Height-4
+                        LayoutDirection: =LayoutDirection.Vertical
+                        LayoutMinHeight: =100
+                        LayoutMinWidth: =250
+                        LayoutMode: =LayoutMode.Auto
+                        RadiusBottomLeft: =8
+                        RadiusBottomRight: =8
+                        RadiusTopLeft: =8
+                        RadiusTopRight: =8
+                        Width: =Parent.Width/3-20
+                        X: =Parent.Width*.68
+                        Y: =Parent.Height-Self.Height-33
+                        ZIndex: =3
+
         Container21 As groupContainer.manualLayoutContainer:
+            DropShadow: =DropShadow.None
             Height: =Parent.Height
             Width: =If(VarExpandNavBar,240,100)
             ZIndex: =2

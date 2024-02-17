@@ -39,7 +39,6 @@ CmpNavBar As CanvasComponent:
         RadiusTopLeft: =0
         RadiusTopRight: =0
         Width: =Parent.Width-20
-        X: =40
         ZIndex: =1
 
         Container4 As groupContainer.horizontalAutoLayoutContainer:

@@ -8,13 +8,15 @@ Component1 As CanvasComponent:
     ZIndex: =1
 
     Container16 As groupContainer.horizontalAutoLayoutContainer:
-        DropShadow: =DropShadow.None
         Height: =Parent.Height
         LayoutAlignItems: =LayoutAlignItems.Center
         LayoutJustifyContent: =LayoutJustifyContent.SpaceBetween
         LayoutMode: =LayoutMode.Auto
+        RadiusBottomLeft: =0
+        RadiusBottomRight: =0
+        RadiusTopLeft: =0
+        RadiusTopRight: =0
         Width: =Parent.Width
-        Y: =40
         ZIndex: =1
 
         Label2 As label:
