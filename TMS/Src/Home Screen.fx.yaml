@@ -415,6 +415,53 @@
                         Width: =Parent.Height/2
                         ZIndex: =2
 
+                Gallery2 As gallery.variableTemplateHeightGallery:
+                    DelayItemLoading: =true
+                    Height: =Parent.Height-Container28.Height
+                    Items: =CustomGallerySample
+                    Layout: =Layout.Vertical
+                    LoadingSpinner: =LoadingSpinner.Data
+                    TemplateSize: =Parent.Height*.15
+                    Width: =Parent.Width
+                    Y: =Container28.Height
+                    ZIndex: =2
+
+                    Container29 As groupContainer.verticalAutoLayoutContainer:
+                        Fill: =RGBA(240, 247, 252, 1)
+                        Height: =57.599999999999994
+                        LayoutAlignItems: =LayoutAlignItems.Center
+                        LayoutJustifyContent: =LayoutJustifyContent.Center
+                        LayoutMode: =LayoutMode.Auto
+                        PaddingBottom: =5
+                        PaddingLeft: =5
+                        PaddingRight: =5
+                        PaddingTop: =5
+                        Width: =299.42
+                        ZIndex: =1
+
+                        Image8 As image:
+                            Height: =Parent.Height*.4
+                            Image: =TICKETS
+                            Width: =Parent.Height-5
+                            ZIndex: =1
+
+                        Container30 As groupContainer.verticalAutoLayoutContainer:
+                            AlignInContainer: =AlignInContainer.SetByContainer
+                            DropShadow: =DropShadow.None
+                            FillPortions: =0
+                            Height: =Parent.Height-5
+                            LayoutDirection: =LayoutDirection.Vertical
+                            LayoutMinHeight: =100
+                            LayoutMinWidth: =250
+                            LayoutMode: =LayoutMode.Auto
+                            Width: =Parent.Width-Image8.Width-15
+                            ZIndex: =2
+
+                            Label7 As label:
+                                Text: ="New Ticket is been created"
+                                Width: =Parent.Width
+                                ZIndex: =1
+
         Container21 As groupContainer.manualLayoutContainer:
             DropShadow: =DropShadow.None
             Height: =Parent.Height
