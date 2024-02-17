@@ -35,7 +35,7 @@
                     Height: =Parent.Height
                     Image: =BLUE
                     ImagePosition: =ImagePosition.Fill
-                    Width: =955
+                    Width: =Parent.Width
                     ZIndex: =1
 
                 Container11 As groupContainer.verticalAutoLayoutContainer:
@@ -326,6 +326,27 @@
                                 Text: ="Rejected Tickets"
                                 ZIndex: =2
 
+                Label8 As label:
+                    Color: =RGBA(255, 255, 255, 1)
+                    FontWeight: =FontWeight.Bold
+                    PaddingLeft: =2
+                    Size: =22
+                    Text: ="Overview"
+                    Width: =288
+                    X: =Container26.X
+                    Y: =12
+                    ZIndex: =7
+
+                Label8_1 As label:
+                    Color: =RGBA(255, 255, 255, 1)
+                    Size: =10
+                    Text: |-
+                        ="Streamline Your Ticket Management : Get a OverView of All Tickets, Approved and Rejected."
+                    Width: =722
+                    X: =Container26.X
+                    Y: =40
+                    ZIndex: =8
+
             Container10_2 As groupContainer.manualLayoutContainer:
                 Height: |-
                     =//310
@@ -468,21 +489,34 @@
                                 Width: =Parent.Width
                                 ZIndex: =1
 
-                            Label7_1 As label:
-                                Color: =RGBA(150, 150, 150, 1)
-                                Height: =Parent.Height*.2
-                                Size: =8
-                                Text: |-
-                                    ="ID :"
-                                Width: =Parent.Width/3
-                                ZIndex: =2
-
                             Container31 As groupContainer.horizontalAutoLayoutContainer:
                                 AlignInContainer: =AlignInContainer.Center
+                                DropShadow: =DropShadow.None
+                                FillPortions: =0
+                                Height: =Parent.Height*.3
                                 LayoutMinHeight: =100
                                 LayoutMinWidth: =250
                                 LayoutMode: =LayoutMode.Auto
+                                Width: =Parent.Width
                                 ZIndex: =3
+
+                                Label7_1 As label:
+                                    Color: =RGBA(150, 150, 150, 1)
+                                    Height: =Parent.Height
+                                    Size: =8
+                                    Text: |-
+                                        ="ID :"
+                                    Width: =Parent.Width/3
+                                    ZIndex: =1
+
+                                Label7_2 As label:
+                                    Color: =RGBA(150, 150, 150, 1)
+                                    Height: =Parent.Height
+                                    Size: =8
+                                    Text: |-
+                                        ="Sector :"
+                                    Width: =Parent.Width-Label7_1.Width
+                                    ZIndex: =2
 
         Container21 As groupContainer.manualLayoutContainer:
             DropShadow: =DropShadow.None
