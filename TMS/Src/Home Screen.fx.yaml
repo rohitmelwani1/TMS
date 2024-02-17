@@ -451,6 +451,8 @@
                             FillPortions: =0
                             Height: =Parent.Height-5
                             LayoutDirection: =LayoutDirection.Vertical
+                            LayoutGap: =4
+                            LayoutJustifyContent: =LayoutJustifyContent.Center
                             LayoutMinHeight: =100
                             LayoutMinWidth: =250
                             LayoutMode: =LayoutMode.Auto
@@ -458,9 +460,29 @@
                             ZIndex: =2
 
                             Label7 As label:
+                                Color: =RGBA(150, 150, 150, 1)
+                                FontWeight: =FontWeight.Bold
+                                Height: =Parent.Height*.2
+                                Size: =10
                                 Text: ="New Ticket is been created"
                                 Width: =Parent.Width
                                 ZIndex: =1
+
+                            Label7_1 As label:
+                                Color: =RGBA(150, 150, 150, 1)
+                                Height: =Parent.Height*.2
+                                Size: =8
+                                Text: |-
+                                    ="ID :"
+                                Width: =Parent.Width/3
+                                ZIndex: =2
+
+                            Container31 As groupContainer.horizontalAutoLayoutContainer:
+                                AlignInContainer: =AlignInContainer.Center
+                                LayoutMinHeight: =100
+                                LayoutMinWidth: =250
+                                LayoutMode: =LayoutMode.Auto
+                                ZIndex: =3
 
         Container21 As groupContainer.manualLayoutContainer:
             DropShadow: =DropShadow.None
