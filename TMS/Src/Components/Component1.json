@@ -2,7 +2,7 @@
   "ComponentAllowCustomization": true,
   "ComponentChangedSinceFileImport": true,
   "ComponentDefinitionInfo": {
-    "AllowAccessToGlobals": false,
+    "AllowAccessToGlobals": true,
     "Children": [
       {
         "AllowAccessToGlobals": true,
@@ -156,7 +156,7 @@
             "OptimizeForDevices": "Off",
             "Parent": "Container16",
             "PersistMetaDataIDKey": false,
-            "PublishOrderIndex": 91,
+            "PublishOrderIndex": 99,
             "Rules": [
               {
                 "Category": "Data",
@@ -543,7 +543,7 @@
                     "OptimizeForDevices": "Off",
                     "Parent": "Container19",
                     "PersistMetaDataIDKey": false,
-                    "PublishOrderIndex": 94,
+                    "PublishOrderIndex": 102,
                     "Rules": [
                       {
                         "Category": "Data",
@@ -931,7 +931,7 @@
                     "OptimizeForDevices": "Off",
                     "Parent": "Container19",
                     "PersistMetaDataIDKey": false,
-                    "PublishOrderIndex": 95,
+                    "PublishOrderIndex": 103,
                     "Rules": [
                       {
                         "Category": "Data",
@@ -1315,7 +1315,7 @@
                 "OptimizeForDevices": "Off",
                 "Parent": "Container17",
                 "PersistMetaDataIDKey": false,
-                "PublishOrderIndex": 93,
+                "PublishOrderIndex": 101,
                 "Rules": [
                   {
                     "Category": "Design",
@@ -1553,7 +1553,15 @@
                   "PaddingTop",
                   "PaddingRight",
                   "PaddingBottom",
-                  "PaddingLeft"
+                  "PaddingLeft",
+                  {
+                    "AFDDataSourceName": "",
+                    "AutoRuleBindingEnabled": false,
+                    "AutoRuleBindingString": "false",
+                    "InvariantPropertyName": "OnSelect",
+                    "IsLockable": false,
+                    "NameMapSourceSchema": "?"
+                  }
                 ],
                 "ControlUniqueId": "25",
                 "DynamicProperties": [
@@ -1618,7 +1626,7 @@
                 "OptimizeForDevices": "Off",
                 "Parent": "Container17",
                 "PersistMetaDataIDKey": false,
-                "PublishOrderIndex": 96,
+                "PublishOrderIndex": 104,
                 "Rules": [
                   {
                     "Category": "Data",
@@ -1793,6 +1801,12 @@
                     "InvariantScript": "0",
                     "Property": "PaddingLeft",
                     "RuleProviderType": "Unknown"
+                  },
+                  {
+                    "Category": "Behavior",
+                    "InvariantScript": "",
+                    "Property": "OnSelect",
+                    "RuleProviderType": "User"
                   }
                 ],
                 "StyleName": "defaultImageStyle",
@@ -1881,7 +1895,15 @@
                       "PaddingTop",
                       "PaddingRight",
                       "PaddingBottom",
-                      "PaddingLeft"
+                      "PaddingLeft",
+                      {
+                        "AFDDataSourceName": "",
+                        "AutoRuleBindingEnabled": false,
+                        "AutoRuleBindingString": "false",
+                        "InvariantPropertyName": "OnSelect",
+                        "IsLockable": false,
+                        "NameMapSourceSchema": "?"
+                      }
                     ],
                     "ControlUniqueId": "27",
                     "HasDynamicProperties": false,
@@ -1897,7 +1919,7 @@
                     "OptimizeForDevices": "Off",
                     "Parent": "Container18",
                     "PersistMetaDataIDKey": false,
-                    "PublishOrderIndex": 98,
+                    "PublishOrderIndex": 106,
                     "Rules": [
                       {
                         "Category": "Data",
@@ -2072,6 +2094,12 @@
                         "InvariantScript": "0",
                         "Property": "PaddingLeft",
                         "RuleProviderType": "Unknown"
+                      },
+                      {
+                        "Category": "Behavior",
+                        "InvariantScript": "Set(Varnotification,!Varnotification)",
+                        "Property": "OnSelect",
+                        "RuleProviderType": "User"
                       }
                     ],
                     "StyleName": "defaultImageStyle",
@@ -2241,7 +2269,7 @@
                 "OptimizeForDevices": "Off",
                 "Parent": "Container17",
                 "PersistMetaDataIDKey": false,
-                "PublishOrderIndex": 97,
+                "PublishOrderIndex": 105,
                 "Rules": [
                   {
                     "Category": "Design",
@@ -2523,7 +2551,7 @@
             "OptimizeForDevices": "Off",
             "Parent": "Container16",
             "PersistMetaDataIDKey": false,
-            "PublishOrderIndex": 92,
+            "PublishOrderIndex": 100,
             "Rules": [
               {
                 "Category": "Design",
@@ -2797,7 +2825,7 @@
         "OptimizeForDevices": "Off",
         "Parent": "Component1",
         "PersistMetaDataIDKey": false,
-        "PublishOrderIndex": 90,
+        "PublishOrderIndex": 98,
         "Rules": [
           {
             "Category": "Design",
@@ -2978,7 +3006,7 @@
       "ZIndex",
       "screenname"
     ],
-    "LastModifiedTimestamp": "638437775914431068",
+    "LastModifiedTimestamp": "638437796055597308",
     "Name": "Component1",
     "Rules": [
       {
@@ -3026,7 +3054,7 @@
     ]
   },
   "ComponentManifest": {
-    "AllowAccessToGlobals": false,
+    "AllowAccessToGlobals": true,
     "AllowCustomization": true,
     "Description": "",
     "Name": "Component1",
@@ -3053,7 +3081,7 @@
   "IsPcfControl": false,
   "IsPremiumPcfControl": false,
   "IsWidgetTemplate": false,
-  "LastModifiedTimestamp": "638437775914431068",
+  "LastModifiedTimestamp": "638437796055597308",
   "Name": "6273a31f8bfa489d93ac409e3d7e0941",
   "OverridableProperties": {},
   "Version": "1.0"

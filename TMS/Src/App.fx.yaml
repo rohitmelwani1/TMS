@@ -96,7 +96,8 @@ App As appinfo:
         Reset(TxtinputUserName);
         Set(varLoginpopup,false);
         Set(VarPersona,Blank());
-        Set(VarExpandNavBar,false)
+        Set(VarExpandNavBar,false);
+        Set(Varnotification,false)
         
         
     StartScreen: =
