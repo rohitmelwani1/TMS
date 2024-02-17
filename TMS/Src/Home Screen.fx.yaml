@@ -518,6 +518,17 @@
                                     Width: =Parent.Width-Label7_1.Width
                                     ZIndex: =2
 
+            Container33 As groupContainer.verticalAutoLayoutContainer:
+                DropShadow: =DropShadow.Semilight
+                Fill: =RGBA(255, 255, 255, 1)
+                Height: =Parent.Height*.47
+                LayoutDirection: =LayoutDirection.Vertical
+                LayoutMode: =LayoutMode.Auto
+                Width: =Parent.Width*.972
+                X: =Parent.Width/2-Self.Width/2+2
+                Y: =Container10.Height+Component1_1.Height+25
+                ZIndex: =5
+
         Container21 As groupContainer.manualLayoutContainer:
             DropShadow: =DropShadow.None
             Height: =Parent.Height
