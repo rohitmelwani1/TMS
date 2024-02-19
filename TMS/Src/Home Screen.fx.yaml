@@ -392,7 +392,7 @@
 
                         Container25_3 As groupContainer.manualLayoutContainer:
                             AlignInContainer: =AlignInContainer.Center
-                            Fill: =RGBA(180, 214, 250, 0.21)
+                            Fill: =RGBA(132, 62, 194, 1)
                             FillPortions: =0
                             Height: =Parent.Height-20
                             LayoutMinHeight: =100
@@ -405,9 +405,9 @@
                             ZIndex: =1
 
                             Image7_3 As image:
-                                Height: =Parent.Height*.6
-                                Image: =TICKETS
-                                Width: =Parent.Width*.6
+                                Height: =Parent.Height*.5
+                                Image: ='chrome-white'
+                                Width: =Parent.Width*.5
                                 X: =Parent.Height/2-Self.Height/2
                                 Y: =Parent.Width/2-Self.Width/2
                                 ZIndex: =1
@@ -421,7 +421,7 @@
                         LayoutMinHeight: =100
                         LayoutMinWidth: =250
                         LayoutMode: =LayoutMode.Auto
-                        PaddingLeft: =15
+                        PaddingLeft: =5
                         Width: =Parent.Width
                         ZIndex: =2
 
@@ -429,10 +429,9 @@
                             Color: =RGBA(0, 0, 0, 0.61)
                             FontWeight: =FontWeight.Bold
                             PaddingBottom: =0
-                            Size: =22
-                            Text: |-
-                                =//"10"
-                                CountRows(TMS_Tickets)
+                            Size: =15
+                            Text: ="View Tickets"
+                            Width: =Parent.Width*.8
                             ZIndex: =1
 
                         Label5_3 As label:
@@ -440,7 +439,8 @@
                             FontWeight: =FontWeight.Semibold
                             PaddingTop: =0
                             Size: =12
-                            Text: ="Total Tickets"
+                            Text: ="Click to view all Tickets"
+                            Width: =Parent.Width*.8
                             ZIndex: =2
 
                 Container11_3 As groupContainer.verticalAutoLayoutContainer:
@@ -471,7 +471,7 @@
 
                         Container25_4 As groupContainer.manualLayoutContainer:
                             AlignInContainer: =AlignInContainer.Center
-                            Fill: =RGBA(180, 214, 250, 0.21)
+                            Fill: =RGBA(0, 120, 232, 1)
                             FillPortions: =0
                             Height: =Parent.Height-20
                             LayoutMinHeight: =100
@@ -484,9 +484,9 @@
                             ZIndex: =1
 
                             Image7_4 As image:
-                                Height: =Parent.Height*.6
-                                Image: =TICKETS
-                                Width: =Parent.Width*.6
+                                Height: =Parent.Height*.5
+                                Image: =add
+                                Width: =Parent.Width*.5
                                 X: =Parent.Height/2-Self.Height/2
                                 Y: =Parent.Width/2-Self.Width/2
                                 ZIndex: =1
@@ -500,7 +500,7 @@
                         LayoutMinHeight: =100
                         LayoutMinWidth: =250
                         LayoutMode: =LayoutMode.Auto
-                        PaddingLeft: =15
+                        PaddingLeft: =5
                         Width: =Parent.Width
                         ZIndex: =2
 
@@ -508,10 +508,9 @@
                             Color: =RGBA(0, 0, 0, 0.61)
                             FontWeight: =FontWeight.Bold
                             PaddingBottom: =0
-                            Size: =22
-                            Text: |-
-                                =//"10"
-                                CountRows(TMS_Tickets)
+                            Size: =15
+                            Text: ="Add Ticket"
+                            Width: =Parent.Width*.8
                             ZIndex: =1
 
                         Label5_4 As label:
@@ -519,7 +518,8 @@
                             FontWeight: =FontWeight.Semibold
                             PaddingTop: =0
                             Size: =12
-                            Text: ="Total Tickets"
+                            Text: ="Click to add new Ticket"
+                            Width: =Parent.Width*.8
                             ZIndex: =2
 
             Container33 As groupContainer.verticalAutoLayoutContainer:

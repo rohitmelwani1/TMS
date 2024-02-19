@@ -144,6 +144,170 @@
                                     Width: =Parent.Width-Label7_4.Width
                                     ZIndex: =2
 
+            Container32 As groupContainer.horizontalAutoLayoutContainer:
+                DropShadow: =DropShadow.None
+                Height: =Parent.Height*.2
+                LayoutAlignItems: =LayoutAlignItems.Center
+                LayoutGap: =30
+                LayoutJustifyContent: =LayoutJustifyContent.Center
+                LayoutMode: =LayoutMode.Auto
+                PaddingLeft: =10
+                PaddingRight: =10
+                RadiusBottomLeft: =0
+                RadiusBottomRight: =0
+                RadiusTopLeft: =0
+                RadiusTopRight: =0
+                Width: =Parent.Width
+                Y: =61
+                ZIndex: =3
+
+                Container35 As groupContainer.verticalAutoLayoutContainer:
+                    AlignInContainer: =AlignInContainer.Center
+                    DropShadow: =DropShadow.Regular
+                    Fill: =RGBA(214, 234, 255, 1)
+                    FillPortions: =0
+                    Height: =Parent.Height*.7
+                    LayoutAlignItems: =LayoutAlignItems.Center
+                    LayoutDirection: =LayoutDirection.Vertical
+                    LayoutJustifyContent: =LayoutJustifyContent.Center
+                    LayoutMinHeight: =100
+                    LayoutMinWidth: =250
+                    LayoutMode: =LayoutMode.Auto
+                    Width: =Parent.Width*.17
+                    ZIndex: =1
+
+                    Label11 As label:
+                        Align: =Align.Center
+                        Color: =RGBA(40, 134, 222, 1)
+                        FontWeight: =FontWeight.Semibold
+                        Size: =20
+                        Text: =CountRows(TMS_Tickets)
+                        ZIndex: =1
+
+                    Label12 As label:
+                        Align: =Align.Center
+                        Color: =RGBA(106, 122, 127, 1)
+                        Text: ="ALL TICKETS"
+                        ZIndex: =2
+
+                Container35_1 As groupContainer.verticalAutoLayoutContainer:
+                    AlignInContainer: =AlignInContainer.Center
+                    DropShadow: =DropShadow.Regular
+                    Fill: =RGBA(214, 234, 255, 1)
+                    FillPortions: =0
+                    Height: =Parent.Height*.7
+                    LayoutAlignItems: =LayoutAlignItems.Center
+                    LayoutDirection: =LayoutDirection.Vertical
+                    LayoutJustifyContent: =LayoutJustifyContent.Center
+                    LayoutMinHeight: =100
+                    LayoutMinWidth: =250
+                    LayoutMode: =LayoutMode.Auto
+                    Width: =Parent.Width*.17
+                    ZIndex: =2
+
+                    Label11_1 As label:
+                        Align: =Align.Center
+                        Color: =RGBA(40, 134, 222, 1)
+                        FontWeight: =FontWeight.Semibold
+                        Size: =20
+                        Text: =CountRows(Filter(TMS_Tickets,Ticket_Status.Value="Approved"))
+                        ZIndex: =1
+
+                    Label12_1 As label:
+                        Align: =Align.Center
+                        Color: =RGBA(106, 122, 127, 1)
+                        Text: ="APPROVED TICKETS "
+                        Width: =Parent.Width
+                        ZIndex: =2
+
+                Container35_2 As groupContainer.verticalAutoLayoutContainer:
+                    AlignInContainer: =AlignInContainer.Center
+                    DropShadow: =DropShadow.Regular
+                    Fill: =RGBA(214, 234, 255, 1)
+                    FillPortions: =0
+                    Height: =Parent.Height*.7
+                    LayoutAlignItems: =LayoutAlignItems.Center
+                    LayoutDirection: =LayoutDirection.Vertical
+                    LayoutJustifyContent: =LayoutJustifyContent.Center
+                    LayoutMinHeight: =100
+                    LayoutMinWidth: =250
+                    LayoutMode: =LayoutMode.Auto
+                    Width: =Parent.Width*.17
+                    ZIndex: =3
+
+                    Label11_2 As label:
+                        Align: =Align.Center
+                        Color: =RGBA(40, 134, 222, 1)
+                        FontWeight: =FontWeight.Semibold
+                        Size: =20
+                        Text: =CountRows(Filter(TMS_Tickets,Ticket_Status.Value="Rejected"))
+                        ZIndex: =1
+
+                    Label12_2 As label:
+                        Align: =Align.Center
+                        Color: =RGBA(106, 122, 127, 1)
+                        Text: ="REJECTED TICKETS"
+                        Width: =Parent.Width
+                        ZIndex: =2
+
+                Container35_3 As groupContainer.verticalAutoLayoutContainer:
+                    AlignInContainer: =AlignInContainer.Center
+                    DropShadow: =DropShadow.Regular
+                    Fill: =RGBA(214, 234, 255, 1)
+                    FillPortions: =0
+                    Height: =Parent.Height*.7
+                    LayoutAlignItems: =LayoutAlignItems.Center
+                    LayoutDirection: =LayoutDirection.Vertical
+                    LayoutJustifyContent: =LayoutJustifyContent.Center
+                    LayoutMinHeight: =100
+                    LayoutMinWidth: =250
+                    LayoutMode: =LayoutMode.Auto
+                    Width: =Parent.Width*.17
+                    ZIndex: =4
+
+                    Label11_3 As label:
+                        Align: =Align.Center
+                        Color: =RGBA(40, 134, 222, 1)
+                        FontWeight: =FontWeight.Semibold
+                        Size: =20
+                        Text: =CountRows(Filter(TMS_Tickets,Ticket_Status.Value="In Progress"))
+                        ZIndex: =1
+
+                    Label12_3 As label:
+                        Align: =Align.Center
+                        Color: =RGBA(106, 122, 127, 1)
+                        Text: ="IN PROGRESS"
+                        ZIndex: =2
+
+                Container35_4 As groupContainer.verticalAutoLayoutContainer:
+                    AlignInContainer: =AlignInContainer.Center
+                    DropShadow: =DropShadow.Regular
+                    Fill: =RGBA(214, 234, 255, 1)
+                    FillPortions: =0
+                    Height: =Parent.Height*.7
+                    LayoutAlignItems: =LayoutAlignItems.Center
+                    LayoutDirection: =LayoutDirection.Vertical
+                    LayoutJustifyContent: =LayoutJustifyContent.Center
+                    LayoutMinHeight: =100
+                    LayoutMinWidth: =250
+                    LayoutMode: =LayoutMode.Auto
+                    Width: =Parent.Width*.17
+                    ZIndex: =5
+
+                    Label11_4 As label:
+                        Align: =Align.Center
+                        Color: =RGBA(40, 134, 222, 1)
+                        FontWeight: =FontWeight.Semibold
+                        Size: =20
+                        Text: =CountRows(Filter(TMS_Tickets,Ticket_Status.Value="On Hold"))
+                        ZIndex: =1
+
+                    Label12_4 As label:
+                        Align: =Align.Center
+                        Color: =RGBA(106, 122, 127, 1)
+                        Text: ="ON HOLD"
+                        ZIndex: =2
+
         Container21_1 As groupContainer.manualLayoutContainer:
             DropShadow: =DropShadow.None
             Height: =Parent.Height
