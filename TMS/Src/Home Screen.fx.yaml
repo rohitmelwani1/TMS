@@ -523,11 +523,176 @@
                 Fill: =RGBA(255, 255, 255, 1)
                 Height: =Parent.Height*.47
                 LayoutDirection: =LayoutDirection.Vertical
+                LayoutGap: =1
                 LayoutMode: =LayoutMode.Auto
                 Width: =Parent.Width*.972
                 X: =Parent.Width/2-Self.Width/2+2
                 Y: =Container10.Height+Component1_1.Height+25
                 ZIndex: =5
+
+                Container9 As groupContainer.horizontalAutoLayoutContainer:
+                    AlignInContainer: =AlignInContainer.Center
+                    DropShadow: =DropShadow.None
+                    FillPortions: =0
+                    Height: =Parent.Height*.13
+                    LayoutAlignItems: =LayoutAlignItems.Center
+                    LayoutMinHeight: =100
+                    LayoutMinWidth: =250
+                    LayoutMode: =LayoutMode.Auto
+                    Width: =Parent.Width
+                    ZIndex: =1
+
+                    Image9 As image:
+                        Height: =Parent.Height*.9
+                        Image: =BLUE
+                        ImagePosition: =ImagePosition.Fill
+                        RadiusBottomLeft: =30
+                        RadiusBottomRight: =30
+                        RadiusTopLeft: =30
+                        RadiusTopRight: =30
+                        Width: =12
+                        ZIndex: =1
+
+                    Label9 As label:
+                        Color: =RGBA(84, 84, 84, 1)
+                        FontWeight: =FontWeight.Semibold
+                        Size: =18
+                        Text: ="Recent Tickets"
+                        Width: =Parent.Width*.7
+                        ZIndex: =2
+
+                Container9_2 As groupContainer.horizontalAutoLayoutContainer:
+                    AlignInContainer: =AlignInContainer.Center
+                    DropShadow: =DropShadow.None
+                    Fill: =RGBA(222, 238, 255, 1)
+                    FillPortions: =0
+                    Height: =Parent.Height*.13
+                    LayoutAlignItems: =LayoutAlignItems.Center
+                    LayoutJustifyContent: =LayoutJustifyContent.SpaceBetween
+                    LayoutMinHeight: =100
+                    LayoutMinWidth: =250
+                    LayoutMode: =LayoutMode.Auto
+                    PaddingRight: =5
+                    RadiusBottomLeft: =10
+                    RadiusBottomRight: =10
+                    RadiusTopLeft: =10
+                    RadiusTopRight: =10
+                    Width: =Parent.Width*.97
+                    ZIndex: =2
+
+                    Label10 As label:
+                        Align: =Align.Center
+                        FontWeight: =FontWeight.Lighter
+                        Size: =12
+                        Text: ="TICKET TYPE"
+                        ZIndex: =1
+
+                    Label10_3 As label:
+                        Align: =Align.Center
+                        FontWeight: =FontWeight.Lighter
+                        Size: =12
+                        Text: ="TICKET TITLE"
+                        ZIndex: =2
+
+                    Label10_4 As label:
+                        Align: =Align.Center
+                        FontWeight: =FontWeight.Lighter
+                        Size: =12
+                        Text: ="ASSIGNED TO"
+                        ZIndex: =3
+
+                    Label10_5 As label:
+                        Align: =Align.Center
+                        FontWeight: =FontWeight.Lighter
+                        Size: =12
+                        Text: ="CREEATED ON"
+                        ZIndex: =4
+
+                    Label10_6 As label:
+                        Align: =Align.Center
+                        FontWeight: =FontWeight.Lighter
+                        Size: =12
+                        Text: ="TICKET PRIORITY"
+                        ZIndex: =5
+
+                    Label10_7 As label:
+                        Align: =Align.Center
+                        FontWeight: =FontWeight.Lighter
+                        Size: =12
+                        Text: ="TICKET STATUS"
+                        ZIndex: =6
+
+                Gallery3 As gallery.variableTemplateHeightGallery:
+                    AlignInContainer: =AlignInContainer.Center
+                    DelayItemLoading: =true
+                    FillPortions: =0
+                    Height: =Parent.Height*.7
+                    Items: =ClearcollectrecentTickets
+                    Layout: =Layout.Vertical
+                    LayoutMinHeight: =287
+                    LayoutMinWidth: =320
+                    LoadingSpinner: =LoadingSpinner.Data
+                    TemplateSize: =Parent.Height*.14
+                    Transition: =Transition.Pop
+                    Width: =Parent.Width*.98
+                    ZIndex: =3
+
+                    Container9_3 As groupContainer.horizontalAutoLayoutContainer:
+                        DropShadow: =DropShadow.None
+                        Fill: =RGBA(245, 245, 245, 1)
+                        Height: =Parent.TemplateHeight
+                        LayoutAlignItems: =LayoutAlignItems.Center
+                        LayoutJustifyContent: =LayoutJustifyContent.SpaceBetween
+                        LayoutMode: =LayoutMode.Auto
+                        PaddingRight: =5
+                        RadiusBottomLeft: =10
+                        RadiusBottomRight: =10
+                        RadiusTopLeft: =10
+                        RadiusTopRight: =10
+                        Width: =Parent.TemplateWidth
+                        ZIndex: =1
+
+                        Label10_8 As label:
+                            Align: =Align.Center
+                            FontWeight: =FontWeight.Lighter
+                            Size: =12
+                            Text: ="TICKET TYPE"
+                            ZIndex: =1
+
+                        Label10_9 As label:
+                            Align: =Align.Center
+                            FontWeight: =FontWeight.Lighter
+                            Size: =12
+                            Text: ="TICKET TITLE"
+                            ZIndex: =2
+
+                        Label10_10 As label:
+                            Align: =Align.Center
+                            FontWeight: =FontWeight.Lighter
+                            Size: =12
+                            Text: ="ASSIGNED TO"
+                            ZIndex: =3
+
+                        Label10_11 As label:
+                            Align: =Align.Center
+                            FontWeight: =FontWeight.Lighter
+                            Size: =12
+                            Text: ="CREEATED ON"
+                            ZIndex: =4
+
+                        Label10_12 As label:
+                            Align: =Align.Center
+                            FontWeight: =FontWeight.Lighter
+                            Size: =12
+                            Text: ="TICKET PRIORITY"
+                            ZIndex: =5
+
+                        Label10_13 As label:
+                            Align: =Align.Center
+                            FontWeight: =FontWeight.Lighter
+                            Size: =12
+                            Text: ="TICKET STATUS"
+                            ZIndex: =6
 
         Container21 As groupContainer.manualLayoutContainer:
             DropShadow: =DropShadow.None

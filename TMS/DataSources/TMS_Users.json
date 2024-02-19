@@ -33,7 +33,9 @@
       "Modified": "Modified",
       "OData__ColorTag": "Color Tag",
       "Title": "Title",
+      "TMS_Name": "TMS_Name",
       "TMS_PASSWORD": "TMS_PASSWORD",
+      "TMS_PHOTO": "TMS_PHOTO",
       "TMS_ROLE": "TMS_ROLE",
       "TMS_ROLE#Id": "TMS_ROLE Id",
       "TMS_USERNAME": "TMS_USERNAME"

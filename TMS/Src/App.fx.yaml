@@ -2,6 +2,13 @@ App As appinfo:
     BackEnabled: =true
     OnStart: |+
         =ClearCollect(
+            ClearcollectrecentTickets,
+             Filter(
+                TMS_Tickets,
+                Ticket_CreatedOn <= Today() 
+            )
+        );
+        ClearCollect(
         Clearcollectnavitems,
            Table(
             {
@@ -98,7 +105,6 @@ App As appinfo:
         Set(VarPersona,Blank());
         Set(VarExpandNavBar,false);
         Set(Varnotification,false)
-        
         
     StartScreen: =
     Theme: =PowerAppsTheme
