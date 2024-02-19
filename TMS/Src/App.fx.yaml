@@ -5,7 +5,7 @@ App As appinfo:
             ClearcollectrecentTickets,
              Filter(
                 TMS_Tickets,
-                Ticket_CreatedOn <= Today() + 2
+                Ticket_CreatedOn <= Today() + 2,Ticket_Status.Value<>"Approved"
             )
         );
         
