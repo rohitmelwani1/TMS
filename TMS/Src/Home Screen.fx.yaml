@@ -755,9 +755,9 @@
                                     =Switch(
                                         ThisItem.Ticket_Status.Value,
                                         "Approved",
-                                          ColorFade(Color.Green,60%),
+                                          ColorFade(Color.Green,40%),
                                          "In Progress",
-                                        ColorFade(Color.Yellow,60%),
+                                        ColorFade(Color.Yellow,40%),
                                          "Rejected",
                                           ColorFade(Color.Red,50%)
                                     )
