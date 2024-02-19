@@ -772,6 +772,15 @@
                                     Width: =Parent.Width-Label7_1.Width
                                     ZIndex: =2
 
+            Rectangle1 As rectangle:
+                Fill: =RGBA(255, 255, 255, 1)
+                Height: =706
+                Visible: =VarLoader
+                Width: =1284
+                X: =2
+                Y: =61
+                ZIndex: =6
+
         Container21 As groupContainer.manualLayoutContainer:
             DropShadow: =DropShadow.None
             Height: =Parent.Height
@@ -782,13 +791,6 @@
                 currentscreen: ="HOME"
                 Height: =Parent.Height
                 navitems: =Clearcollectnavitems
-
-    Rectangle1 As rectangle:
-        Fill: =RGBA(255, 255, 255, 1)
-        Height: =Parent.Height
-        Visible: =VarLoader
-        Width: =Parent.Width
-        ZIndex: =2
 
     Timer1 As timer:
         AutoStart: =true
