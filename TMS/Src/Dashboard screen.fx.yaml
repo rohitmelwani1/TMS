@@ -1,65 +1,32 @@
 "'Dashboard screen' As screen":
 
-    Container9_1 As groupContainer.horizontalAutoLayoutContainer:
+    Container20_1 As groupContainer.manualLayoutContainer:
+        DropShadow: =DropShadow.None
+        Fill: =RGBA(214, 214, 214, 0.35)
         Height: =Parent.Height
-        LayoutMode: =LayoutMode.Auto
-        RadiusBottomLeft: =0
-        RadiusBottomRight: =0
-        RadiusTopLeft: =0
-        RadiusTopRight: =0
         Width: =Parent.Width
         ZIndex: =1
 
-        Container10_1 As groupContainer.verticalAutoLayoutContainer:
-            AlignInContainer: =AlignInContainer.Center
-            FillPortions: =0
+        Container22_1 As groupContainer.manualLayoutContainer:
             Height: =Parent.Height
-            LayoutDirection: =LayoutDirection.Vertical
-            LayoutMinHeight: =100
-            LayoutMinWidth: =250
-            LayoutMode: =LayoutMode.Auto
-            RadiusBottomLeft: =0
-            RadiusBottomRight: =0
-            RadiusTopLeft: =0
-            RadiusTopRight: =0
-            Width: =If(VarExpandNavBar,240,100)
+            Width: =Parent.Width-Container21_1.Width+20
+            X: =Container21_1.Width-20
             ZIndex: =1
+
+            Component1_2 As Component1:
+                Fill: =RGBA(255, 255, 255, 1)
+                Height: =Parent.Height*.08
+                screenname: ="DASHBOARD"
+                Width: =Parent.Width
+
+        Container21_1 As groupContainer.manualLayoutContainer:
+            DropShadow: =DropShadow.None
+            Height: =Parent.Height
+            Width: =If(VarExpandNavBar,240,100)
+            ZIndex: =2
 
             CmpNavBar_2 As CmpNavBar:
                 currentscreen: ="DASHBOARD"
                 Height: =Parent.Height
-                LayoutMinWidth: =640
-                navitems: |-
-                    =/*Table(
-                        {
-                            Title: "HOME",
-                            TargetScreen: App.ActiveScreen,
-                            image:'menuBar-cicle'
-                    
-                        },
-                        {
-                            Title: "DASHBOARD",
-                            TargetScreen: App.ActiveScreen,
-                            image: 'airplay-white'
-                            
-                        }
-                    )*/
-                    Clearcollectnavitems
-
-        Container11_1 As groupContainer.verticalAutoLayoutContainer:
-            AlignInContainer: =AlignInContainer.Center
-            DropShadow: =DropShadow.None
-            Fill: =RGBA(255, 255, 255, 1)
-            FillPortions: =0
-            Height: =Parent.Height
-            LayoutDirection: =LayoutDirection.Vertical
-            LayoutMinHeight: =100
-            LayoutMinWidth: =250
-            LayoutMode: =LayoutMode.Auto
-            RadiusBottomLeft: =0
-            RadiusBottomRight: =0
-            RadiusTopLeft: =0
-            RadiusTopRight: =0
-            Width: =Parent.Width-Container10_1.Width
-            ZIndex: =2
+                navitems: =Clearcollectnavitems
 
