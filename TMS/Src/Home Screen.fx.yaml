@@ -142,7 +142,9 @@
                                 FontWeight: =FontWeight.Bold
                                 PaddingBottom: =0
                                 Size: =22
-                                Text: ="10"
+                                Text: |-
+                                    =//"10"
+                                    CountRows(TMS_Tickets)
                                 ZIndex: =1
 
                             Label5 As label:
@@ -228,7 +230,9 @@
                                 FontWeight: =FontWeight.Bold
                                 PaddingBottom: =0
                                 Size: =22
-                                Text: ="5"
+                                Text: |-
+                                    =//"5"
+                                    CountRows(Filter(TMS_Tickets,Ticket_Status.Value="Approved"))
                                 ZIndex: =1
 
                             Label5_1 As label:
@@ -315,7 +319,9 @@
                                 FontWeight: =FontWeight.Bold
                                 PaddingBottom: =0
                                 Size: =22
-                                Text: ="5"
+                                Text: |-
+                                    =//"5"
+                                    CountRows(Filter(TMS_Tickets,Ticket_Status.Value="Rejected"))
                                 ZIndex: =1
 
                             Label5_2 As label:
