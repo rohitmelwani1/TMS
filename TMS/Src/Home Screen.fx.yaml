@@ -366,7 +366,7 @@
                     Height: =Parent.Height
                     Image: =BLUE
                     ImagePosition: =ImagePosition.Fill
-                    Width: =951.64
+                    Width: =Parent.Width
                     ZIndex: =1
 
                 Container11_2 As groupContainer.verticalAutoLayoutContainer:
@@ -703,7 +703,7 @@
 
                     Container29 As groupContainer.verticalAutoLayoutContainer:
                         Fill: =RGBA(240, 247, 252, 1)
-                        Height: =57.599999999999994
+                        Height: =Parent.TemplateHeight
                         LayoutAlignItems: =LayoutAlignItems.Center
                         LayoutJustifyContent: =LayoutJustifyContent.Center
                         LayoutMode: =LayoutMode.Auto
@@ -711,7 +711,7 @@
                         PaddingLeft: =5
                         PaddingRight: =5
                         PaddingTop: =5
-                        Width: =299.42
+                        Width: =Parent.TemplateWidth
                         ZIndex: =1
 
                         Image8 As image:
