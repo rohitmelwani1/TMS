@@ -100,7 +100,7 @@
       "zeroalltabindexes": false
     },
     "Author": "",
-    "BindingErrorCount": 0,
+    "BindingErrorCount": 4,
     "ContainsThirdPartyPcfControls": false,
     "DefaultConnectedDataSourceMaxGetRowsCount": 500,
     "DocumentAppType": "DesktopOrTablet",
@@ -136,6 +136,7 @@
   "ScreenOrder": [
     "login screen",
     "Home screen",
-    "Dashboard screen"
+    "Dashboard screen",
+    "Screen1"
   ]
 }
