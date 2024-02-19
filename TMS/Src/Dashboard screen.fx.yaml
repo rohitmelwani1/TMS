@@ -155,3 +155,28 @@
                 Height: =Parent.Height
                 navitems: =Clearcollectnavitems
 
+    Rectangle1_1 As rectangle:
+        Fill: =RGBA(255, 255, 255, 1)
+        Height: =Parent.Height
+        Visible: =VarLoader
+        Width: =Parent.Width
+        ZIndex: =2
+
+    Timer1_1 As timer:
+        AutoStart: =true
+        Duration: =3000
+        Fill: =RGBA(0, 0, 0, 0)
+        OnTimerEnd: =Set(VarLoader,false)
+        OnTimerStart: =Set(VarLoader,true)
+        Visible: =VarLoader
+        X: =40
+        Y: =40
+        ZIndex: =3
+
+    Image11_1 As image:
+        Image: ='Spinner-square'
+        Visible: =VarLoader
+        X: =633
+        Y: =334
+        ZIndex: =4
+

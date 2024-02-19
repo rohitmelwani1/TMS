@@ -1,6 +1,6 @@
 App As appinfo:
     BackEnabled: =true
-    OnStart: |
+    OnStart: |+
         =ClearCollect(
             ClearcollectrecentTickets,
              Filter(
@@ -98,6 +98,7 @@ App As appinfo:
         ")}
         )
         );
+        Set(VarLoader,false);
         Set(varLoginbtn,false);
         Set(Varlogin,Blank());
         Set(Varpswd,Blank());
@@ -113,7 +114,8 @@ App As appinfo:
                 TMS_Tickets,
                 Ticket_CreatedOn = Today(),Ticket_Status.Value="In Progress"
             )
-        )
+        );
+        
     StartScreen: =
     Theme: =PowerAppsTheme
 
