@@ -693,7 +693,7 @@
                 Gallery2 As gallery.variableTemplateHeightGallery:
                     DelayItemLoading: =true
                     Height: =Parent.Height-Container28.Height
-                    Items: =ClearcollectrecentTickets
+                    Items: =ClearcollectTodayTickets
                     Layout: =Layout.Vertical
                     LoadingSpinner: =LoadingSpinner.Data
                     TemplateSize: =Parent.Height*.15

@@ -161,7 +161,7 @@
   },
   "FunctionParamsInvariantScripts": {},
   "FunctionParamsInvariantScriptsOnInstances": {},
-  "HeaderLastSavedDateTimeUTC": "02/19/2024 10:01:55",
+  "HeaderLastSavedDateTimeUTC": "02/19/2024 10:06:45",
   "IsLegacyComponentAllowGlobalScopeCase": false,
   "LocalConnectionIDReferences": {
     "176ea08a-3c03-4dfc-b673-b48610b13ee2": "\"/providers/microsoft.powerapps/apis/shared_sharepointonline/connections/ffbc5922b2e140c387b18cbafc6d5552\""
@@ -222,10 +222,11 @@
     "7777174ab75b44198e9e21a6fbc4f040": 1
   },
   "OrderDataSource": {
-    "Clearcollectnavitems": 4,
+    "Clearcollectnavitems": 6,
     "ClearcollectrecentTickets": 5,
+    "ClearcollectTodayTickets": 3,
     "CustomGallerySample": 2,
-    "homescreenop": 3,
+    "homescreenop": 4,
     "TMS_Tickets": 1,
     "TMS_Users": 0
   },

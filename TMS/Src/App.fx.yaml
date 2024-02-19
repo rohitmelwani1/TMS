@@ -1,6 +1,6 @@
 App As appinfo:
     BackEnabled: =true
-    OnStart: |+
+    OnStart: |
         =ClearCollect(
             ClearcollectrecentTickets,
              Filter(
@@ -8,6 +8,8 @@ App As appinfo:
                 Ticket_CreatedOn <= Today() + 2
             )
         );
+        
+        
         ClearCollect(
         Clearcollectnavitems,
            Table(
@@ -104,8 +106,14 @@ App As appinfo:
         Set(varLoginpopup,false);
         Set(VarPersona,Blank());
         Set(VarExpandNavBar,false);
-        Set(Varnotification,false)
-        
+        Set(Varnotification,false);
+        ClearCollect(
+            ClearcollectTodayTickets,
+             Filter(
+                TMS_Tickets,
+                Ticket_CreatedOn = Today(),Ticket_Status.Value="In Progress"
+            )
+        )
     StartScreen: =
     Theme: =PowerAppsTheme
 
