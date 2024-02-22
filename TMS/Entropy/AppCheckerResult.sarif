@@ -24,7 +24,7 @@
                 },
                 "region": {
                   "charLength": 1,
-                  "charOffset": 379,
+                  "charOffset": 632,
                   "snippet": {
                     "text": "+"
                   }
@@ -64,7 +64,7 @@
                 },
                 "region": {
                   "charLength": 2,
-                  "charOffset": 368,
+                  "charOffset": 621,
                   "snippet": {
                     "text": "<="
                   }
@@ -143,10 +143,10 @@
                   "relativeAddress": 0
                 },
                 "region": {
-                  "charLength": 61,
+                  "charLength": 55,
                   "charOffset": 0,
                   "snippet": {
-                    "text": "CountRows(Filter(TMS_Tickets,Ticket_Status.Value=\"Approved\"))"
+                    "text": "CountRows(Filter(TMS_Tickets,Ticket_Status=\"Approved\"))"
                   }
                 }
               },
@@ -183,10 +183,10 @@
                   "relativeAddress": 0
                 },
                 "region": {
-                  "charLength": 61,
+                  "charLength": 55,
                   "charOffset": 0,
                   "snippet": {
-                    "text": "CountRows(Filter(TMS_Tickets,Ticket_Status.Value=\"Rejected\"))"
+                    "text": "CountRows(Filter(TMS_Tickets,Ticket_Status=\"Rejected\"))"
                   }
                 }
               },
@@ -223,10 +223,10 @@
                   "relativeAddress": 0
                 },
                 "region": {
-                  "charLength": 64,
+                  "charLength": 58,
                   "charOffset": 0,
                   "snippet": {
-                    "text": "CountRows(Filter(TMS_Tickets,Ticket_Status.Value=\"In Progress\"))"
+                    "text": "CountRows(Filter(TMS_Tickets,Ticket_Status=\"In Progress\"))"
                   }
                 }
               },
@@ -263,10 +263,10 @@
                   "relativeAddress": 0
                 },
                 "region": {
-                  "charLength": 60,
+                  "charLength": 54,
                   "charOffset": 0,
                   "snippet": {
-                    "text": "CountRows(Filter(TMS_Tickets,Ticket_Status.Value=\"On Hold\"))"
+                    "text": "CountRows(Filter(TMS_Tickets,Ticket_Status=\"On Hold\"))"
                   }
                 }
               },
@@ -343,10 +343,10 @@
                   "relativeAddress": 0
                 },
                 "region": {
-                  "charLength": 61,
+                  "charLength": 55,
                   "charOffset": 6,
                   "snippet": {
-                    "text": "CountRows(Filter(TMS_Tickets,Ticket_Status.Value=\"Approved\"))"
+                    "text": "CountRows(Filter(TMS_Tickets,Ticket_Status=\"Approved\"))"
                   }
                 }
               },
@@ -383,10 +383,10 @@
                   "relativeAddress": 0
                 },
                 "region": {
-                  "charLength": 61,
+                  "charLength": 55,
                   "charOffset": 6,
                   "snippet": {
-                    "text": "CountRows(Filter(TMS_Tickets,Ticket_Status.Value=\"Rejected\"))"
+                    "text": "CountRows(Filter(TMS_Tickets,Ticket_Status=\"Rejected\"))"
                   }
                 }
               },
@@ -737,6 +737,36 @@
           },
           "ruleId": "acc-ReadableScreenNameNeeded",
           "ruleIndex": 5
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'Dashboard screen'.Container20_1.Container22_1.Canvas1.DataCard2.Container39.Container40.ColumnChart1.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'Dashboard screen'.Container20_1.Container22_1.Canvas1.DataCard2.Container39.Container40.ColumnChart1.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "Dashboard screen",
+                "type": "'Dashboard screen'.Container20_1.Container22_1.Canvas1.DataCard2.Container39.Container40.ColumnChart1"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 2
         },
         {
           "locations": [

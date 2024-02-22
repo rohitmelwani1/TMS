@@ -236,7 +236,7 @@
                                 Color: =RGBA(40, 134, 222, 1)
                                 FontWeight: =FontWeight.Semibold
                                 Size: =20
-                                Text: =CountRows(Filter(TMS_Tickets,Ticket_Status.Value="Approved"))
+                                Text: =CountRows(Filter(TMS_Tickets,Ticket_Status="Approved"))
                                 ZIndex: =1
 
                             Label12_1 As label:
@@ -270,7 +270,7 @@
                                 Color: =RGBA(40, 134, 222, 1)
                                 FontWeight: =FontWeight.Semibold
                                 Size: =20
-                                Text: =CountRows(Filter(TMS_Tickets,Ticket_Status.Value="Rejected"))
+                                Text: =CountRows(Filter(TMS_Tickets,Ticket_Status="Rejected"))
                                 ZIndex: =1
 
                             Label12_2 As label:
@@ -304,7 +304,7 @@
                                 Color: =RGBA(40, 134, 222, 1)
                                 FontWeight: =FontWeight.Semibold
                                 Size: =20
-                                Text: =CountRows(Filter(TMS_Tickets,Ticket_Status.Value="In Progress"))
+                                Text: =CountRows(Filter(TMS_Tickets,Ticket_Status="In Progress"))
                                 ZIndex: =1
 
                             Label12_3 As label:
@@ -337,7 +337,7 @@
                                 Color: =RGBA(40, 134, 222, 1)
                                 FontWeight: =FontWeight.Semibold
                                 Size: =20
-                                Text: =CountRows(Filter(TMS_Tickets,Ticket_Status.Value="On Hold"))
+                                Text: =CountRows(Filter(TMS_Tickets,Ticket_Status="On Hold"))
                                 ZIndex: =1
 
                             Label12_4 As label:
@@ -479,11 +479,66 @@
                     ZIndex: =2
 
                     Container39 As groupContainer.verticalAutoLayoutContainer:
+                        DropShadow: =DropShadow.None
                         Height: =Parent.Height
+                        LayoutAlignItems: =LayoutAlignItems.Center
                         LayoutDirection: =LayoutDirection.Vertical
+                        LayoutJustifyContent: =LayoutJustifyContent.Center
                         LayoutMode: =LayoutMode.Auto
                         Width: =Parent.Width
                         ZIndex: =1
+
+                        Container40 As groupContainer.verticalAutoLayoutContainer:
+                            AlignInContainer: =AlignInContainer.SetByContainer
+                            DropShadow: =DropShadow.None
+                            Fill: =RGBA(255, 255, 255, 1)
+                            FillPortions: =0
+                            Height: =Parent.Height*.9
+                            LayoutDirection: =LayoutDirection.Vertical
+                            LayoutMinHeight: =100
+                            LayoutMinWidth: =250
+                            LayoutMode: =LayoutMode.Auto
+                            RadiusBottomLeft: =10
+                            RadiusBottomRight: =10
+                            RadiusTopLeft: =10
+                            RadiusTopRight: =10
+                            Width: =Parent.Width*.93
+                            ZIndex: =1
+
+                            CompositeColumnChart1 As group:
+                                Height: =5
+                                LayoutMinHeight: =5
+                                LayoutMinWidth: =5
+                                Width: =5
+                                X: =40
+                                Y: =40
+                                ZIndex: =1
+
+                                Title4 As label:
+                                    Align: =Align.Center
+                                    Height: =25
+                                    Text: ="Chart Title"
+                                    Width: =400
+                                    X: =40
+                                    Y: =40
+                                    ZIndex: =2
+
+                                ColumnChart1 As barChart:
+                                    Height: =Parent.Height*.9
+                                    Items: =StatusCounts
+                                    Width: =Parent.Width
+                                    X: =40
+                                    Y: =70
+                                    ZIndex: =3
+
+                                Legend4 As legend:
+                                    Height: =80
+                                    ItemColorSet: =ColumnChart1.ItemColorSet
+                                    Items: =ColumnChart1.SeriesLabels
+                                    Width: =320
+                                    X: =80
+                                    Y: =480
+                                    ZIndex: =4
 
             Rectangle1_1 As rectangle:
                 Fill: =RGBA(255, 255, 255, 1)

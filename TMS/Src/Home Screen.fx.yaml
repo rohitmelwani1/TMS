@@ -232,7 +232,7 @@
                                 Size: =22
                                 Text: |-
                                     =//"5"
-                                    CountRows(Filter(TMS_Tickets,Ticket_Status.Value="Approved"))
+                                    CountRows(Filter(TMS_Tickets,Ticket_Status="Approved"))
                                 ZIndex: =1
 
                             Label5_1 As label:
@@ -321,7 +321,7 @@
                                 Size: =22
                                 Text: |-
                                     =//"5"
-                                    CountRows(Filter(TMS_Tickets,Ticket_Status.Value="Rejected"))
+                                    CountRows(Filter(TMS_Tickets,Ticket_Status="Rejected"))
                                 ZIndex: =1
 
                             Label5_2 As label:
@@ -751,7 +751,7 @@
                                 DisplayMode: =DisplayMode.View
                                 Fill: |-
                                     =Switch(
-                                        ThisItem.Ticket_Status.Value,
+                                        ThisItem.Ticket_Status,
                                         "Approved",
                                           ColorFade(Color.Green,40%),
                                          "In Progress",
@@ -766,7 +766,7 @@
                                 PressedColor: =Self.Color
                                 PressedFill: =Self.Fill
                                 Size: =12
-                                Text: =ThisItem.Ticket_Status.Value
+                                Text: =ThisItem.Ticket_Status
                                 Width: =Parent.Width*.8
                                 ZIndex: =1
 

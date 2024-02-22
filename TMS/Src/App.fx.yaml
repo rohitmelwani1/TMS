@@ -16,10 +16,25 @@ App As appinfo:
             )
         );
         ClearCollect(
+            StatusCounts,
+            AddColumns(
+                GroupBy(
+                    TMS_Tickets,
+                    "Ticket_Status",
+                    "StatusGroup"
+                ),
+                "Status",
+                StatusGroup,
+                "Count",
+                CountRows(StatusGroup)
+            )
+        );
+        
+        ClearCollect(
             ClearcollectrecentTickets,
              Filter(
                 TMS_Tickets,
-                Ticket_CreatedOn <= Today() + 2,Ticket_Status.Value<>"Approved"
+                Ticket_CreatedOn <= Today() + 2,Ticket_Status<>"Approved"
             )
         );
         
@@ -126,7 +141,7 @@ App As appinfo:
             ClearcollectTodayTickets,
              Filter(
                 TMS_Tickets,
-                Ticket_CreatedOn = Today(),Ticket_Status.Value="In Progress"
+                Ticket_CreatedOn = Today(),Ticket_Status="In Progress"
             )
         );
         
