@@ -2,6 +2,20 @@ App As appinfo:
     BackEnabled: =true
     OnStart: |+
         =ClearCollect(
+            CategoryCounts,
+            AddColumns(
+                GroupBy(
+                    TMS_Tickets,
+                    "Ticket_Catagory",
+                    "CategoryGroup"
+                ),
+                "Category",
+                CategoryGroup,
+                "Count",
+                CountRows(CategoryGroup)
+            )
+        );
+        ClearCollect(
             ClearcollectrecentTickets,
              Filter(
                 TMS_Tickets,

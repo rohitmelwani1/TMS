@@ -24,7 +24,7 @@
                 },
                 "region": {
                   "charLength": 1,
-                  "charOffset": 115,
+                  "charOffset": 379,
                   "snippet": {
                     "text": "+"
                   }
@@ -64,7 +64,7 @@
                 },
                 "region": {
                   "charLength": 2,
-                  "charOffset": 104,
+                  "charOffset": 368,
                   "snippet": {
                     "text": "<="
                   }
@@ -88,6 +88,206 @@
           },
           "ruleId": "app-SuggestRemoteExecutionHint",
           "ruleIndex": 1
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'Dashboard screen'.Container20_1.Container22_1.Canvas1.DataCard1.Container32.Container35.Label11.Text"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'Dashboard screen'.Container20_1.Container22_1.Canvas1.DataCard1.Container32.Container35.Label11.Text",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 22,
+                  "charOffset": 0,
+                  "snippet": {
+                    "text": "CountRows(TMS_Tickets)"
+                  }
+                }
+              },
+              "properties": {
+                "member": "Text",
+                "module": "Dashboard screen",
+                "type": "'Dashboard screen'.Container20_1.Container22_1.Canvas1.DataCard1.Container32.Container35.Label11"
+              }
+            }
+          ],
+          "message": {
+            "arguments": [
+              "CountRows"
+            ],
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "app-SuggestRemoteExecutionHint-OpNotSupportedByService",
+          "ruleIndex": 0
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'Dashboard screen'.Container20_1.Container22_1.Canvas1.DataCard1.Container32.Container35_1.Label11_1.Text"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'Dashboard screen'.Container20_1.Container22_1.Canvas1.DataCard1.Container32.Container35_1.Label11_1.Text",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 61,
+                  "charOffset": 0,
+                  "snippet": {
+                    "text": "CountRows(Filter(TMS_Tickets,Ticket_Status.Value=\"Approved\"))"
+                  }
+                }
+              },
+              "properties": {
+                "member": "Text",
+                "module": "Dashboard screen",
+                "type": "'Dashboard screen'.Container20_1.Container22_1.Canvas1.DataCard1.Container32.Container35_1.Label11_1"
+              }
+            }
+          ],
+          "message": {
+            "arguments": [
+              "CountRows"
+            ],
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "app-SuggestRemoteExecutionHint-OpNotSupportedByService",
+          "ruleIndex": 0
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'Dashboard screen'.Container20_1.Container22_1.Canvas1.DataCard1.Container32.Container35_2.Label11_2.Text"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'Dashboard screen'.Container20_1.Container22_1.Canvas1.DataCard1.Container32.Container35_2.Label11_2.Text",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 61,
+                  "charOffset": 0,
+                  "snippet": {
+                    "text": "CountRows(Filter(TMS_Tickets,Ticket_Status.Value=\"Rejected\"))"
+                  }
+                }
+              },
+              "properties": {
+                "member": "Text",
+                "module": "Dashboard screen",
+                "type": "'Dashboard screen'.Container20_1.Container22_1.Canvas1.DataCard1.Container32.Container35_2.Label11_2"
+              }
+            }
+          ],
+          "message": {
+            "arguments": [
+              "CountRows"
+            ],
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "app-SuggestRemoteExecutionHint-OpNotSupportedByService",
+          "ruleIndex": 0
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'Dashboard screen'.Container20_1.Container22_1.Canvas1.DataCard1.Container32.Container35_3.Label11_3.Text"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'Dashboard screen'.Container20_1.Container22_1.Canvas1.DataCard1.Container32.Container35_3.Label11_3.Text",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 64,
+                  "charOffset": 0,
+                  "snippet": {
+                    "text": "CountRows(Filter(TMS_Tickets,Ticket_Status.Value=\"In Progress\"))"
+                  }
+                }
+              },
+              "properties": {
+                "member": "Text",
+                "module": "Dashboard screen",
+                "type": "'Dashboard screen'.Container20_1.Container22_1.Canvas1.DataCard1.Container32.Container35_3.Label11_3"
+              }
+            }
+          ],
+          "message": {
+            "arguments": [
+              "CountRows"
+            ],
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "app-SuggestRemoteExecutionHint-OpNotSupportedByService",
+          "ruleIndex": 0
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'Dashboard screen'.Container20_1.Container22_1.Canvas1.DataCard1.Container32.Container35_4.Label11_4.Text"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'Dashboard screen'.Container20_1.Container22_1.Canvas1.DataCard1.Container32.Container35_4.Label11_4.Text",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 60,
+                  "charOffset": 0,
+                  "snippet": {
+                    "text": "CountRows(Filter(TMS_Tickets,Ticket_Status.Value=\"On Hold\"))"
+                  }
+                }
+              },
+              "properties": {
+                "member": "Text",
+                "module": "Dashboard screen",
+                "type": "'Dashboard screen'.Container20_1.Container22_1.Canvas1.DataCard1.Container32.Container35_4.Label11_4"
+              }
+            }
+          ],
+          "message": {
+            "arguments": [
+              "CountRows"
+            ],
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "app-SuggestRemoteExecutionHint-OpNotSupportedByService",
+          "ruleIndex": 0
         },
         {
           "locations": [
@@ -214,266 +414,6 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "'Dashboard screen'.Container20_1.Container22_1.Canvas1.DataCard1.Container32.Container35_4.Label11_4.Text"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "'Dashboard screen'.Container20_1.Container22_1.Canvas1.DataCard1.Container32.Container35_4.Label11_4.Text",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 60,
-                  "charOffset": 0,
-                  "snippet": {
-                    "text": "CountRows(Filter(TMS_Tickets,Ticket_Status.Value=\"On Hold\"))"
-                  }
-                }
-              },
-              "properties": {
-                "member": "Text",
-                "module": "Dashboard screen",
-                "type": "'Dashboard screen'.Container20_1.Container22_1.Canvas1.DataCard1.Container32.Container35_4.Label11_4"
-              }
-            }
-          ],
-          "message": {
-            "arguments": [
-              "CountRows"
-            ],
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "app-SuggestRemoteExecutionHint-OpNotSupportedByService",
-          "ruleIndex": 0
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "'Dashboard screen'.Container20_1.Container22_1.Canvas1.DataCard1.Container32.Container35_3.Label11_3.Text"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "'Dashboard screen'.Container20_1.Container22_1.Canvas1.DataCard1.Container32.Container35_3.Label11_3.Text",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 64,
-                  "charOffset": 0,
-                  "snippet": {
-                    "text": "CountRows(Filter(TMS_Tickets,Ticket_Status.Value=\"In Progress\"))"
-                  }
-                }
-              },
-              "properties": {
-                "member": "Text",
-                "module": "Dashboard screen",
-                "type": "'Dashboard screen'.Container20_1.Container22_1.Canvas1.DataCard1.Container32.Container35_3.Label11_3"
-              }
-            }
-          ],
-          "message": {
-            "arguments": [
-              "CountRows"
-            ],
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "app-SuggestRemoteExecutionHint-OpNotSupportedByService",
-          "ruleIndex": 0
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "'Dashboard screen'.Container20_1.Container22_1.Canvas1.DataCard1.Container32.Container35_2.Label11_2.Text"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "'Dashboard screen'.Container20_1.Container22_1.Canvas1.DataCard1.Container32.Container35_2.Label11_2.Text",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 61,
-                  "charOffset": 0,
-                  "snippet": {
-                    "text": "CountRows(Filter(TMS_Tickets,Ticket_Status.Value=\"Rejected\"))"
-                  }
-                }
-              },
-              "properties": {
-                "member": "Text",
-                "module": "Dashboard screen",
-                "type": "'Dashboard screen'.Container20_1.Container22_1.Canvas1.DataCard1.Container32.Container35_2.Label11_2"
-              }
-            }
-          ],
-          "message": {
-            "arguments": [
-              "CountRows"
-            ],
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "app-SuggestRemoteExecutionHint-OpNotSupportedByService",
-          "ruleIndex": 0
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "'Dashboard screen'.Container20_1.Container22_1.Canvas1.DataCard1.Container32.Container35_1.Label11_1.Text"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "'Dashboard screen'.Container20_1.Container22_1.Canvas1.DataCard1.Container32.Container35_1.Label11_1.Text",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 61,
-                  "charOffset": 0,
-                  "snippet": {
-                    "text": "CountRows(Filter(TMS_Tickets,Ticket_Status.Value=\"Approved\"))"
-                  }
-                }
-              },
-              "properties": {
-                "member": "Text",
-                "module": "Dashboard screen",
-                "type": "'Dashboard screen'.Container20_1.Container22_1.Canvas1.DataCard1.Container32.Container35_1.Label11_1"
-              }
-            }
-          ],
-          "message": {
-            "arguments": [
-              "CountRows"
-            ],
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "app-SuggestRemoteExecutionHint-OpNotSupportedByService",
-          "ruleIndex": 0
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "'Dashboard screen'.Container20_1.Container22_1.Canvas1.DataCard1.Container32.Container35.Label11.Text"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "'Dashboard screen'.Container20_1.Container22_1.Canvas1.DataCard1.Container32.Container35.Label11.Text",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 22,
-                  "charOffset": 0,
-                  "snippet": {
-                    "text": "CountRows(TMS_Tickets)"
-                  }
-                }
-              },
-              "properties": {
-                "member": "Text",
-                "module": "Dashboard screen",
-                "type": "'Dashboard screen'.Container20_1.Container22_1.Canvas1.DataCard1.Container32.Container35.Label11"
-              }
-            }
-          ],
-          "message": {
-            "arguments": [
-              "CountRows"
-            ],
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "app-SuggestRemoteExecutionHint-OpNotSupportedByService",
-          "ruleIndex": 0
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "Component1.Container16.Container17.Container18.Image1.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "Component1.Container16.Container17.Container18.Image1.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "Component1",
-                "type": "Component1.Container16.Container17.Container18.Image1"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 2
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "Component1.Container16.Container17.Container18.Image1.TabIndex"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "Component1.Container16.Container17.Container18.Image1.TabIndex",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "TabIndex",
-                "module": "Component1",
-                "type": "Component1.Container16.Container17.Container18.Image1"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
-          "ruleIndex": 3
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
                   "fullyQualifiedName": "CmpNavBar.Container3.Container8.Gallery1.AccessibleLabel"
                 }
               ],
@@ -517,66 +457,6 @@
                 "member": "TabIndex",
                 "module": "CmpNavBar",
                 "type": "CmpNavBar.Container3.Container8.Gallery1"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
-          "ruleIndex": 3
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "CmpNavBar.Container3.Container8.Gallery1.Container12.Label1.FocusedBorderThickness"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "CmpNavBar.Container3.Container8.Gallery1.Container12.Label1.FocusedBorderThickness",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "FocusedBorderThickness",
-                "module": "CmpNavBar",
-                "type": "CmpNavBar.Container3.Container8.Gallery1.Container12.Label1"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-FocusBorderShouldBeVisible",
-          "ruleIndex": 4
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "CmpNavBar.Container3.Container8.Gallery1.Container12.Label1.TabIndex"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "CmpNavBar.Container3.Container8.Gallery1.Container12.Label1.TabIndex",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "TabIndex",
-                "module": "CmpNavBar",
-                "type": "CmpNavBar.Container3.Container8.Gallery1.Container12.Label1"
               }
             }
           ],
@@ -654,6 +534,66 @@
             {
               "logicalLocations": [
                 {
+                  "fullyQualifiedName": "CmpNavBar.Container3.Container8.Gallery1.Container12.Label1.FocusedBorderThickness"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "CmpNavBar.Container3.Container8.Gallery1.Container12.Label1.FocusedBorderThickness",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "FocusedBorderThickness",
+                "module": "CmpNavBar",
+                "type": "CmpNavBar.Container3.Container8.Gallery1.Container12.Label1"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-FocusBorderShouldBeVisible",
+          "ruleIndex": 4
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "CmpNavBar.Container3.Container8.Gallery1.Container12.Label1.TabIndex"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "CmpNavBar.Container3.Container8.Gallery1.Container12.Label1.TabIndex",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "TabIndex",
+                "module": "CmpNavBar",
+                "type": "CmpNavBar.Container3.Container8.Gallery1.Container12.Label1"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
+          "ruleIndex": 3
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
                   "fullyQualifiedName": "CmpNavBar.Container7.Image3.AccessibleLabel"
                 }
               ],
@@ -708,6 +648,95 @@
           },
           "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
           "ruleIndex": 3
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Component1.Container16.Container17.Container18.Image1.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "Component1.Container16.Container17.Container18.Image1.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "Component1",
+                "type": "Component1.Container16.Container17.Container18.Image1"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 2
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Component1.Container16.Container17.Container18.Image1.TabIndex"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "Component1.Container16.Container17.Container18.Image1.TabIndex",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "TabIndex",
+                "module": "Component1",
+                "type": "Component1.Container16.Container17.Container18.Image1"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
+          "ruleIndex": 3
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Screen1"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "Screen1",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "module": "Screen1",
+                "type": "Screen1"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Low"
+          },
+          "ruleId": "acc-ReadableScreenNameNeeded",
+          "ruleIndex": 5
         },
         {
           "locations": [
@@ -857,7 +886,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-AutostartShouldBeOff",
-          "ruleIndex": 5
+          "ruleIndex": 6
         },
         {
           "locations": [
@@ -1487,66 +1516,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-AutostartShouldBeOff",
-          "ruleIndex": 5
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "Screen1"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "Screen1",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "module": "Screen1",
-                "type": "Screen1"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Low"
-          },
-          "ruleId": "acc-ReadableScreenNameNeeded",
           "ruleIndex": 6
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "'Dashboard screen'.Container20_1.Container22_1.Canvas1.DataCard2.ColumnChart1.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "'Dashboard screen'.Container20_1.Container22_1.Canvas1.DataCard2.ColumnChart1.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "Dashboard screen",
-                "type": "'Dashboard screen'.Container20_1.Container22_1.Canvas1.DataCard2.ColumnChart1"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 2
         },
         {
           "locations": [
@@ -1824,23 +1794,6 @@
               }
             },
             {
-              "id": "acc-AutostartShouldBeOff",
-              "messageStrings": {
-                "issue": {
-                  "text": "Turn off autostart"
-                }
-              },
-              "properties": {
-                "componentType": "app",
-                "howToFix": [
-                  "Set autostart for video and audio to False."
-                ],
-                "level": "Medium",
-                "primaryCategory": "accessibility",
-                "whyFix": "Autostart of video and audio files can be distracting. Let users choose whether to play or not."
-              }
-            },
-            {
               "id": "acc-ReadableScreenNameNeeded",
               "messageStrings": {
                 "issue": {
@@ -1855,6 +1808,23 @@
                 "level": "Low",
                 "primaryCategory": "accessibility",
                 "whyFix": "People who are blind, have low vision, or a reading disability rely on screen titles to navigate using the screen reader. "
+              }
+            },
+            {
+              "id": "acc-AutostartShouldBeOff",
+              "messageStrings": {
+                "issue": {
+                  "text": "Turn off autostart"
+                }
+              },
+              "properties": {
+                "componentType": "app",
+                "howToFix": [
+                  "Set autostart for video and audio to False."
+                ],
+                "level": "Medium",
+                "primaryCategory": "accessibility",
+                "whyFix": "Autostart of video and audio files can be distracting. Let users choose whether to play or not."
               }
             },
             {

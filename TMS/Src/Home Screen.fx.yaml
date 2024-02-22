@@ -676,7 +676,7 @@
                                 Height: =Parent.Height*.8
                                 Image: |-
                                     =Switch(
-                                        ThisItem.Ticket_Catagory.Value,
+                                        ThisItem.Ticket_Catagory,
                                         "IT",
                                         IT,
                                         "HR",
@@ -696,7 +696,7 @@
                                 Size: =12
                                 Text: |-
                                     =//"TICKET TYPE"
-                                    ThisItem.Ticket_Catagory.Value
+                                    ThisItem.Ticket_Catagory
                                 Width: =Parent.Width-Image10.Width-10
                                 ZIndex: =2
 
@@ -891,7 +891,7 @@
                                     Height: =Parent.Height
                                     Size: =8
                                     Text: |-
-                                        ="Sector : " &ThisItem.Ticket_Catagory.Value
+                                        ="Sector : " &ThisItem.Ticket_Catagory
                                     Width: =Parent.Width-Label7_1.Width
                                     ZIndex: =2
 
