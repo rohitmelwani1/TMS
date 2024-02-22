@@ -2,6 +2,20 @@ App As appinfo:
     BackEnabled: =true
     OnStart: |+
         =ClearCollect(
+            PriorityCounts,
+            AddColumns(
+                GroupBy(
+                    TMS_Tickets,
+                    "Ticket_Priority",
+                    "PriorityGroup"
+                ),
+                "Priority",
+                PriorityGroup,
+                "Count",
+                CountRows(PriorityGroup)
+            )
+        );
+        ClearCollect(
             CategoryCounts,
             AddColumns(
                 GroupBy(

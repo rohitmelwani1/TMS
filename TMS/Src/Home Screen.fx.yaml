@@ -725,7 +725,7 @@
                             Align: =Align.Center
                             FontWeight: =FontWeight.Lighter
                             Size: =12
-                            Text: =ThisItem.Ticket_Priority.Value
+                            Text: =ThisItem.Ticket_Priority
                             ZIndex: =5
 
                         Container34_1 As groupContainer.horizontalAutoLayoutContainer:

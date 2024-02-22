@@ -369,6 +369,7 @@
                             LayoutMinHeight: =100
                             LayoutMinWidth: =250
                             LayoutMode: =LayoutMode.Auto
+                            PaddingLeft: =10
                             RadiusBottomLeft: =10
                             RadiusBottomRight: =10
                             RadiusTopLeft: =10
@@ -425,6 +426,7 @@
                             LayoutMinHeight: =100
                             LayoutMinWidth: =250
                             LayoutMode: =LayoutMode.Auto
+                            PaddingLeft: =10
                             RadiusBottomLeft: =10
                             RadiusBottomRight: =10
                             RadiusTopLeft: =10
@@ -459,6 +461,7 @@
                                     ZIndex: =3
 
                                 Legend3 As legend:
+                                    AlignInContainer: =AlignInContainer.Start
                                     ItemColorSet: =LineChart1.ItemColorSet
                                     Items: =LineChart1.SeriesLabels
                                     Size: =10
@@ -472,7 +475,7 @@
                     BorderStyle: =BorderStyle.Solid
                     DisplayMode: =DisplayMode.Edit
                     Fill: =RGBA(0, 0, 0, 0)
-                    Height: =330
+                    Height: =430
                     Width: =1286
                     X: =0
                     Y: =1
@@ -482,7 +485,7 @@
                         DropShadow: =DropShadow.None
                         Height: =Parent.Height
                         LayoutAlignItems: =LayoutAlignItems.Center
-                        LayoutDirection: =LayoutDirection.Vertical
+                        LayoutGap: =40
                         LayoutJustifyContent: =LayoutJustifyContent.Center
                         LayoutMode: =LayoutMode.Auto
                         Width: =Parent.Width
@@ -494,6 +497,7 @@
                             Fill: =RGBA(255, 255, 255, 1)
                             FillPortions: =0
                             Height: =Parent.Height*.9
+                            LayoutAlignItems: =LayoutAlignItems.Center
                             LayoutDirection: =LayoutDirection.Vertical
                             LayoutMinHeight: =100
                             LayoutMinWidth: =250
@@ -502,7 +506,7 @@
                             RadiusBottomRight: =10
                             RadiusTopLeft: =10
                             RadiusTopRight: =10
-                            Width: =Parent.Width*.93
+                            Width: =Parent.Width*.45
                             ZIndex: =1
 
                             CompositeColumnChart1 As group:
@@ -514,30 +518,93 @@
                                 Y: =40
                                 ZIndex: =1
 
-                                Title4 As label:
+                                Title1 As label:
                                     Align: =Align.Center
-                                    Height: =25
-                                    Text: ="Chart Title"
+                                    Height: =Parent.Height*.1
+                                    Text: ="Tickets By Status"
                                     Width: =400
                                     X: =40
                                     Y: =40
                                     ZIndex: =2
 
                                 ColumnChart1 As barChart:
-                                    Height: =Parent.Height*.9
+                                    GridStyle: =GridStyle.All
+                                    Height: =Parent.Height*.8
+                                    ItemColorSet: =[RGBA(40, 134, 222, 1)]
                                     Items: =StatusCounts
+                                    SeriesAxisMax: =10
+                                    Size: =12
                                     Width: =Parent.Width
                                     X: =40
                                     Y: =70
                                     ZIndex: =3
 
-                                Legend4 As legend:
-                                    Height: =80
+                                Legend1 As legend:
+                                    AlignInContainer: =AlignInContainer.Start
+                                    Height: =Parent.Height*.1
                                     ItemColorSet: =ColumnChart1.ItemColorSet
                                     Items: =ColumnChart1.SeriesLabels
                                     Width: =320
                                     X: =80
                                     Y: =480
+                                    ZIndex: =4
+
+                        Container40_1 As groupContainer.verticalAutoLayoutContainer:
+                            AlignInContainer: =AlignInContainer.SetByContainer
+                            DropShadow: =DropShadow.None
+                            Fill: =RGBA(255, 255, 255, 1)
+                            FillPortions: =0
+                            Height: =Parent.Height*.9
+                            LayoutAlignItems: =LayoutAlignItems.Center
+                            LayoutDirection: =LayoutDirection.Vertical
+                            LayoutJustifyContent: =LayoutJustifyContent.Center
+                            LayoutMinHeight: =100
+                            LayoutMinWidth: =250
+                            LayoutMode: =LayoutMode.Auto
+                            RadiusBottomLeft: =10
+                            RadiusBottomRight: =10
+                            RadiusTopLeft: =10
+                            RadiusTopRight: =10
+                            Width: =Parent.Width*.45
+                            ZIndex: =2
+
+                            CompositeColumnChart1_1 As group:
+                                Height: =5
+                                LayoutMinHeight: =5
+                                LayoutMinWidth: =5
+                                Width: =5
+                                X: =-40
+                                Y: =-40
+                                ZIndex: =1
+
+                                Title1_1 As label:
+                                    Align: =Align.Center
+                                    Height: =Parent.Height*.1
+                                    Text: ="Distribution of Tickets by Priority"
+                                    Width: =400
+                                    X: =40
+                                    Y: =40
+                                    ZIndex: =2
+
+                                ColumnChart1_1 As barChart:
+                                    GridStyle: =GridStyle.All
+                                    Height: =Parent.Height*.8
+                                    ItemColorSet: =[ Color.ForestGreen ]
+                                    Items: =PriorityCounts
+                                    SeriesAxisMax: =10
+                                    Width: =Parent.Width
+                                    X: =40
+                                    Y: =30
+                                    ZIndex: =3
+
+                                Legend1_1 As legend:
+                                    AlignInContainer: =AlignInContainer.Start
+                                    Height: =Parent.Height*.1
+                                    ItemColorSet: =ColumnChart1_1.ItemColorSet
+                                    Items: =ColumnChart1_1.SeriesLabels
+                                    Width: =320
+                                    X: =40
+                                    Y: =440
                                     ZIndex: =4
 
             Rectangle1_1 As rectangle:
