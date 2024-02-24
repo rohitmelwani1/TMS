@@ -96,6 +96,10 @@
                     Height: =Parent.Height*.07
                     HoverColor: =RGBA(0, 0, 0, 1)
                     HoverFill: =RGBA(255, 255, 255, 1)
+                    OnSelect: |-
+                        =Navigate('Home screen',ScreenTransition.Fade);
+                        Set(VarblackBGHS,true);
+                        Set(VarCreateTicket,true)
                     PressedColor: =Self.Color
                     PressedFill: =Self.Fill
                     Size: =12

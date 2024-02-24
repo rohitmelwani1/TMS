@@ -1129,7 +1129,8 @@
                                     FontWeight: =FontWeight.Bold
                                     OnSelect: |-
                                         =Set(VarCreateTicket,false);
-                                        Set(VarblackBGHS,false)
+                                        Set(VarblackBGHS,false);
+                                        Back()
                                     Size: =10
                                     Text: ="CLOSE"
                                     ZIndex: =1
@@ -1158,6 +1159,7 @@
                                         Reset(DropdownCanvas2_1);
                                         Set(VarblackBGHS,false);
                                         Set(VarCreateTicket,false);
+                                        Back()
                                         
                                     Size: =10
                                     Text: ="CREATE TICKET"
