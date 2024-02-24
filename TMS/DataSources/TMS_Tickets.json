@@ -36,6 +36,7 @@
       "Ticket_Catagory": "Ticket_Catagory",
       "Ticket_CreatedOn": "Ticket_CreatedOn",
       "Ticket_Description": "Ticket_Description",
+      "Ticket_Id": "Ticket_Id",
       "Ticket_ModifiedOn": "Ticket_ModifiedOn",
       "Ticket_Priority": "Ticket_Priority",
       "Ticket_Status": "Ticket_Status",

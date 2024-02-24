@@ -414,6 +414,46 @@
             {
               "logicalLocations": [
                 {
+                  "fullyQualifiedName": "'Home screen'.con_Main_HS.con_HOME_HS.Container58.Container50_1.Container51_1.Container56_1.Container59.Button4_1.OnSelect"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'Home screen'.con_Main_HS.con_HOME_HS.Container58.Container50_1.Container51_1.Container56_1.Container59.Button4_1.OnSelect",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 22,
+                  "charOffset": 75,
+                  "snippet": {
+                    "text": "CountRows(TMS_Tickets)"
+                  }
+                }
+              },
+              "properties": {
+                "member": "OnSelect",
+                "module": "Home screen",
+                "type": "'Home screen'.con_Main_HS.con_HOME_HS.Container58.Container50_1.Container51_1.Container56_1.Container59.Button4_1"
+              }
+            }
+          ],
+          "message": {
+            "arguments": [
+              "CountRows"
+            ],
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "app-SuggestRemoteExecutionHint-OpNotSupportedByService",
+          "ruleIndex": 0
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
                   "fullyQualifiedName": "CmpNavBar.Container3.Container8.Gallery1.AccessibleLabel"
                 }
               ],
