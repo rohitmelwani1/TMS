@@ -20,3 +20,82 @@
             LayoutMinWidth: =640
             ZIndex: =2
 
+        Container48 As groupContainer.manualLayoutContainer:
+            LayoutMinHeight: =100
+            LayoutMinWidth: =250
+            RadiusBottomLeft: =0
+            RadiusBottomRight: =0
+            RadiusTopLeft: =0
+            RadiusTopRight: =0
+            ZIndex: =3
+
+            Image13 As image:
+                Height: =Parent.Height
+                Image: ='Office management-pana'
+                ImagePosition: =ImagePosition.Fill
+                Width: =Parent.Width
+                ZIndex: =1
+
+            Rectangle3 As rectangle:
+                Fill: =RGBA(0, 0, 0, .7)
+                Height: =Parent.Height
+                Width: =Parent.Width
+                ZIndex: =2
+
+            Container49 As groupContainer.verticalAutoLayoutContainer:
+                Height: =Parent.Height
+                LayoutAlignItems: =LayoutAlignItems.Center
+                LayoutDirection: =LayoutDirection.Vertical
+                LayoutGap: =20
+                LayoutMode: =LayoutMode.Auto
+                PaddingTop: =70
+                RadiusBottomLeft: =0
+                RadiusBottomRight: =0
+                RadiusTopLeft: =0
+                RadiusTopRight: =0
+                Width: =Parent.Width
+                ZIndex: =3
+
+                Image14 As image:
+                    Image: ='Teamwork-icon'
+                    RadiusBottomLeft: =50
+                    RadiusBottomRight: =50
+                    RadiusTopLeft: =50
+                    RadiusTopRight: =50
+                    ZIndex: =1
+
+                Label13 As label:
+                    Align: =Align.Center
+                    Color: =RGBA(255, 255, 255, 1)
+                    FontWeight: =FontWeight.Bold
+                    Height: =Parent.Height*.1
+                    PaddingBottom: =0
+                    PaddingTop: =0
+                    Size: =40
+                    Text: ="Welcome To Ticket Management System"
+                    Width: =Parent.Width
+                    ZIndex: =2
+
+                Label14 As label:
+                    Align: =Align.Center
+                    Color: =RGBA(255, 255, 255, 1)
+                    Height: =Parent.Height*.1
+                    PaddingTop: =0
+                    Text: ="' Begin Resolving Issues Now! Click below to Create a Ticket '"
+                    Width: =Parent.Width
+                    ZIndex: =3
+
+                Button3 As button:
+                    Color: =RGBA(13, 50, 61, 1)
+                    Fill: =RGBA(180, 214, 250, 1)
+                    FontWeight: =FontWeight.Bold
+                    Height: =Parent.Height*.07
+                    HoverColor: =RGBA(0, 0, 0, 1)
+                    HoverFill: =RGBA(255, 255, 255, 1)
+                    PressedColor: =Self.Color
+                    PressedFill: =Self.Fill
+                    Size: =12
+                    Text: ="Create a Ticket"
+                    Width: =Parent.Width*.12
+                    ZIndex: =4
+

@@ -1763,36 +1763,6 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "App.Teamwork-icon"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "App.Teamwork-icon",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "Teamwork-icon",
-                "module": "App",
-                "type": "App"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "app-UnusedMediaResources",
-          "ruleIndex": 8
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
                   "fullyQualifiedName": "App.logout"
                 }
               ],
@@ -1834,6 +1804,66 @@
               },
               "properties": {
                 "member": "menuBar-white",
+                "module": "App",
+                "type": "App"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "app-UnusedMediaResources",
+          "ruleIndex": 8
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "App.sharepoint-ticketing"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "App.sharepoint-ticketing",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "sharepoint-ticketing",
+                "module": "App",
+                "type": "App"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "app-UnusedMediaResources",
+          "ruleIndex": 8
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "App.Ticket-Management-System-870x457"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "App.Ticket-Management-System-870x457",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "Ticket-Management-System-870x457",
                 "module": "App",
                 "type": "App"
               }
