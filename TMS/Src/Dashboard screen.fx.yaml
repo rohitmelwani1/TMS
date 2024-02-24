@@ -614,7 +614,7 @@
                     BorderStyle: =BorderStyle.Solid
                     DisplayMode: =DisplayMode.Edit
                     Fill: =RGBA(0, 0, 0, 0)
-                    Height: =360
+                    Height: =660
                     Width: =1286
                     X: =0
                     Y: =2
@@ -623,7 +623,7 @@
                     con_AllTickets_HS_1 As groupContainer.verticalAutoLayoutContainer:
                         DropShadow: =DropShadow.Semilight
                         Fill: =RGBA(255, 255, 255, 1)
-                        Height: =Parent.Height
+                        Height: =Parent.Height*.98
                         LayoutAlignItems: =LayoutAlignItems.Center
                         LayoutDirection: =LayoutDirection.Vertical
                         LayoutGap: =1
@@ -641,7 +641,7 @@
                             AlignInContainer: =AlignInContainer.SetByContainer
                             DropShadow: =DropShadow.None
                             FillPortions: =0
-                            Height: =Parent.Height*.13
+                            Height: =Parent.Height*.1
                             LayoutAlignItems: =LayoutAlignItems.Center
                             LayoutMinHeight: =100
                             LayoutMinWidth: =250
@@ -673,7 +673,7 @@
                             DropShadow: =DropShadow.None
                             Fill: =RGBA(222, 238, 255, 1)
                             FillPortions: =0
-                            Height: =Parent.Height*.13
+                            Height: =Parent.Height*.1
                             LayoutAlignItems: =LayoutAlignItems.Center
                             LayoutJustifyContent: =LayoutJustifyContent.SpaceBetween
                             LayoutMinHeight: =100
@@ -741,7 +741,7 @@
                             LayoutMinWidth: =320
                             LoadingSpinner: =LoadingSpinner.Data
                             OnSelect: =
-                            TemplateSize: =Parent.Height*.14
+                            TemplateSize: =Parent.Height*.1
                             Transition: =Transition.Pop
                             Width: =Parent.Width*.98
                             ZIndex: =3
