@@ -33,11 +33,13 @@
       "Modified": "Modified",
       "OData__ColorTag": "Color Tag",
       "Title": "Title",
+      "TMS_Email": "TMS_Email",
       "TMS_Name": "TMS_Name",
       "TMS_PASSWORD": "TMS_PASSWORD",
       "TMS_PHOTO": "TMS_PHOTO",
       "TMS_ROLE": "TMS_ROLE",
       "TMS_ROLE#Id": "TMS_ROLE Id",
+      "TMS_Status": "TMS_Status",
       "TMS_USERNAME": "TMS_USERNAME"
     },
     "DatasetName": "https://xebiagroup.sharepoint.com/sites/MY.FirstSite",
