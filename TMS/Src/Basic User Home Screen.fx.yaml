@@ -70,7 +70,7 @@
                     Align: =Align.Center
                     Color: =RGBA(255, 255, 255, 1)
                     FontWeight: =FontWeight.Bold
-                    Height: =Parent.Height*.1
+                    Height: =Parent.Height*.12
                     PaddingBottom: =0
                     PaddingTop: =0
                     Size: =40
