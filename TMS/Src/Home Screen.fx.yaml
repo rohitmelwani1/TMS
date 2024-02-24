@@ -1143,6 +1143,7 @@
                                             TMS_Tickets,
                                             Defaults(TMS_Tickets),
                                             {
+                                                
                                                 Ticket_Title: TextInputCanvas1.Value,
                                                 Ticket_Catagory: DropdownCanvas2_2.Selected.Value,
                                                 Ticket_Status: "In Progress",
