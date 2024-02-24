@@ -27,12 +27,16 @@ Component1 As CanvasComponent:
 
     Container43 As groupContainer.horizontalAutoLayoutContainer:
         Height: =Parent.Height
+        LayoutAlignItems: =LayoutAlignItems.Center
+        LayoutJustifyContent: =LayoutJustifyContent.Center
         LayoutMode: =LayoutMode.Auto
         Width: =Parent.Width
         ZIndex: =1
 
         Container44 As groupContainer.verticalAutoLayoutContainer:
-            AlignInContainer: =AlignInContainer.Center
+            AlignInContainer: =AlignInContainer.SetByContainer
+            DropShadow: =DropShadow.None
+            Fill: =RGBA(20, 32, 54, 1)
             FillPortions: =0
             Height: =Parent.Height
             LayoutAlignItems: =LayoutAlignItems.Center
@@ -41,6 +45,10 @@ Component1 As CanvasComponent:
             LayoutMinHeight: =100
             LayoutMinWidth: =250
             LayoutMode: =LayoutMode.Auto
+            RadiusBottomLeft: =0
+            RadiusBottomRight: =50
+            RadiusTopLeft: =0
+            RadiusTopRight: =50
             Width: =Parent.Height
             ZIndex: =1
 
@@ -55,8 +63,10 @@ Component1 As CanvasComponent:
                 ZIndex: =1
 
         Container44_1 As groupContainer.verticalAutoLayoutContainer:
+            AlignInContainer: =AlignInContainer.SetByContainer
             DropShadow: =DropShadow.None
             FillPortions: =0
+            Height: =Parent.Height
             LayoutAlignItems: =LayoutAlignItems.Center
             LayoutDirection: =LayoutDirection.Vertical
             LayoutJustifyContent: =LayoutJustifyContent.Center
@@ -74,7 +84,7 @@ Component1 As CanvasComponent:
                 LoadingSpinner: =LoadingSpinner.Data
                 ShowScrollbar: =false
                 TemplateSize: =Parent.Width*.2
-                Width: =Parent.Width
+                Width: =Parent.Width*.7
                 ZIndex: =1
 
                 Container46 As groupContainer.verticalAutoLayoutContainer:
@@ -92,6 +102,8 @@ Component1 As CanvasComponent:
 
                     Label15 As label:
                         Align: =Align.Center
+                        FontWeight: =FontWeight.Semibold
+                        Size: =10
                         Text: =ThisItem.Title
                         Width: =Parent.Width
                         ZIndex: =1
@@ -103,6 +115,9 @@ Component1 As CanvasComponent:
                         ZIndex: =2
 
         Container44_2 As groupContainer.verticalAutoLayoutContainer:
+            AlignInContainer: =AlignInContainer.SetByContainer
+            DropShadow: =DropShadow.None
+            Height: =Parent.Height
             LayoutAlignItems: =LayoutAlignItems.Center
             LayoutDirection: =LayoutDirection.Vertical
             LayoutJustifyContent: =LayoutJustifyContent.Center
@@ -122,10 +137,26 @@ Component1 As CanvasComponent:
                 RadiusBottomRight: =50
                 RadiusTopLeft: =50
                 RadiusTopRight: =50
-                Width: =Parent.Width*.7
+                Width: =Parent.Width*.65
                 ZIndex: =1
 
                 Label16 As label:
-                    Text: ="Text"
+                    Color: =RGBA(106, 122, 127, 1)
+                    FontWeight: =FontWeight.Lighter
+                    Height: =Parent.Height
+                    PaddingLeft: =25
+                    Size: =15
+                    Text: ="Search"
+                    Width: =Parent.Width*.85
                     ZIndex: =1
+
+                Icon2 As icon.Search:
+                    Color: =RGBA(106, 122, 127, 1)
+                    Height: =Parent.Height*.6
+                    Icon: =Icon.Search
+                    PaddingRight: =20
+                    Width: =Parent.Width-Label16.Width-20
+                    X: =Parent.Width-Self.Width
+                    Y: =Parent.Height/2-Self.Height/2
+                    ZIndex: =2
 
