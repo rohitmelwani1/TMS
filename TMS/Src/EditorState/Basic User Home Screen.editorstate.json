@@ -439,7 +439,14 @@
         "X",
         "Y",
         "ZIndex",
-        "screenname"
+        {
+          "AFDDataSourceName": "",
+          "AutoRuleBindingEnabled": false,
+          "AutoRuleBindingString": "\"Text\"",
+          "InvariantPropertyName": "screenname",
+          "IsLockable": false,
+          "NameMapSourceSchema": "?"
+        }
       ],
       "DynamicProperties": [
         {
@@ -501,7 +508,7 @@
         {
           "Category": "Data",
           "PropertyName": "screenname",
-          "RuleProviderType": "System"
+          "RuleProviderType": "User"
         },
         {
           "Category": "Design",
@@ -644,7 +651,7 @@
         {
           "Category": "Data",
           "PropertyName": "NavItems",
-          "RuleProviderType": "System"
+          "RuleProviderType": "User"
         },
         {
           "Category": "Data",

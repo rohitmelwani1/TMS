@@ -103,6 +103,7 @@ Component1 As CanvasComponent:
                     Label15 As label:
                         Align: =Align.Center
                         FontWeight: =FontWeight.Semibold
+                        OnSelect: =Navigate(ThisItem.TargetScreen,ScreenTransition.Fade)
                         Size: =10
                         Text: =ThisItem.Title
                         Width: =Parent.Width

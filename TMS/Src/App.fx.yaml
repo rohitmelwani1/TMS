@@ -2,6 +2,20 @@ App As appinfo:
     BackEnabled: =true
     OnStart: |+
         =ClearCollect(
+            NavBarBasicUser,
+            Table(
+                {
+                    Title: "HOME",
+                    TargetScreen: 'Basic User Home Screen'
+                },
+                {
+                    Title: "ABOUT US",
+                    TargetScreen: 'Basic User About Us Screen'
+                }
+               
+            )
+        );
+        ClearCollect(
             PriorityCounts,
             AddColumns(
                 GroupBy(

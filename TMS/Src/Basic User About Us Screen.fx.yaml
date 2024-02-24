@@ -1,0 +1,22 @@
+"'Basic User About Us Screen' As screen":
+
+    Container50 As groupContainer.verticalAutoLayoutContainer:
+        Height: =Parent.Height
+        LayoutDirection: =LayoutDirection.Vertical
+        LayoutMode: =LayoutMode.Auto
+        Width: =Parent.Width
+        ZIndex: =1
+
+        CmpHeaderBasicUser_2 As CmpHeaderBasicUser:
+            Height: =Parent.Height*.1
+            screenname: ="ABOUT US"
+            Width: =Parent.Width
+
+        Component1_4 As Component1:
+            CurrentScreen: ="ABOUT US"
+            Height: =Parent.Height*.1
+            LayoutMinHeight: =640
+            LayoutMinWidth: =640
+            NavItems: =NavBarBasicUser
+            ZIndex: =2
+
