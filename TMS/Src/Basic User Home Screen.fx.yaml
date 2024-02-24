@@ -14,6 +14,7 @@
             Width: =Parent.Width
 
         Component1_3 As Component1:
+            CurrentScreen: ="HOME"
             Height: =Parent.Height*.1
             LayoutMinHeight: =640
             LayoutMinWidth: =640

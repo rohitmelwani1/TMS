@@ -1111,7 +1111,14 @@
                         "AllowAccessToGlobals": true,
                         "Children": [],
                         "ControlPropertyState": [
-                          "Fill",
+                          {
+                            "AFDDataSourceName": "",
+                            "AutoRuleBindingEnabled": false,
+                            "AutoRuleBindingString": "",
+                            "InvariantPropertyName": "Fill",
+                            "IsLockable": false,
+                            "NameMapSourceSchema": "?"
+                          },
                           "DisabledFill",
                           "PressedFill",
                           "HoverFill",
@@ -1209,7 +1216,7 @@
                         "Rules": [
                           {
                             "Category": "Design",
-                            "InvariantScript": "RGBA(56, 96, 178, 1)",
+                            "InvariantScript": "RGBA(40, 134, 222, 1)",
                             "Property": "Fill",
                             "RuleProviderType": "Unknown"
                           },
@@ -1269,7 +1276,7 @@
                           },
                           {
                             "Category": "Design",
-                            "InvariantScript": "Parent.Width*.8",
+                            "InvariantScript": "Parent.Width*.5",
                             "Property": "Width",
                             "RuleProviderType": "User"
                           },
@@ -3603,7 +3610,7 @@
       },
       "CurrentScreen"
     ],
-    "LastModifiedTimestamp": "638443765264333585",
+    "LastModifiedTimestamp": "638443766455878688",
     "Name": "Component1",
     "Rules": [
       {
@@ -3693,7 +3700,7 @@
   "IsPcfControl": false,
   "IsPremiumPcfControl": false,
   "IsWidgetTemplate": false,
-  "LastModifiedTimestamp": "638443765264333585",
+  "LastModifiedTimestamp": "638443766455878688",
   "Name": "00b5d2fd6c44421a83281808a4939c2d",
   "OverridableProperties": {},
   "Version": "1.0"

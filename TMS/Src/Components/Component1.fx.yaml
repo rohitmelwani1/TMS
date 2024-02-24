@@ -109,9 +109,10 @@ Component1 As CanvasComponent:
                         ZIndex: =1
 
                     Rectangle2 As rectangle:
+                        Fill: =RGBA(40, 134, 222, 1)
                         Height: =Parent.Height*.02
                         Visible: =If(ThisItem.Title=Component1.CurrentScreen, true,false)
-                        Width: =Parent.Width*.8
+                        Width: =Parent.Width*.5
                         ZIndex: =2
 
         Container44_2 As groupContainer.verticalAutoLayoutContainer:
