@@ -166,6 +166,8 @@ App As appinfo:
         Set(VarExpandNavBar,false);
         Set(Varnotification,false);
         Set(VarViewSummary,false);
+        Set(VarCreateTicket,false);
+        Set(VarblackBGHS,false);
         ClearCollect(
             ClearcollectTodayTickets,
              Filter(

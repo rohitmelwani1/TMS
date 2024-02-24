@@ -488,6 +488,9 @@
                             img_AddTicket_HS As image:
                                 Height: =Parent.Height*.5
                                 Image: =add
+                                OnSelect: |-
+                                    =Set(VarCreateTicket,true);
+                                    Set(VarblackBGHS,true)
                                 Width: =Parent.Width*.5
                                 X: =Parent.Height/2-Self.Height/2
                                 Y: =Parent.Width/2-Self.Width/2
@@ -621,7 +624,7 @@
                         Align: =Align.Center
                         FontWeight: =FontWeight.Lighter
                         Size: =12
-                        Text: ="TICKET PRIORITY"
+                        Text: ="TICKET STATUS"
                         ZIndex: =5
 
                     lbl_TicketStatus_HS As label:
@@ -641,9 +644,7 @@
                     LayoutMinHeight: =287
                     LayoutMinWidth: =320
                     LoadingSpinner: =LoadingSpinner.Data
-                    OnSelect: |-
-                        =ClearCollect(Currentdata,gal_RecentTickets_HS.Selected);
-                        Set(VarViewSummary,true)
+                    OnSelect: =
                     TemplateSize: =Parent.Height*.14
                     Transition: =Transition.Pop
                     Width: =Parent.Width*.98
@@ -728,13 +729,6 @@
                             Text: =ThisItem.Ticket_CreatedOn
                             ZIndex: =4
 
-                        lbl_TicketPriorityingal_HS As label:
-                            Align: =Align.Center
-                            FontWeight: =FontWeight.Lighter
-                            Size: =12
-                            Text: =ThisItem.Ticket_Priority
-                            ZIndex: =5
-
                         Con_TicketStatus_HS As groupContainer.horizontalAutoLayoutContainer:
                             AlignInContainer: =AlignInContainer.SetByContainer
                             DropShadow: =DropShadow.None
@@ -776,6 +770,16 @@
                                 Text: =ThisItem.Ticket_Status
                                 Width: =Parent.Width*.8
                                 ZIndex: =1
+
+                        Icon1 As icon.View:
+                            Height: =20
+                            Icon: =Icon.View
+                            OnSelect: |-
+                                =ClearCollect(Currentdata,gal_RecentTickets_HS.Selected);
+                                Set(VarViewSummary,true);
+                                Set(VarblackBGHS,true)
+                            Width: =150
+                            ZIndex: =9
 
             con_Notifications_HS As groupContainer.manualLayoutContainer:
                 DropShadow: =DropShadow.ExtraBold
@@ -914,11 +918,423 @@
             Rectangle4 As rectangle:
                 Fill: =RGBA(0, 0, 0, 0.64)
                 Height: =Parent.Height
-                Visible: =VarViewSummary
+                Visible: =VarblackBGHS
                 Width: =Parent.Width
                 X: =
                 Y: =
                 ZIndex: =7
+
+            Container58 As groupContainer.manualLayoutContainer:
+                Height: =Parent.Height*.9
+                Visible: =VarCreateTicket
+                Width: =Parent.Width*.52
+                X: =Parent.Width/2-Self.Width/2
+                Y: =Parent.Height/2-Self.Height/2
+                ZIndex: =8
+
+                Container50_1 As groupContainer.verticalAutoLayoutContainer:
+                    DropShadow: =DropShadow.ExtraBold
+                    Height: =Parent.Height
+                    LayoutDirection: =LayoutDirection.Vertical
+                    LayoutMode: =LayoutMode.Auto
+                    RadiusBottomLeft: =20
+                    RadiusBottomRight: =20
+                    RadiusTopLeft: =20
+                    RadiusTopRight: =20
+                    Width: =Parent.Width
+                    ZIndex: =1
+
+                    CmpHeaderBasicUser_3 As CmpHeaderBasicUser:
+                        Height: =Parent.Height*.1
+                        image: =jaya
+                        LayoutMinHeight: =640
+                        LayoutMinWidth: =640
+                        Name: ="Jaya Keswani"
+                        screenname: ="Create Ticket"
+                        Width: =Parent.Width
+
+                    Container51_1 As groupContainer.verticalAutoLayoutContainer:
+                        DropShadow: =DropShadow.None
+                        Fill: =RGBA(215, 232, 250, 1)
+                        Height: =Parent.Height*.9
+                        LayoutAlignItems: =LayoutAlignItems.Center
+                        LayoutDirection: =LayoutDirection.Vertical
+                        LayoutMinHeight: =100
+                        LayoutMinWidth: =250
+                        LayoutMode: =LayoutMode.Auto
+                        Width: =Parent.Width
+                        ZIndex: =3
+
+                        Container56_1 As groupContainer.verticalAutoLayoutContainer:
+                            AlignInContainer: =AlignInContainer.Center
+                            DropShadow: =DropShadow.None
+                            FillPortions: =0
+                            Height: =Parent.Height
+                            LayoutAlignItems: =LayoutAlignItems.Center
+                            LayoutDirection: =LayoutDirection.Vertical
+                            LayoutMinHeight: =100
+                            LayoutMinWidth: =250
+                            LayoutMode: =LayoutMode.Auto
+                            Width: =Parent.Width
+                            ZIndex: =1
+
+                            Image17 As image:
+                                Height: =Parent.Height*.4
+                                Image: ='Design team-amico'
+                                Width: =Parent.Width*.7
+                                ZIndex: =1
+
+                            Container57 As groupContainer.verticalAutoLayoutContainer:
+                                AlignInContainer: =AlignInContainer.SetByContainer
+                                DropShadow: =DropShadow.None
+                                FillPortions: =0
+                                Height: =Parent.Height*.12
+                                LayoutJustifyContent: =LayoutJustifyContent.Center
+                                LayoutMinHeight: =100
+                                LayoutMinWidth: =250
+                                LayoutMode: =LayoutMode.Auto
+                                PaddingLeft: =10
+                                Width: =Parent.Width
+                                ZIndex: =2
+
+                                Label20 As label:
+                                    Text: |-
+                                        ="Title:"
+                                    ZIndex: =1
+
+                                "TextInputCanvas1 As 'Text input'":
+                                    BasePaletteColor: =RGBA(5, 102, 178, 1)
+                                    DisplayMode: =DisplayMode.Edit
+                                    FontColor: =RGBA(0, 0, 0, 1)
+                                    FontSize: =12
+                                    Height: =Parent.Height*.5
+                                    LayoutMinHeight: =32
+                                    LayoutMinWidth: =320
+                                    Width: =Parent.Width*.7
+                                    X: =0
+                                    Y: =0
+                                    ZIndex: =3
+
+                            Container57_1 As groupContainer.verticalAutoLayoutContainer:
+                                AlignInContainer: =AlignInContainer.SetByContainer
+                                DropShadow: =DropShadow.None
+                                FillPortions: =0
+                                Height: =Parent.Height*.12
+                                LayoutJustifyContent: =LayoutJustifyContent.Center
+                                LayoutMinHeight: =100
+                                LayoutMinWidth: =250
+                                LayoutMode: =LayoutMode.Auto
+                                PaddingLeft: =10
+                                Width: =Parent.Width
+                                ZIndex: =3
+
+                                Label20_1 As label:
+                                    Text: |-
+                                        ="Priority:"
+                                    ZIndex: =1
+
+                                DropdownCanvas2_1 As Dropdown.pcfdataset:
+                                    BasePaletteColor: =RGBA(5, 102, 178, 1)
+                                    DisplayMode: =DisplayMode.Edit
+                                    FontSize: =10
+                                    Height: =Parent.Height*.5
+                                    Items: =["High", "Medium", "Low"]
+                                    LayoutMinHeight: =32
+                                    LayoutMinWidth: =320
+                                    Required: =false
+                                    Width: =Parent.Width*.7
+                                    X: =0
+                                    Y: =0
+                                    ZIndex: =2
+
+                            Container57_3 As groupContainer.verticalAutoLayoutContainer:
+                                AlignInContainer: =AlignInContainer.SetByContainer
+                                DropShadow: =DropShadow.None
+                                FillPortions: =0
+                                Height: =Parent.Height*.12
+                                LayoutJustifyContent: =LayoutJustifyContent.Center
+                                LayoutMinHeight: =100
+                                LayoutMinWidth: =250
+                                LayoutMode: =LayoutMode.Auto
+                                PaddingLeft: =10
+                                Width: =Parent.Width
+                                ZIndex: =4
+
+                                Label20_3 As label:
+                                    Text: |-
+                                        ="Department:"
+                                    ZIndex: =1
+
+                                DropdownCanvas2_2 As Dropdown.pcfdataset:
+                                    BasePaletteColor: =RGBA(5, 102, 178, 1)
+                                    DisplayMode: =DisplayMode.Edit
+                                    FontSize: =10
+                                    Height: =Parent.Height*.5
+                                    Items: =["IT", "Finance", "HR","Administrator"]
+                                    LayoutMinHeight: =32
+                                    LayoutMinWidth: =320
+                                    Required: =false
+                                    Width: =Parent.Width*.7
+                                    X: =0
+                                    Y: =0
+                                    ZIndex: =2
+
+                            Container57_2 As groupContainer.verticalAutoLayoutContainer:
+                                AlignInContainer: =AlignInContainer.SetByContainer
+                                DropShadow: =DropShadow.None
+                                FillPortions: =0
+                                Height: =Parent.Height*.12
+                                LayoutJustifyContent: =LayoutJustifyContent.Center
+                                LayoutMinHeight: =100
+                                LayoutMinWidth: =250
+                                LayoutMode: =LayoutMode.Auto
+                                PaddingLeft: =10
+                                Width: =Parent.Width
+                                ZIndex: =5
+
+                                Label20_2 As label:
+                                    Text: |-
+                                        ="Description:"
+                                    ZIndex: =1
+
+                                "TextInputCanvas1_1 As 'Text input'":
+                                    BasePaletteColor: =RGBA(5, 102, 178, 1)
+                                    DisplayMode: =DisplayMode.Edit
+                                    FontColor: =RGBA(0, 0, 0, 1)
+                                    FontSize: =12
+                                    Height: =Parent.Height*.5
+                                    LayoutMinHeight: =32
+                                    LayoutMinWidth: =320
+                                    Width: =Parent.Width*.7
+                                    X: =0
+                                    Y: =0
+                                    ZIndex: =2
+
+                            Container59 As groupContainer.horizontalAutoLayoutContainer:
+                                AlignInContainer: =AlignInContainer.Center
+                                FillPortions: =0
+                                Height: =Parent.Height*.12
+                                LayoutAlignItems: =LayoutAlignItems.Center
+                                LayoutJustifyContent: =LayoutJustifyContent.SpaceBetween
+                                LayoutMinHeight: =100
+                                LayoutMinWidth: =250
+                                LayoutMode: =LayoutMode.Auto
+                                PaddingLeft: =50
+                                PaddingRight: =50
+                                Width: =Parent.Width
+                                ZIndex: =6
+
+                                Button4 As button:
+                                    Fill: =RGBA(40, 134, 222, 1)
+                                    FontWeight: =FontWeight.Bold
+                                    OnSelect: |-
+                                        =Set(VarCreateTicket,false);
+                                        Set(VarblackBGHS,false)
+                                    Size: =10
+                                    Text: ="CLOSE"
+                                    ZIndex: =1
+
+                                Button4_1 As button:
+                                    Fill: =RGBA(20, 32, 54, 1)
+                                    FontWeight: =FontWeight.Bold
+                                    OnSelect: |+
+                                        =Patch(
+                                            TMS_Tickets,
+                                            Defaults(TMS_Tickets),
+                                            {
+                                                Ticket_Title: TextInputCanvas1.Value,
+                                                Ticket_Catagory: DropdownCanvas2_2.Selected.Value,
+                                                Ticket_Status: "In Progress",
+                                                Ticket_Description: TextInputCanvas1_1.Value,
+                                                Assigned_To: "Rohit Melwani",
+                                                Ticket_Priority: DropdownCanvas2_1.Selected.Value,
+                                                Ticket_CreatedOn:Today()
+                                            }
+                                        );
+                                        Notify("Ticket has been created succesfully!",NotificationType.Success);
+                                        Reset(TextInputCanvas1);
+                                        Reset(TextInputCanvas1_1);
+                                        Reset(DropdownCanvas2_2);
+                                        Reset(DropdownCanvas2_1);
+                                        Set(VarblackBGHS,false);
+                                        Set(VarCreateTicket,false);
+                                        
+                                    Size: =10
+                                    Text: ="CREATE TICKET"
+                                    ZIndex: =2
+
+            Container58_1 As groupContainer.manualLayoutContainer:
+                Height: =Parent.Height*.9
+                Visible: =VarViewSummary
+                Width: =Parent.Width*.52
+                X: =Parent.Width/2-Self.Width/2
+                Y: =Parent.Height/2-Self.Height/2
+                ZIndex: =9
+
+                Container50_2 As groupContainer.verticalAutoLayoutContainer:
+                    DropShadow: =DropShadow.ExtraBold
+                    Height: =Parent.Height
+                    LayoutDirection: =LayoutDirection.Vertical
+                    LayoutMode: =LayoutMode.Auto
+                    RadiusBottomLeft: =20
+                    RadiusBottomRight: =20
+                    RadiusTopLeft: =20
+                    RadiusTopRight: =20
+                    Width: =Parent.Width
+                    ZIndex: =1
+
+                    CmpHeaderBasicUser_4 As CmpHeaderBasicUser:
+                        Height: =Parent.Height*.1
+                        image: =jaya
+                        LayoutMinHeight: =640
+                        LayoutMinWidth: =640
+                        Name: ="Jaya Keswani"
+                        screenname: ="View Ticket"
+                        Width: =Parent.Width
+
+                    Container51_2 As groupContainer.verticalAutoLayoutContainer:
+                        DropShadow: =DropShadow.None
+                        Fill: =RGBA(215, 232, 250, 1)
+                        Height: =Parent.Height*.9
+                        LayoutAlignItems: =LayoutAlignItems.Center
+                        LayoutDirection: =LayoutDirection.Vertical
+                        LayoutMinHeight: =100
+                        LayoutMinWidth: =250
+                        LayoutMode: =LayoutMode.Auto
+                        Width: =Parent.Width
+                        ZIndex: =3
+
+                        Container56_2 As groupContainer.verticalAutoLayoutContainer:
+                            AlignInContainer: =AlignInContainer.Center
+                            DropShadow: =DropShadow.None
+                            FillPortions: =0
+                            Height: =Parent.Height
+                            LayoutAlignItems: =LayoutAlignItems.Center
+                            LayoutDirection: =LayoutDirection.Vertical
+                            LayoutMinHeight: =100
+                            LayoutMinWidth: =250
+                            LayoutMode: =LayoutMode.Auto
+                            Width: =Parent.Width
+                            ZIndex: =1
+
+                            Image17_1 As image:
+                                Height: =Parent.Height*.4
+                                Image: ='Design team-amico'
+                                Width: =Parent.Width*.7
+                                ZIndex: =1
+
+                            Container57_4 As groupContainer.verticalAutoLayoutContainer:
+                                AlignInContainer: =AlignInContainer.SetByContainer
+                                DropShadow: =DropShadow.None
+                                FillPortions: =0
+                                Height: =Parent.Height*.12
+                                LayoutJustifyContent: =LayoutJustifyContent.Center
+                                LayoutMinHeight: =100
+                                LayoutMinWidth: =250
+                                LayoutMode: =LayoutMode.Auto
+                                PaddingLeft: =10
+                                Width: =Parent.Width
+                                ZIndex: =2
+
+                                Label20_4 As label:
+                                    Text: |-
+                                        ="Title:"
+                                    ZIndex: =1
+
+                                TextInput2 As text:
+                                    Default: ="Reimbursement Releted"
+                                    ZIndex: =2
+
+                            Container57_5 As groupContainer.verticalAutoLayoutContainer:
+                                AlignInContainer: =AlignInContainer.SetByContainer
+                                DropShadow: =DropShadow.None
+                                FillPortions: =0
+                                Height: =Parent.Height*.12
+                                LayoutJustifyContent: =LayoutJustifyContent.Center
+                                LayoutMinHeight: =100
+                                LayoutMinWidth: =250
+                                LayoutMode: =LayoutMode.Auto
+                                PaddingLeft: =10
+                                Width: =Parent.Width
+                                ZIndex: =3
+
+                                Label20_5 As label:
+                                    Text: |-
+                                        ="Priority:"
+                                    ZIndex: =1
+
+                                TextInput2_1 As text:
+                                    Default: ="Medium"
+                                    ZIndex: =2
+
+                            Container57_6 As groupContainer.verticalAutoLayoutContainer:
+                                AlignInContainer: =AlignInContainer.SetByContainer
+                                DropShadow: =DropShadow.None
+                                FillPortions: =0
+                                Height: =Parent.Height*.12
+                                LayoutJustifyContent: =LayoutJustifyContent.Center
+                                LayoutMinHeight: =100
+                                LayoutMinWidth: =250
+                                LayoutMode: =LayoutMode.Auto
+                                PaddingLeft: =10
+                                Width: =Parent.Width
+                                ZIndex: =4
+
+                                Label20_6 As label:
+                                    Text: |-
+                                        ="Department:"
+                                    ZIndex: =1
+
+                                TextInput2_2 As text:
+                                    Default: ="Finance"
+                                    ZIndex: =2
+
+                            Container57_7 As groupContainer.verticalAutoLayoutContainer:
+                                AlignInContainer: =AlignInContainer.SetByContainer
+                                DropShadow: =DropShadow.None
+                                FillPortions: =0
+                                Height: =Parent.Height*.12
+                                LayoutJustifyContent: =LayoutJustifyContent.Center
+                                LayoutMinHeight: =100
+                                LayoutMinWidth: =250
+                                LayoutMode: =LayoutMode.Auto
+                                PaddingLeft: =10
+                                Width: =Parent.Width
+                                ZIndex: =5
+
+                                Label20_7 As label:
+                                    Text: |-
+                                        ="Description:"
+                                    ZIndex: =1
+
+                                TextInput2_3 As text:
+                                    Default: ="-"
+                                    ZIndex: =2
+
+                            Container59_1 As groupContainer.horizontalAutoLayoutContainer:
+                                AlignInContainer: =AlignInContainer.Center
+                                FillPortions: =0
+                                Height: =Parent.Height*.12
+                                LayoutAlignItems: =LayoutAlignItems.Center
+                                LayoutJustifyContent: =LayoutJustifyContent.Center
+                                LayoutMinHeight: =100
+                                LayoutMinWidth: =250
+                                LayoutMode: =LayoutMode.Auto
+                                PaddingLeft: =50
+                                PaddingRight: =50
+                                Width: =Parent.Width
+                                ZIndex: =6
+
+                                Button4_2 As button:
+                                    Fill: =RGBA(20, 32, 54, 1)
+                                    FontWeight: =FontWeight.Bold
+                                    OnSelect: |-
+                                        =Set(VarViewSummary,false);
+                                        Set(VarblackBGHS,false)
+                                    Size: =10
+                                    Text: ="CLOSE"
+                                    Width: =Parent.Width*.4
+                                    ZIndex: =1
 
         con_NavBarLFT_HS As groupContainer.manualLayoutContainer:
             DropShadow: =DropShadow.None
