@@ -1,17 +1,17 @@
 "'Home screen' As screen":
     OnVisible: =
 
-    Container20 As groupContainer.manualLayoutContainer:
+    con_Main_HS As groupContainer.manualLayoutContainer:
         DropShadow: =DropShadow.None
         Fill: =RGBA(214, 214, 214, 0.35)
         Height: =Parent.Height
         Width: =Parent.Width
         ZIndex: =1
 
-        Container22 As groupContainer.manualLayoutContainer:
+        con_HOME_HS As groupContainer.manualLayoutContainer:
             Height: =Parent.Height
-            Width: =Parent.Width-Container21.Width+20
-            X: =Container21.Width-20
+            Width: =Parent.Width-con_NavBarLFT_HS.Width+20
+            X: =con_NavBarLFT_HS.Width-20
             ZIndex: =1
 
             Component1_1 As CmpHeaderAdmin:
@@ -355,7 +355,7 @@
                     Y: =40
                     ZIndex: =8
 
-            Container10_2 As groupContainer.manualLayoutContainer:
+            con_AddTicket_HS As groupContainer.manualLayoutContainer:
                 DropShadow: =DropShadow.None
                 Height: |-
                     =//310
@@ -445,7 +445,7 @@
                             Width: =Parent.Width*.8
                             ZIndex: =2
 
-                Container11_3 As groupContainer.verticalAutoLayoutContainer:
+                con_AddTicketMain_HS As groupContainer.verticalAutoLayoutContainer:
                     DropShadow: =DropShadow.None
                     Fill: =RGBA(255, 255, 255, 1)
                     Height: =Parent.Height/2-10
@@ -458,8 +458,8 @@
                     Width: =Parent.Width
                     ZIndex: =3
 
-                    Container23_4 As groupContainer.horizontalAutoLayoutContainer:
-                        AlignInContainer: =AlignInContainer.Center
+                    con_AddTicketbtn_HS As groupContainer.horizontalAutoLayoutContainer:
+                        AlignInContainer: =AlignInContainer.SetByContainer
                         DropShadow: =DropShadow.None
                         FillPortions: =0
                         Height: =Parent.Height*.5
@@ -471,8 +471,8 @@
                         Width: =Parent.Width
                         ZIndex: =1
 
-                        Container25_4 As groupContainer.manualLayoutContainer:
-                            AlignInContainer: =AlignInContainer.Center
+                        con_AddTicketbtnAdd_HS As groupContainer.manualLayoutContainer:
+                            AlignInContainer: =AlignInContainer.SetByContainer
                             Fill: =RGBA(0, 120, 232, 1)
                             FillPortions: =0
                             Height: =Parent.Height-20
@@ -485,7 +485,7 @@
                             Width: =Parent.Height-20
                             ZIndex: =1
 
-                            Image7_4 As image:
+                            img_AddTicket_HS As image:
                                 Height: =Parent.Height*.5
                                 Image: =add
                                 Width: =Parent.Width*.5
@@ -493,8 +493,8 @@
                                 Y: =Parent.Width/2-Self.Width/2
                                 ZIndex: =1
 
-                    Container24_4 As groupContainer.horizontalAutoLayoutContainer:
-                        AlignInContainer: =AlignInContainer.Center
+                    con_ADDTicketText_HS As groupContainer.horizontalAutoLayoutContainer:
+                        AlignInContainer: =AlignInContainer.SetByContainer
                         DropShadow: =DropShadow.None
                         FillPortions: =0
                         Height: =Parent.Height*.5
@@ -524,20 +524,22 @@
                             Width: =Parent.Width*.8
                             ZIndex: =2
 
-            Container33 As groupContainer.verticalAutoLayoutContainer:
+            con_AllTickets_HS As groupContainer.verticalAutoLayoutContainer:
                 DropShadow: =DropShadow.Semilight
                 Fill: =RGBA(255, 255, 255, 1)
                 Height: =Parent.Height*.47
+                LayoutAlignItems: =LayoutAlignItems.Center
                 LayoutDirection: =LayoutDirection.Vertical
                 LayoutGap: =1
+                LayoutJustifyContent: =LayoutJustifyContent.Center
                 LayoutMode: =LayoutMode.Auto
                 Width: =Parent.Width*.972
                 X: =Parent.Width/2-Self.Width/2+2
                 Y: =Container10.Height+Component1_1.Height+25
                 ZIndex: =4
 
-                Container9 As groupContainer.horizontalAutoLayoutContainer:
-                    AlignInContainer: =AlignInContainer.Center
+                con_AllTicketsHeader_HS As groupContainer.horizontalAutoLayoutContainer:
+                    AlignInContainer: =AlignInContainer.SetByContainer
                     DropShadow: =DropShadow.None
                     FillPortions: =0
                     Height: =Parent.Height*.13
@@ -548,7 +550,7 @@
                     Width: =Parent.Width
                     ZIndex: =1
 
-                    Image9 As image:
+                    img_AllTickets_HS As image:
                         Height: =Parent.Height*.9
                         Image: =BLUE
                         ImagePosition: =ImagePosition.Fill
@@ -559,7 +561,7 @@
                         Width: =12
                         ZIndex: =1
 
-                    Label9 As label:
+                    lbl_recentTickets_HS As label:
                         Color: =RGBA(84, 84, 84, 1)
                         FontWeight: =FontWeight.Semibold
                         Size: =18
@@ -567,8 +569,8 @@
                         Width: =Parent.Width*.7
                         ZIndex: =2
 
-                Container9_2 As groupContainer.horizontalAutoLayoutContainer:
-                    AlignInContainer: =AlignInContainer.Center
+                Con_recentTickets_Header_HS As groupContainer.horizontalAutoLayoutContainer:
+                    AlignInContainer: =AlignInContainer.SetByContainer
                     DropShadow: =DropShadow.None
                     Fill: =RGBA(222, 238, 255, 1)
                     FillPortions: =0
@@ -586,7 +588,7 @@
                     Width: =Parent.Width*.97
                     ZIndex: =2
 
-                    Label10 As label:
+                    lbl_TicketType_HS As label:
                         Align: =Align.Center
                         FontWeight: =FontWeight.Lighter
                         Size: =12
@@ -594,43 +596,43 @@
                         Width: =160
                         ZIndex: =1
 
-                    Label10_3 As label:
+                    lbl_TicketTitle_HS As label:
                         Align: =Align.Center
                         FontWeight: =FontWeight.Lighter
                         Size: =12
                         Text: ="TICKET TITLE"
                         ZIndex: =2
 
-                    Label10_4 As label:
+                    lbl_TicketAssign_HS As label:
                         Align: =Align.Center
                         FontWeight: =FontWeight.Lighter
                         Size: =12
                         Text: ="ASSIGNED TO"
                         ZIndex: =3
 
-                    Label10_5 As label:
+                    lbl_TicketCreated_HS As label:
                         Align: =Align.Center
                         FontWeight: =FontWeight.Lighter
                         Size: =12
                         Text: ="CREEATED ON"
                         ZIndex: =4
 
-                    Label10_6 As label:
+                    lbl_TicketPriority_HS As label:
                         Align: =Align.Center
                         FontWeight: =FontWeight.Lighter
                         Size: =12
                         Text: ="TICKET PRIORITY"
                         ZIndex: =5
 
-                    Label10_7 As label:
+                    lbl_TicketStatus_HS As label:
                         Align: =Align.Center
                         FontWeight: =FontWeight.Lighter
                         Size: =12
                         Text: ="TICKET STATUS"
                         ZIndex: =6
 
-                Gallery3 As gallery.variableTemplateHeightGallery:
-                    AlignInContainer: =AlignInContainer.Center
+                gal_RecentTickets_HS As gallery.variableTemplateHeightGallery:
+                    AlignInContainer: =AlignInContainer.SetByContainer
                     DelayItemLoading: =true
                     FillPortions: =0
                     Height: =Parent.Height*.7
@@ -639,12 +641,15 @@
                     LayoutMinHeight: =287
                     LayoutMinWidth: =320
                     LoadingSpinner: =LoadingSpinner.Data
+                    OnSelect: |-
+                        =ClearCollect(Currentdata,gal_RecentTickets_HS.Selected);
+                        Set(VarViewSummary,true)
                     TemplateSize: =Parent.Height*.14
                     Transition: =Transition.Pop
                     Width: =Parent.Width*.98
                     ZIndex: =3
 
-                    Container9_3 As groupContainer.horizontalAutoLayoutContainer:
+                    con_recentTickets_HS As groupContainer.horizontalAutoLayoutContainer:
                         DropShadow: =DropShadow.None
                         Fill: =RGBA(245, 245, 245, 1)
                         Height: =Parent.TemplateHeight
@@ -659,8 +664,8 @@
                         Width: =Parent.TemplateWidth
                         ZIndex: =1
 
-                        Container34 As groupContainer.horizontalAutoLayoutContainer:
-                            AlignInContainer: =AlignInContainer.Center
+                        con_Image_HS As groupContainer.horizontalAutoLayoutContainer:
+                            AlignInContainer: =AlignInContainer.SetByContainer
                             DropShadow: =DropShadow.None
                             FillPortions: =0
                             Height: =Parent.Height
@@ -702,36 +707,36 @@
                                 Width: =Parent.Width-Image10.Width-10
                                 ZIndex: =2
 
-                        Label10_9 As label:
+                        lbl_TicketTitleingal_HS As label:
                             Align: =Align.Center
                             FontWeight: =FontWeight.Lighter
                             Size: =12
                             Text: =ThisItem.Ticket_Title
                             ZIndex: =2
 
-                        Label10_10 As label:
+                        lbl_TicketAssigningal_HS As label:
                             Align: =Align.Center
                             FontWeight: =FontWeight.Lighter
                             Size: =12
                             Text: =ThisItem.Assigned_To
                             ZIndex: =3
 
-                        Label10_11 As label:
+                        lbl_TicketCreatedingal_HS As label:
                             Align: =Align.Center
                             FontWeight: =FontWeight.Lighter
                             Size: =12
                             Text: =ThisItem.Ticket_CreatedOn
                             ZIndex: =4
 
-                        Label10_12 As label:
+                        lbl_TicketPriorityingal_HS As label:
                             Align: =Align.Center
                             FontWeight: =FontWeight.Lighter
                             Size: =12
                             Text: =ThisItem.Ticket_Priority
                             ZIndex: =5
 
-                        Container34_1 As groupContainer.horizontalAutoLayoutContainer:
-                            AlignInContainer: =AlignInContainer.Center
+                        Con_TicketStatus_HS As groupContainer.horizontalAutoLayoutContainer:
+                            AlignInContainer: =AlignInContainer.SetByContainer
                             DropShadow: =DropShadow.None
                             FillPortions: =0
                             Height: =Parent.Height
@@ -744,7 +749,7 @@
                             Width: =160
                             ZIndex: =7
 
-                            Button1 As button:
+                            btn_TicketStatus_HS As button:
                                 BorderColor: =ColorFade(Self.Fill, -35%)
                                 Color: =RGBA(0, 0, 0, 1)
                                 DisabledBorderColor: =RGBA(0, 0, 0, 0)
@@ -772,7 +777,7 @@
                                 Width: =Parent.Width*.8
                                 ZIndex: =1
 
-            Container27 As groupContainer.manualLayoutContainer:
+            con_Notifications_HS As groupContainer.manualLayoutContainer:
                 DropShadow: =DropShadow.ExtraBold
                 Fill: =RGBA(255, 255, 255, 1)
                 Height: =Parent.Height*.5
@@ -786,7 +791,7 @@
                 Y: =Container10.Y
                 ZIndex: =5
 
-                Container28 As groupContainer.horizontalAutoLayoutContainer:
+                con_NotificationsMAin_HS As groupContainer.horizontalAutoLayoutContainer:
                     Height: =Parent.Height*.1
                     LayoutAlignItems: =LayoutAlignItems.Center
                     LayoutJustifyContent: =LayoutJustifyContent.SpaceBetween
@@ -800,7 +805,7 @@
                     Width: =Parent.Width
                     ZIndex: =1
 
-                    Label6 As label:
+                    lbl_Notifications_HS As label:
                         FontWeight: =FontWeight.Bold
                         Height: =Parent.Height
                         Size: =10
@@ -808,22 +813,22 @@
                         Width: =Parent.Width*.8
                         ZIndex: =1
 
-                    Icon1 As icon.Cancel:
+                    ico_Notifications_HS As icon.Cancel:
                         Height: =Parent.Height/2
                         Icon: =Icon.Cancel
                         OnSelect: =Set(Varnotification,false)
                         Width: =Parent.Height/2
                         ZIndex: =2
 
-                Gallery2 As gallery.variableTemplateHeightGallery:
+                gal_Notifications_HS As gallery.variableTemplateHeightGallery:
                     DelayItemLoading: =true
-                    Height: =Parent.Height-Container28.Height
+                    Height: =Parent.Height-con_NotificationsMAin_HS.Height
                     Items: =ClearcollectTodayTickets
                     Layout: =Layout.Vertical
                     LoadingSpinner: =LoadingSpinner.Data
                     TemplateSize: =Parent.Height*.15
                     Width: =Parent.Width
-                    Y: =Container28.Height
+                    Y: =con_NotificationsMAin_HS.Height
                     ZIndex: =2
 
                     Container29 As groupContainer.verticalAutoLayoutContainer:
@@ -897,7 +902,7 @@
                                     Width: =Parent.Width-Label7_1.Width
                                     ZIndex: =2
 
-            Rectangle1 As rectangle:
+            rec_Loader_HS As rectangle:
                 Fill: =RGBA(255, 255, 255, 1)
                 Height: =706
                 Visible: =VarLoader
@@ -906,18 +911,27 @@
                 Y: =61
                 ZIndex: =6
 
-        Container21 As groupContainer.manualLayoutContainer:
+            Rectangle4 As rectangle:
+                Fill: =RGBA(0, 0, 0, 0.64)
+                Height: =Parent.Height
+                Visible: =VarViewSummary
+                Width: =Parent.Width
+                X: =
+                Y: =
+                ZIndex: =7
+
+        con_NavBarLFT_HS As groupContainer.manualLayoutContainer:
             DropShadow: =DropShadow.None
             Height: =Parent.Height
             Width: =If(VarExpandNavBar,240,100)
             ZIndex: =2
 
-            CmpNavBar_1 As CmpNavBar:
+            cmp_NavBar_HS As CmpNavBar:
                 currentscreen: ="HOME"
                 Height: =Parent.Height
                 navitems: =Clearcollectnavitems
 
-    Timer1 As timer:
+    tm_Loader_HS As timer:
         AutoStart: =true
         Duration: =3000
         Fill: =RGBA(0, 0, 0, 0)
@@ -928,7 +942,7 @@
         Y: =40
         ZIndex: =3
 
-    Image11 As image:
+    img_Loader_HS As image:
         Image: ='Spinner-square'
         Visible: =VarLoader
         X: =Parent.Width/2-Self.Width/2

@@ -1,12 +1,14 @@
 "'login screen' As screen":
 
-    ConMain As groupContainer.horizontalAutoLayoutContainer:
-        Height: =768
+    con_Main_LS2 As groupContainer.horizontalAutoLayoutContainer:
+        Height: =Parent.Height
         LayoutMode: =LayoutMode.Auto
-        Width: =1366
+        Width: =Parent.Width
         ZIndex: =1
 
         Conlest As groupContainer.manualLayoutContainer:
+            AlignInContainer: =AlignInContainer.SetByContainer
+            Height: =Parent.Height
             LayoutMinHeight: =100
             LayoutMinWidth: =250
             RadiusBottomLeft: =0
@@ -81,6 +83,8 @@
                     ZIndex: =4
 
         Conright As groupContainer.manualLayoutContainer:
+            AlignInContainer: =AlignInContainer.SetByContainer
+            Height: =Parent.Height
             LayoutMinHeight: =100
             LayoutMinWidth: =250
             RadiusBottomLeft: =0
@@ -90,13 +94,13 @@
             ZIndex: =2
 
             imgDecor As image:
-                Height: =768
+                Height: =Parent.Height
                 Image: =employees
                 ImagePosition: =ImagePosition.Fill
-                Width: =683
+                Width: =Parent.Width
                 ZIndex: =1
 
-    Condescenbottom As groupContainer.manualLayoutContainer:
+    con_descenbottom As groupContainer.manualLayoutContainer:
         Fill: =RGBA(43, 40, 59, 0.84)
         Height: =228
         RadiusBottomLeft: =0
@@ -108,7 +112,7 @@
         Y: =540
         ZIndex: =2
 
-    Congal As groupContainer.manualLayoutContainer:
+    con_gal_LS As groupContainer.manualLayoutContainer:
         Fill: =RGBA(43, 40, 59, 1)
         Height: =228
         RadiusBottomLeft: =0
@@ -119,7 +123,7 @@
         Y: =540
         ZIndex: =3
 
-        Landing_Gal As gallery.galleryHorizontal:
+        gal_Landing_LS As gallery.galleryHorizontal:
             DelayItemLoading: =true
             Fill: =RGBA(48, 52, 63, 1)
             Height: =Parent.Height
@@ -191,20 +195,20 @@
             TemplatePadding: =0
             TemplateSize: |-
                 =//If(Self.Layout = Layout.Horizontal, Min(320, Self.Width - 60), Min(320, Self.Height - 60))
-                If(Self.Layout = Layout.Horizontal, Landing_Gal.Width/3, Landing_Gal.Height)
+                If(Self.Layout = Layout.Horizontal, gal_Landing_LS.Width/3, gal_Landing_LS.Height)
             Width: =684
             ZIndex: =1
 
             Land_gal_Con_main As groupContainer.manualLayoutContainer:
                 BorderStyle: =BorderStyle.None
-                Height: =Landing_Gal.TemplateHeight
+                Height: =gal_Landing_LS.TemplateHeight
                 PaddingLeft: =10
                 PaddingRight: =10
                 RadiusBottomLeft: =0
                 RadiusBottomRight: =0
                 RadiusTopLeft: =0
                 RadiusTopRight: =0
-                Width: =Landing_Gal.TemplateWidth
+                Width: =gal_Landing_LS.TemplateWidth
                 ZIndex: =1
 
                 Land_gal_img As image:
@@ -256,7 +260,7 @@
                     Width: =Land_gal_Con_main.Width
                     ZIndex: =4
 
-    ConDestopright As groupContainer.manualLayoutContainer:
+    con_Destopright_LS As groupContainer.manualLayoutContainer:
         Fill: =RGBA(43, 40, 59, 0.84)
         Height: =153
         RadiusBottomLeft: =90
@@ -267,14 +271,14 @@
         X: =1268
         ZIndex: =4
 
-    RecBlurBG As rectangle:
+    shp_BG_LS As rectangle:
         Fill: =RGBA(0, 0, 0, 0.68)
         Height: =768
         Visible: =varLoginbtn
         Width: =1366
         ZIndex: =5
 
-    Container5 As groupContainer.horizontalAutoLayoutContainer:
+    con_Main_LS As groupContainer.horizontalAutoLayoutContainer:
         Height: =768
         LayoutAlignItems: =LayoutAlignItems.Center
         LayoutJustifyContent: =LayoutJustifyContent.Center
@@ -459,7 +463,7 @@
                     ZIndex: =5
 
         Container6_1 As groupContainer.verticalAutoLayoutContainer:
-            AlignInContainer: =AlignInContainer.Center
+            AlignInContainer: =AlignInContainer.SetByContainer
             DropShadow: =DropShadow.ExtraBold
             Fill: =RGBA(255, 255, 255, 1)
             FillPortions: =0

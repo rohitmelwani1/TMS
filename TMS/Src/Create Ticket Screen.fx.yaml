@@ -1,2 +1,27 @@
 "'Create Ticket Screen' As screen":
 
+    Container50_1 As groupContainer.verticalAutoLayoutContainer:
+        Height: =Parent.Height
+        LayoutDirection: =LayoutDirection.Vertical
+        LayoutMode: =LayoutMode.Auto
+        Width: =Parent.Width
+        ZIndex: =1
+
+        CmpHeaderBasicUser_3 As CmpHeaderBasicUser:
+            Height: =Parent.Height*.1
+            image: =jaya
+            LayoutMinHeight: =640
+            LayoutMinWidth: =640
+            Name: ="Jaya Keswani"
+            screenname: ="Create Ticket"
+            Width: =Parent.Width
+
+        Container51_1 As groupContainer.verticalAutoLayoutContainer:
+            Height: =Parent.Height*.9
+            LayoutAlignItems: =LayoutAlignItems.Center
+            LayoutDirection: =LayoutDirection.Vertical
+            LayoutMode: =LayoutMode.Auto
+            PaddingTop: =20
+            Width: =Parent.Width
+            ZIndex: =3
+
