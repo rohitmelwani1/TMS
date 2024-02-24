@@ -609,6 +609,271 @@
                                     Y: =440
                                     ZIndex: =4
 
+                DataCard3 As dataCard.blankCard:
+                    BorderColor: =RGBA(0, 0, 0, 1)
+                    BorderStyle: =BorderStyle.Solid
+                    DisplayMode: =DisplayMode.Edit
+                    Fill: =RGBA(0, 0, 0, 0)
+                    Height: =360
+                    Width: =1286
+                    X: =0
+                    Y: =2
+                    ZIndex: =3
+
+                    con_AllTickets_HS_1 As groupContainer.verticalAutoLayoutContainer:
+                        DropShadow: =DropShadow.Semilight
+                        Fill: =RGBA(255, 255, 255, 1)
+                        Height: =Parent.Height
+                        LayoutAlignItems: =LayoutAlignItems.Center
+                        LayoutDirection: =LayoutDirection.Vertical
+                        LayoutGap: =1
+                        LayoutJustifyContent: =LayoutJustifyContent.Center
+                        LayoutMode: =LayoutMode.Auto
+                        RadiusBottomLeft: =10
+                        RadiusBottomRight: =10
+                        RadiusTopLeft: =10
+                        RadiusTopRight: =10
+                        Width: =Parent.Width*.93
+                        X: =Parent.Width/2-Self.Width/2
+                        ZIndex: =1
+
+                        con_AllTicketsHeader_HS_1 As groupContainer.horizontalAutoLayoutContainer:
+                            AlignInContainer: =AlignInContainer.SetByContainer
+                            DropShadow: =DropShadow.None
+                            FillPortions: =0
+                            Height: =Parent.Height*.13
+                            LayoutAlignItems: =LayoutAlignItems.Center
+                            LayoutMinHeight: =100
+                            LayoutMinWidth: =250
+                            LayoutMode: =LayoutMode.Auto
+                            Width: =Parent.Width
+                            ZIndex: =1
+
+                            img_AllTickets_HS_1 As image:
+                                Height: =Parent.Height*.9
+                                Image: =BLUE
+                                ImagePosition: =ImagePosition.Fill
+                                RadiusBottomLeft: =30
+                                RadiusBottomRight: =30
+                                RadiusTopLeft: =30
+                                RadiusTopRight: =30
+                                Width: =12
+                                ZIndex: =1
+
+                            lbl_recentTickets_HS_1 As label:
+                                Color: =RGBA(84, 84, 84, 1)
+                                FontWeight: =FontWeight.Semibold
+                                Size: =18
+                                Text: ="Recent Tickets"
+                                Width: =Parent.Width*.7
+                                ZIndex: =2
+
+                        Con_recentTickets_Header_HS_1 As groupContainer.horizontalAutoLayoutContainer:
+                            AlignInContainer: =AlignInContainer.SetByContainer
+                            DropShadow: =DropShadow.None
+                            Fill: =RGBA(222, 238, 255, 1)
+                            FillPortions: =0
+                            Height: =Parent.Height*.13
+                            LayoutAlignItems: =LayoutAlignItems.Center
+                            LayoutJustifyContent: =LayoutJustifyContent.SpaceBetween
+                            LayoutMinHeight: =100
+                            LayoutMinWidth: =250
+                            LayoutMode: =LayoutMode.Auto
+                            PaddingRight: =5
+                            RadiusBottomLeft: =10
+                            RadiusBottomRight: =10
+                            RadiusTopLeft: =10
+                            RadiusTopRight: =10
+                            Width: =Parent.Width*.97
+                            ZIndex: =2
+
+                            lbl_TicketStatus_HS_1 As label:
+                                Align: =Align.Center
+                                FontWeight: =FontWeight.Lighter
+                                Size: =12
+                                Text: ="TICKET ID"
+                                ZIndex: =1
+
+                            lbl_TicketType_HS_1 As label:
+                                Align: =Align.Center
+                                FontWeight: =FontWeight.Lighter
+                                Size: =12
+                                Text: ="TICKET TYPE"
+                                Width: =160
+                                ZIndex: =2
+
+                            lbl_TicketTitle_HS_1 As label:
+                                Align: =Align.Center
+                                FontWeight: =FontWeight.Lighter
+                                Size: =12
+                                Text: ="TICKET TITLE"
+                                ZIndex: =3
+
+                            lbl_TicketAssign_HS_1 As label:
+                                Align: =Align.Center
+                                FontWeight: =FontWeight.Lighter
+                                Size: =12
+                                Text: ="ASSIGNED TO"
+                                ZIndex: =4
+
+                            lbl_TicketCreated_HS_1 As label:
+                                Align: =Align.Center
+                                FontWeight: =FontWeight.Lighter
+                                Size: =12
+                                Text: ="CREEATED ON"
+                                ZIndex: =5
+
+                            lbl_TicketPriority_HS_1 As label:
+                                Align: =Align.Center
+                                FontWeight: =FontWeight.Lighter
+                                Size: =12
+                                Text: ="TICKET STATUS"
+                                ZIndex: =6
+
+                        gal_RecentTickets_HS_1 As gallery.variableTemplateHeightGallery:
+                            AlignInContainer: =AlignInContainer.SetByContainer
+                            DelayItemLoading: =true
+                            FillPortions: =0
+                            Height: =Parent.Height*.7
+                            Items: =TMS_Tickets
+                            Layout: =Layout.Vertical
+                            LayoutMinHeight: =287
+                            LayoutMinWidth: =320
+                            LoadingSpinner: =LoadingSpinner.Data
+                            OnSelect: =
+                            TemplateSize: =Parent.Height*.14
+                            Transition: =Transition.Pop
+                            Width: =Parent.Width*.98
+                            ZIndex: =3
+
+                            con_recentTickets_HS_1 As groupContainer.horizontalAutoLayoutContainer:
+                                DropShadow: =DropShadow.None
+                                Fill: =RGBA(245, 245, 245, 1)
+                                Height: =Parent.TemplateHeight
+                                LayoutAlignItems: =LayoutAlignItems.Center
+                                LayoutJustifyContent: =LayoutJustifyContent.SpaceBetween
+                                LayoutMode: =LayoutMode.Auto
+                                PaddingRight: =5
+                                RadiusBottomLeft: =10
+                                RadiusBottomRight: =10
+                                RadiusTopLeft: =10
+                                RadiusTopRight: =10
+                                Width: =Parent.TemplateWidth
+                                ZIndex: =1
+
+                                lbl_TicketAssigningal_HS_2 As label:
+                                    Align: =Align.Center
+                                    FontWeight: =FontWeight.Lighter
+                                    Size: =12
+                                    Text: ="TMS00"&ThisItem.ID
+                                    ZIndex: =1
+
+                                con_Image_HS_1 As groupContainer.horizontalAutoLayoutContainer:
+                                    AlignInContainer: =AlignInContainer.SetByContainer
+                                    DropShadow: =DropShadow.None
+                                    FillPortions: =0
+                                    Height: =Parent.Height
+                                    LayoutAlignItems: =LayoutAlignItems.Center
+                                    LayoutJustifyContent: =LayoutJustifyContent.Center
+                                    LayoutMinHeight: =100
+                                    LayoutMinWidth: =250
+                                    LayoutMode: =LayoutMode.Auto
+                                    PaddingLeft: =5
+                                    PaddingRight: =5
+                                    Width: =160
+                                    ZIndex: =2
+
+                                    Image10_1 As image:
+                                        Height: =Parent.Height*.8
+                                        Image: |-
+                                            =Switch(
+                                                ThisItem.Ticket_Catagory,
+                                                "IT",
+                                                IT,
+                                                "HR",
+                                                HR,
+                                                "Finance",
+                                                FINANCE,
+                                                "Administrator",
+                                                ADMINISTRATOR
+                                            )
+                                        Width: =Parent.Height*.8
+                                        ZIndex: =1
+
+                                    Label10_9 As label:
+                                        FontWeight: =FontWeight.Lighter
+                                        Height: =Parent.Height
+                                        PaddingLeft: =10
+                                        Size: =12
+                                        Text: |-
+                                            =//"TICKET TYPE"
+                                            ThisItem.Ticket_Catagory
+                                        Width: =Parent.Width-Image10_1.Width-10
+                                        ZIndex: =2
+
+                                lbl_TicketTitleingal_HS_1 As label:
+                                    Align: =Align.Center
+                                    FontWeight: =FontWeight.Lighter
+                                    Size: =12
+                                    Text: =ThisItem.Ticket_Title
+                                    ZIndex: =3
+
+                                lbl_TicketAssigningal_HS_1 As label:
+                                    Align: =Align.Center
+                                    FontWeight: =FontWeight.Lighter
+                                    Size: =12
+                                    Text: =ThisItem.Assigned_To
+                                    ZIndex: =4
+
+                                lbl_TicketCreatedingal_HS_1 As label:
+                                    Align: =Align.Center
+                                    FontWeight: =FontWeight.Lighter
+                                    Size: =12
+                                    Text: =ThisItem.Ticket_CreatedOn
+                                    ZIndex: =5
+
+                                Con_TicketStatus_HS_1 As groupContainer.horizontalAutoLayoutContainer:
+                                    AlignInContainer: =AlignInContainer.SetByContainer
+                                    DropShadow: =DropShadow.None
+                                    FillPortions: =0
+                                    Height: =Parent.Height
+                                    LayoutAlignItems: =LayoutAlignItems.Center
+                                    LayoutJustifyContent: =LayoutJustifyContent.Center
+                                    LayoutMinHeight: =100
+                                    LayoutMinWidth: =250
+                                    LayoutMode: =LayoutMode.Auto
+                                    PaddingLeft: =5
+                                    Width: =160
+                                    ZIndex: =6
+
+                                    btn_TicketStatus_HS_1 As button:
+                                        BorderColor: =ColorFade(Self.Fill, -35%)
+                                        Color: =RGBA(0, 0, 0, 1)
+                                        DisabledBorderColor: =RGBA(0, 0, 0, 0)
+                                        DisabledColor: =RGBA(0, 0, 0, 0)
+                                        DisabledFill: =RGBA(0, 0, 0, 0)
+                                        DisplayMode: =DisplayMode.View
+                                        Fill: |-
+                                            =Switch(
+                                                ThisItem.Ticket_Status,
+                                                "Approved",
+                                                  ColorFade(Color.Green,40%),
+                                                 "In Progress",
+                                                ColorFade(Color.Yellow,40%),
+                                                 "Rejected",
+                                                  ColorFade(Color.Red,50%)
+                                            )
+                                        FontWeight: =FontWeight.Bold
+                                        Height: =Parent.Height*.5
+                                        HoverColor: =RGBA(0, 0, 0, 1)
+                                        HoverFill: =Self.Fill
+                                        PressedColor: =Self.Color
+                                        PressedFill: =Self.Fill
+                                        Size: =12
+                                        Text: =ThisItem.Ticket_Status
+                                        Width: =Parent.Width*.8
+                                        ZIndex: =1
+
             Rectangle1_1 As rectangle:
                 Fill: =RGBA(255, 255, 255, 1)
                 Height: =Parent.Height

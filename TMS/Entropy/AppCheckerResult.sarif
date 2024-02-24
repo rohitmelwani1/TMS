@@ -1734,6 +1734,36 @@
             {
               "logicalLocations": [
                 {
+                  "fullyQualifiedName": "'Dashboard screen'.Container20_1.Container22_1.Canvas1.DataCard3.con_AllTickets_HS_1.gal_RecentTickets_HS_1.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'Dashboard screen'.Container20_1.Container22_1.Canvas1.DataCard3.con_AllTickets_HS_1.gal_RecentTickets_HS_1.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "Dashboard screen",
+                "type": "'Dashboard screen'.Container20_1.Container22_1.Canvas1.DataCard3.con_AllTickets_HS_1.gal_RecentTickets_HS_1"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 2
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
                   "fullyQualifiedName": "'Home screen'.con_Main_HS.con_HOME_HS.Container58_1.Container50_2.Container51_2.Container56_2.Container57_4.TextInput2.AccessibleLabel"
                 }
               ],
@@ -2028,6 +2058,36 @@
           },
           "ruleId": "acc-AccessibleLabelNeeded",
           "ruleIndex": 2
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'Dashboard screen'.Container20_1.Container22_1.Canvas1.DataCard3.con_AllTickets_HS_1.gal_RecentTickets_HS_1.TabIndex"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'Dashboard screen'.Container20_1.Container22_1.Canvas1.DataCard3.con_AllTickets_HS_1.gal_RecentTickets_HS_1.TabIndex",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "TabIndex",
+                "module": "Dashboard screen",
+                "type": "'Dashboard screen'.Container20_1.Container22_1.Canvas1.DataCard3.con_AllTickets_HS_1.gal_RecentTickets_HS_1"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
+          "ruleIndex": 3
         },
         {
           "locations": [
