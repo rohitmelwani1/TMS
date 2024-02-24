@@ -1,0 +1,106 @@
+CmpHeaderAdmin As CanvasComponent:
+    Fill: =RGBA(0, 0, 0, 0)
+    Height: =100
+    screenname: ="Text"
+    Width: =1300
+    X: =0
+    Y: =0
+    ZIndex: =1
+
+    Container16 As groupContainer.horizontalAutoLayoutContainer:
+        Height: =Parent.Height
+        LayoutAlignItems: =LayoutAlignItems.Center
+        LayoutJustifyContent: =LayoutJustifyContent.SpaceBetween
+        LayoutMode: =LayoutMode.Auto
+        RadiusBottomLeft: =0
+        RadiusBottomRight: =0
+        RadiusTopLeft: =0
+        RadiusTopRight: =0
+        Width: =Parent.Width
+        ZIndex: =1
+
+        Label2 As label:
+            FontWeight: =FontWeight.Bold
+            Height: =Parent.Height
+            PaddingLeft: =15
+            Size: =20
+            Text: =CmpHeaderAdmin.screenname
+            Width: =Parent.Width*.2
+            ZIndex: =1
+
+        Container17 As groupContainer.horizontalAutoLayoutContainer:
+            AlignInContainer: =AlignInContainer.Center
+            DropShadow: =DropShadow.None
+            FillPortions: =0
+            Height: =Parent.Height
+            LayoutGap: =10
+            LayoutJustifyContent: =LayoutJustifyContent.End
+            LayoutMinHeight: =100
+            LayoutMinWidth: =250
+            LayoutMode: =LayoutMode.Auto
+            Width: =Parent.Width*.8
+            ZIndex: =2
+
+            Container18 As groupContainer.manualLayoutContainer:
+                AlignInContainer: =AlignInContainer.Center
+                DropShadow: =DropShadow.Regular
+                Fill: =RGBA(180, 214, 250, 0.26)
+                FillPortions: =0
+                Height: =Parent.Height*.5
+                LayoutMinHeight: =100
+                LayoutMinWidth: =250
+                RadiusBottomLeft: =10
+                RadiusBottomRight: =10
+                RadiusTopLeft: =10
+                RadiusTopRight: =10
+                Width: =Self.Height
+                ZIndex: =1
+
+                Image1 As image:
+                    Height: =Parent.Height*.5
+                    Image: =BELL
+                    OnSelect: =Set(Varnotification,!Varnotification)
+                    Width: =Parent.Width*.5
+                    X: =Parent.Width/2-Self.Width/2
+                    Y: =Parent.Height/2-Self.Height/2
+                    ZIndex: =1
+
+            Image5 As image:
+                AlignInContainer: =AlignInContainer.Center
+                Height: =Parent.Height*.7
+                Image: =User().Image
+                OnSelect: =
+                RadiusBottomLeft: =20
+                RadiusBottomRight: =20
+                RadiusTopLeft: =20
+                RadiusTopRight: =20
+                Width: =Parent.Height*.7
+                ZIndex: =2
+
+            Container19 As groupContainer.verticalAutoLayoutContainer:
+                AlignInContainer: =AlignInContainer.Center
+                DropShadow: =DropShadow.None
+                FillPortions: =0
+                Height: =Parent.Height
+                LayoutDirection: =LayoutDirection.Vertical
+                LayoutJustifyContent: =LayoutJustifyContent.Center
+                LayoutMinHeight: =100
+                LayoutMinWidth: =250
+                LayoutMode: =LayoutMode.Auto
+                Width: =Parent.Width*.2
+                ZIndex: =3
+
+                Label4 As label:
+                    FontWeight: =FontWeight.Bold
+                    Height: =30
+                    PaddingBottom: =0
+                    Text: =User().FullName
+                    ZIndex: =1
+
+                Label4_1 As label:
+                    Height: =25
+                    PaddingTop: =0
+                    Size: =10
+                    Text: ="Administrator"
+                    ZIndex: =2
+

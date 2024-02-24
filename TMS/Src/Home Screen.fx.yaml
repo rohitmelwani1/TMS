@@ -14,7 +14,7 @@
             X: =Container21.Width-20
             ZIndex: =1
 
-            Component1_1 As Component1:
+            Component1_1 As CmpHeaderAdmin:
                 Fill: =RGBA(255, 255, 255, 1)
                 Height: =Parent.Height*.08
                 screenname: ="HOME"

@@ -1,5 +1,21 @@
 "'Basic User Home Screen' As screen.'phoneLayout_FluidGridWithHeaderPageLayout_ver3.0'":
 
-    Container41 As groupContainer.manualLayoutContainer:
+    Container45 As groupContainer.verticalAutoLayoutContainer:
+        Height: =Parent.Height
+        LayoutDirection: =LayoutDirection.Vertical
+        LayoutMode: =LayoutMode.Auto
+        Width: =Parent.Width
         ZIndex: =1
+
+        CmpHeaderBasicUser_1 As CmpHeaderBasicUser:
+            Height: =Parent.Height*.1
+            LayoutMinHeight: =640
+            LayoutMinWidth: =640
+            Width: =Parent.Width
+
+        Component1_3 As Component1:
+            Height: =Parent.Height*.1
+            LayoutMinHeight: =640
+            LayoutMinWidth: =640
+            ZIndex: =2
 
