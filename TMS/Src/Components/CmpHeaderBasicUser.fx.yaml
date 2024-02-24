@@ -1,6 +1,8 @@
 CmpHeaderBasicUser As CanvasComponent:
     Fill: =RGBA(0, 0, 0, 0)
     Height: =100
+    image: =SampleImage
+    Name: ="Text"
     screenname: ="Text"
     Width: =1300
     X: =0
@@ -68,7 +70,7 @@ CmpHeaderBasicUser As CanvasComponent:
             Image5_1 As image:
                 AlignInContainer: =AlignInContainer.Center
                 Height: =Parent.Height*.7
-                Image: =User().Image
+                Image: =CmpHeaderBasicUser.image
                 OnSelect: =
                 RadiusBottomLeft: =20
                 RadiusBottomRight: =20
@@ -94,7 +96,7 @@ CmpHeaderBasicUser As CanvasComponent:
                     FontWeight: =FontWeight.Bold
                     Height: =30
                     PaddingBottom: =0
-                    Text: =User().FullName
+                    Text: =CmpHeaderBasicUser.Name
                     ZIndex: =1
 
                 Label4_3 As label:

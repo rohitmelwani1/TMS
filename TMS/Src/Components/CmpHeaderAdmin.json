@@ -156,7 +156,7 @@
             "OptimizeForDevices": "Off",
             "Parent": "Container16",
             "PersistMetaDataIDKey": false,
-            "PublishOrderIndex": 219,
+            "PublishOrderIndex": 232,
             "Rules": [
               {
                 "Category": "Data",
@@ -543,7 +543,7 @@
                     "OptimizeForDevices": "Off",
                     "Parent": "Container19",
                     "PersistMetaDataIDKey": false,
-                    "PublishOrderIndex": 222,
+                    "PublishOrderIndex": 235,
                     "Rules": [
                       {
                         "Category": "Data",
@@ -553,7 +553,7 @@
                       },
                       {
                         "Category": "Data",
-                        "InvariantScript": "User().FullName",
+                        "InvariantScript": "CmpHeaderAdmin.Name",
                         "Property": "Text",
                         "RuleProviderType": "User"
                       },
@@ -931,7 +931,7 @@
                     "OptimizeForDevices": "Off",
                     "Parent": "Container19",
                     "PersistMetaDataIDKey": false,
-                    "PublishOrderIndex": 223,
+                    "PublishOrderIndex": 236,
                     "Rules": [
                       {
                         "Category": "Data",
@@ -1315,7 +1315,7 @@
                 "OptimizeForDevices": "Off",
                 "Parent": "Container17",
                 "PersistMetaDataIDKey": false,
-                "PublishOrderIndex": 221,
+                "PublishOrderIndex": 234,
                 "Rules": [
                   {
                     "Category": "Design",
@@ -1626,11 +1626,11 @@
                 "OptimizeForDevices": "Off",
                 "Parent": "Container17",
                 "PersistMetaDataIDKey": false,
-                "PublishOrderIndex": 224,
+                "PublishOrderIndex": 237,
                 "Rules": [
                   {
                     "Category": "Data",
-                    "InvariantScript": "User().Image",
+                    "InvariantScript": "CmpHeaderAdmin.image",
                     "Property": "Image",
                     "RuleProviderType": "User"
                   },
@@ -1919,7 +1919,7 @@
                     "OptimizeForDevices": "Off",
                     "Parent": "Container18",
                     "PersistMetaDataIDKey": false,
-                    "PublishOrderIndex": 226,
+                    "PublishOrderIndex": 239,
                     "Rules": [
                       {
                         "Category": "Data",
@@ -2269,7 +2269,7 @@
                 "OptimizeForDevices": "Off",
                 "Parent": "Container17",
                 "PersistMetaDataIDKey": false,
-                "PublishOrderIndex": 225,
+                "PublishOrderIndex": 238,
                 "Rules": [
                   {
                     "Category": "Design",
@@ -2551,7 +2551,7 @@
             "OptimizeForDevices": "Off",
             "Parent": "Container16",
             "PersistMetaDataIDKey": false,
-            "PublishOrderIndex": 220,
+            "PublishOrderIndex": 233,
             "Rules": [
               {
                 "Category": "Design",
@@ -2825,7 +2825,7 @@
         "OptimizeForDevices": "Off",
         "Parent": "CmpHeaderAdmin",
         "PersistMetaDataIDKey": false,
-        "PublishOrderIndex": 218,
+        "PublishOrderIndex": 231,
         "Rules": [
           {
             "Category": "Design",
@@ -3004,15 +3004,29 @@
       "X",
       "Y",
       "ZIndex",
-      "screenname"
+      "screenname",
+      "image",
+      "Name"
     ],
-    "LastModifiedTimestamp": "638443747475695571",
+    "LastModifiedTimestamp": "638443806489192043",
     "Name": "CmpHeaderAdmin",
     "Rules": [
       {
         "Category": "Data",
         "InvariantScript": "\"Text\"",
         "Property": "screenname",
+        "RuleProviderType": "System"
+      },
+      {
+        "Category": "Data",
+        "InvariantScript": "SampleImage",
+        "Property": "image",
+        "RuleProviderType": "System"
+      },
+      {
+        "Category": "Data",
+        "InvariantScript": "\"Text\"",
+        "Property": "Name",
         "RuleProviderType": "System"
       },
       {
@@ -3071,6 +3085,24 @@
       "PropertyDataTypeKey": "String",
       "Tooltip": "A custom property",
       "Type": "{\"Version\":\"1.337\",\"Type\":{\"Name\":\"Root\",\"Kind\":\"String\",\"EnumString\":\"\",\"Type\":[]}}"
+    },
+    {
+      "Category": 0,
+      "DisplayName": "image",
+      "Hidden": false,
+      "Name": "image",
+      "PropertyDataTypeKey": "Image",
+      "Tooltip": "A custom property",
+      "Type": "{\"Version\":\"1.337\",\"Type\":{\"Name\":\"Root\",\"Kind\":\"Image\",\"EnumString\":\"\",\"Type\":[]}}"
+    },
+    {
+      "Category": 0,
+      "DisplayName": "Name",
+      "Hidden": false,
+      "Name": "Name",
+      "PropertyDataTypeKey": "String",
+      "Tooltip": "A custom property",
+      "Type": "{\"Version\":\"1.337\",\"Type\":{\"Name\":\"Root\",\"Kind\":\"String\",\"EnumString\":\"\",\"Type\":[]}}"
     }
   ],
   "FirstParty": true,
@@ -3081,7 +3113,7 @@
   "IsPcfControl": false,
   "IsPremiumPcfControl": false,
   "IsWidgetTemplate": false,
-  "LastModifiedTimestamp": "638443747475695571",
+  "LastModifiedTimestamp": "638443806489192043",
   "Name": "6273a31f8bfa489d93ac409e3d7e0941",
   "OverridableProperties": {},
   "Version": "1.0"

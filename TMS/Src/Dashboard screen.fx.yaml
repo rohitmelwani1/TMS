@@ -16,6 +16,8 @@
             Component1_2 As CmpHeaderAdmin:
                 Fill: =RGBA(255, 255, 255, 1)
                 Height: =Parent.Height*.08
+                image: ='Rohit'
+                Name: ="Rohit Melwani"
                 screenname: ="DASHBOARD"
                 Width: =Parent.Width
 

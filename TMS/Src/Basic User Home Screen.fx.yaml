@@ -9,8 +9,10 @@
 
         CmpHeaderBasicUser_1 As CmpHeaderBasicUser:
             Height: =Parent.Height*.1
+            image: =jaya
             LayoutMinHeight: =640
             LayoutMinWidth: =640
+            Name: ="Jaya Keswani"
             screenname: ="HOME"
             Width: =Parent.Width
 

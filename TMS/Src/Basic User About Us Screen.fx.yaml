@@ -9,6 +9,8 @@
 
         CmpHeaderBasicUser_2 As CmpHeaderBasicUser:
             Height: =Parent.Height*.1
+            image: =jaya
+            Name: ="Jaya Keswani"
             screenname: ="ABOUT US"
             Width: =Parent.Width
 
@@ -19,4 +21,134 @@
             LayoutMinWidth: =640
             NavItems: =NavBarBasicUser
             ZIndex: =2
+
+        Container51 As groupContainer.verticalAutoLayoutContainer:
+            LayoutAlignItems: =LayoutAlignItems.Center
+            LayoutDirection: =LayoutDirection.Vertical
+            LayoutMinHeight: =100
+            LayoutMinWidth: =250
+            LayoutMode: =LayoutMode.Auto
+            PaddingTop: =20
+            ZIndex: =3
+
+            Image14_1 As image:
+                Image: ='Teamwork-icon'
+                RadiusBottomLeft: =50
+                RadiusBottomRight: =50
+                RadiusTopLeft: =50
+                RadiusTopRight: =50
+                ZIndex: =1
+
+            Label13_1 As label:
+                Align: =Align.Center
+                FontWeight: =FontWeight.Bold
+                Height: =Parent.Height*.12
+                PaddingBottom: =0
+                PaddingTop: =0
+                Size: =25
+                Text: ="Ticket Management System"
+                Width: =Parent.Width
+                ZIndex: =2
+
+            Container52 As groupContainer.horizontalAutoLayoutContainer:
+                LayoutMinHeight: =100
+                LayoutMinWidth: =250
+                LayoutMode: =LayoutMode.Auto
+                ZIndex: =3
+
+                Container53 As groupContainer.verticalAutoLayoutContainer:
+                    AlignInContainer: =AlignInContainer.Center
+                    DropShadow: =DropShadow.None
+                    FillPortions: =0
+                    Height: =Parent.Height
+                    LayoutDirection: =LayoutDirection.Vertical
+                    LayoutGap: =5
+                    LayoutMinHeight: =100
+                    LayoutMinWidth: =250
+                    LayoutMode: =LayoutMode.Auto
+                    PaddingLeft: =25
+                    PaddingTop: =20
+                    Width: =Parent.Width/2
+                    ZIndex: =2
+
+                    Label17 As label:
+                        Color: =RGBA(40, 134, 222, 1)
+                        FontWeight: =FontWeight.Bold
+                        Size: =14
+                        Text: ="WHAT WE DO"
+                        ZIndex: =1
+
+                    Label17_1 As label:
+                        Color: =RGBA(40, 134, 222, 1)
+                        FontWeight: =FontWeight.Bold
+                        PaddingBottom: =0
+                        PaddingTop: =0
+                        Size: =20
+                        Text: ="TICKET MANAGEMENT SYSTEM"
+                        Width: =Parent.Width*.7
+                        ZIndex: =2
+
+                    Label18 As label:
+                        Height: =Parent.Height*.33
+                        PaddingTop: =0
+                        Size: =15
+                        Text: ="We designed our ticket management system to simplify how tasks and issues are handled. With our system, you can easily create tickets for various needs and monitor their progress. It ensures that nothing slips through the cracks, making our workflow more organized and efficient"
+                        Width: =Parent.Width*.9
+                        ZIndex: =3
+
+                    Container54 As groupContainer.manualLayoutContainer:
+                        AlignInContainer: =AlignInContainer.Start
+                        DropShadow: =DropShadow.Bold
+                        FillPortions: =0
+                        Height: =Parent.Height*.12
+                        LayoutMinHeight: =100
+                        LayoutMinWidth: =250
+                        RadiusBottomLeft: =10
+                        RadiusBottomRight: =10
+                        RadiusTopLeft: =10
+                        RadiusTopRight: =10
+                        Width: =Parent.Width*.24
+                        ZIndex: =4
+
+                        Image16 As image:
+                            Height: =Parent.Height
+                            Image: ='Screenshot 2024-02-24 195613'
+                            ImagePosition: =ImagePosition.Fill
+                            Width: =Parent.Width
+                            ZIndex: =1
+
+                        Label19 As label:
+                            Align: =Align.Center
+                            Color: =RGBA(255, 255, 255, 1)
+                            FontWeight: =FontWeight.Bold
+                            Height: =Parent.Height
+                            Text: ="LEARN MORE"
+                            Width: =Parent.Width
+                            Y: =2
+                            ZIndex: =2
+
+                Container53_1 As groupContainer.verticalAutoLayoutContainer:
+                    AlignInContainer: =AlignInContainer.Center
+                    DropShadow: =DropShadow.None
+                    FillPortions: =0
+                    Height: =Parent.Height
+                    LayoutAlignItems: =LayoutAlignItems.Center
+                    LayoutDirection: =LayoutDirection.Vertical
+                    LayoutJustifyContent: =LayoutJustifyContent.Center
+                    LayoutMinHeight: =100
+                    LayoutMinWidth: =250
+                    LayoutMode: =LayoutMode.Auto
+                    Width: =Parent.Width/2
+                    ZIndex: =3
+
+                    Image15 As image:
+                        Height: =Parent.Height*.9
+                        Image: =employees
+                        ImagePosition: =ImagePosition.Fill
+                        RadiusBottomLeft: =20
+                        RadiusBottomRight: =20
+                        RadiusTopLeft: =20
+                        RadiusTopRight: =20
+                        Width: =Parent.Width*.9
+                        ZIndex: =1
 
